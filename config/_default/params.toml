@@ -2,17 +2,17 @@
 # favicon
 favicon = "images/favicon.png"
 # logo
-logo = "images/logo.png"
-logo_dark = "images/logo-w.png"
+logo = "images/logo_light.svg"
+logo_dark = "images/logo_dark.svg"
 # use `px` or `x` with logo_width, example: "100px".
 # Note: logo_width is not work with .svg file
-logo_width = "180px"
+logo_width = "396px"
 # if logo_webp set false, will not generate WEBP version of logo | default is true
 logo_webp = true
 # logo text will only show when logo is missing.
-logo_text = "ALAS doo"
+logo_text = "AccessLiaison"
 # theme-mode
-theme_switcher = false
+theme_switcher = true
 theme_default = "automatic" # available options [light/dark/automatic]
 # Main Sections
 mainSections = ["blog"]
@@ -26,7 +26,7 @@ google_tag_manager = "" # example: G-XXXXXXXXXX
 custom_script = ""
 # copyright
 theme_copyright = true
-copyright = "Copyright by ALAS doo"
+copyright = "&#169; year AccessLiasion from ALAS doo"
 
 # Preloader
 [preloader]
@@ -41,16 +41,30 @@ link = "get-demo/"
 
 # contact info
 [contact_info]
-address = "9567 Turner Trace Apt. BC C3G8A4"
-mobile = "+211234565523"
-email = "info@email.com"
+address = "Dimitrija Tucovica 20, Zrenjanin, Srbia"
+mobile = ""
+email = "infoalasdoo.com"
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
-keywords = ["Hugo", "Themefisher", "GetHugoThemes"]
-description = "This is meta description"
-author = "Themefisher"
-image = "images/logo.png"                           # this image will be used as fallback if a page has no image of its own
+keywords = [
+    "web accessibility",
+    "website accessibility", 
+    "accessibility solutions", 
+    "accessibility training", 
+    "document accessibility", 
+    "European accessibility act", 
+    "EAA", 
+    "WCAG", 
+    "accessibility audit", 
+    "accessibility testing", 
+    "VPAT", 
+    "ADA compliance", 
+    "Section 508"
+]
+description = "Experience the full benefits of web accessibility compliance with AccessLiaison: audits, remediation, automated testing, and training."
+author = "Alas doo"
+image = "images/logo_social.png"                           # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 [matomo]

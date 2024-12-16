@@ -1,0 +1,139 @@
+/* Button style */
+.btn {
+    display: flex;
+    align-items: center;
+    gap: $font-size;
+    width: fit-content;
+    padding: 1rem 1.25rem;
+    border: 2px solid;
+    border-radius: 50px;
+
+    font-size: $font-size;
+    font-family: $font-primary;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    line-height: 1;
+    transition: 0.3s ease;
+  
+    &-sm {
+      padding: 0.9em 1.6em;
+      font-size: 1em;
+    }
+  
+    &:hover,
+    &:first-child:hover,
+    &:active,
+    &:first-child:active,
+    &.active,
+    &:focus,
+    &.focus,
+    &:focus,
+    &:focus:not(:focus-visible),
+    &:focus-visible {
+      background: darken($color-primary, 5);
+      border-color: darken($color-primary, 5);
+      box-shadow: none;
+      border-radius: 50px;
+    }
+
+  &.focus,
+  &:focus,
+  &:focus:not(:focus-visible) {
+    outline-width: 3px;
+    outline-offset: 4px;
+    box-shadow: none;
+  }
+}
+  
+.btn.btn-primary {
+  background: $color-primary;
+  color: $white;
+  border-color: $color-primary;
+  &:focus,
+  &.focus,
+  &:focus-visible {
+      outline: 3px solid $color-primary;
+      outline-offset: 4px;
+  }
+}
+
+.btn-outline-primary {
+  color: $color-primary;
+  border-color: $color-primary;
+}
+
+.btn-secondary {
+  background: $color-secondary;
+  color: $white;
+  border-color: $color-secondary;
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: darken($color-secondary, 5) !important;
+    border-color: darken($color-secondary, 5) !important;
+  }
+}
+
+.btn-outline-secondary {
+  color: $color-secondary;
+  border-color: $color-secondary;
+  &:hover,
+  &:active,
+  &.active,
+  &:focus,
+  &.focus {
+    background: $color-secondary !important;
+    border-color: $color-secondary !important;
+  }
+}
+
+.btn-link {
+  color: $color-primary;
+  text-decoration: none;
+
+  i,
+  svg {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-bottom: 1px;
+    transition: 0.2s ease;
+  }
+
+  &:active,
+  &:hover,
+  &.focus,
+  &.active {
+    color: $color-primary;
+
+    i,
+    svg {
+      margin-left: 10px;
+    }
+  }
+}
+
+// dark theme 
+.dark {
+
+  .btn.btn-primary {
+    background: transparent;
+    color: $dark-color-primary;
+    border-color: $dark-color-primary;
+
+    &:hover {
+      color: $dark-color-primary;
+      border-color: $dark-color-primary;
+      background: transparent;
+    }
+
+    &:focus,
+    &.focus,
+    &:focus-visible {
+      outline: 3px solid $dark-color-primary;
+      background: transparent;
+    }
+  }
+
+}

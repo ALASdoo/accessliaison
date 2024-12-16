@@ -34,10 +34,12 @@ body {
   button,
   select {
     cursor: pointer;
-    transition: 0.2s ease;
+    transition: none;
   
     &:focus {
-      outline: 0;
+      outline: 3px solid $color-primary;
+      outline-offset: 4px;
+      border-radius: 20px;
     }
   }
   

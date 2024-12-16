@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'AccessLiaison: Web accessibility solutions beyond compliance'
 
 # This file is for render site varibles and plugins
 # don't remove this file.
@@ -12,16 +12,18 @@ title = 'My New Hugo Site'
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
-color_primary = "#0AA8A7"
+color_primary = "#034c71"
 color_secondary = "#376f92"
 body_color = "#fff"
-text_color = "#777"
+text_color = "#000406"
 text_dark = "#222"
-text_light = "#959595"
+text_light = "#373D3D"
 border_color = "#ECECEC"
+
+# Dark Theme
 dark_body_color = "#1E262C"
-dark_text_color = "#cbcbcb"
-dark_text_light = "#959595"
+dark_text_color = "#F8FDFF"
+dark_text_light = "#F8FDFF"
 dark_text_dark = "#fff"
 dark_border_color = "#4e4e4e"
 black = "#101418"
@@ -31,7 +33,7 @@ dark = "#1b2229"
 
 # font variables
 # base font size for full website, 
-font_size = "16px" # default is 16px
+font_size = "20px" # default is 20px
 # Font Scale Sizes
 # "minorSecond": 1.067,
 # "majorSecond": 1.125,
@@ -41,14 +43,32 @@ font_size = "16px" # default is 16px
 # "augmentedFourth": 1.414,
 # "perfectFifth": 1.5,
 # "goldenRatio": 1.618
-font_scale = "1.25" # default is "majorThird": 1.25
+# font_scale = "1.25" # default is "majorThird": 1.25
 
 # go to https://fonts.google.com/ to find the font you want to use. select your font and copy only the bold part from the URL. and paste it here.
 # example: "Work+Sans:wght@400;500;600"
-font_primary = "Urbanist:wght@500;600;700"
+font_primary = "Atkinson+Hyperlegible:wght@400;700"
 font_primary_type = "sans-serif"           # [serif/sans-serif]
-font_secondary = "Poppins:wght@400;500"
+font_secondary = "Atkinson+Hyperlegible:wght@400;700&display=swap"
 font_secondary_type = "sans-serif"         # [serif/sans-serif]
 font_icon = "Font Awesome 6 Free"          # https://fontawesome.com/v5.15/icons/
 
+############################# Plugins ##############################
+# CSS Plugins
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/brands.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/solid.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/regular.css"
+[[params.plugins.css]]
+link = "plugins/font-awesome/v6/icons.css"
 
+
+# JS Plugins
+[[params.plugins.js]]
+link = "plugins/webfont/webfont-loader-2.js"
+[[params.plugins.js]]
+link = "plugins/cookie.js"
+[[params.plugins.js]]
+link = "plugins/lazy-loader.js"

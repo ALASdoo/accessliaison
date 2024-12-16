@@ -14,14 +14,14 @@ title = 'AccessLiaison: Web accessibility solutions beyond compliance'
 [params.variables]
 color_primary = "#034c71"
 color_secondary = "#376f92"
-body_color = "#fff"
+body_color = "#DCE7EA"
 text_color = "#000406"
 text_dark = "#222"
 text_light = "#373D3D"
 border_color = "#ECECEC"
 
 # Dark Theme
-dark_body_color = "#1E262C"
+dark_body_color = "#000406"
 dark_text_color = "#F8FDFF"
 dark_text_light = "#F8FDFF"
 dark_text_dark = "#fff"

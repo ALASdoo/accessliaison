@@ -82,7 +82,7 @@ call_to_action:
 ##################### Services ##########################
 services:
   enable: true
-  title: "Comprehensive Web Accessibility Services"
+  title: "Comprehensive web accessibility services"
   service_items:
     - title: "Accessibility Audit"
       image: "document-find"

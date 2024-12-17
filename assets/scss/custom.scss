@@ -34,9 +34,7 @@
     flex: 1 1 auto;
 }
 .nav-tabs {
-    // display: flex;
     .nav-link {
-        // flex: 1 1 auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,11 +56,8 @@
     max-height: 80px;
     max-width: 80px;
     margin-bottom: 20px;
-    // display: block;
 }
 .tab-btn-text {
-    // text-align: center;
-    // display: block;
     font-size: rfs-value($font-size);
 }
 .tab-content {
@@ -74,63 +69,63 @@
 }
 
 .accordion-button {
-    border-radius: 20px;
-    background: #FFF;
-    border: 2px solid transparent;
-    box-shadow: none !important;
+    border-radius: 0;
+    background: transparent;
 
     &:active,
     &:focus,
     &.focus,
     &:focus-visible {
         box-shadow: none;
-        border-color: transparent;
         outline: 3px solid $color-primary;
         outline-offset: 4px;
     }
 
     &:not(.collapsed) {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-
+        &:active,
+        &:focus,
+        &.focus,
+        &:focus-visible {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
         .accordion-header {
             color: #fff;
         }
-
         .accordion-image {
             filter: brightness(0) invert(1);
-        }
-    }
-    &.collapsed {
-        &:hover {
-            border-color: $color-primary;
         }
     }
 }
 .accordion-header {
     font-size: rfs-value($font-size);
 }
-.accordion-item:first-of-type .accordion-button {
+.accordion-item {
+    border: 2px solid $color-primary !important;
     border-radius: 20px;
+    background: #FFF;
 
-    &:not(.collapsed) {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
+    &:not(:first-of-type),
+    &:first-of-type {
+        border-radius: 20px;
+        border-top: 2px solid $color-primary !important;
+
+        .accordion-button {
+            border-top-left-radius: 18px;
+            border-top-right-radius: 18px;
+        }
+    }
+    &:last-of-type .accordion-button.collapsed {
+        border-bottom-left-radius: 18px;
+        border-bottom-right-radius: 18px;
+    }
+
+    .show {
+        border-bottom-left-radius: 20px !important;
+        border-bottom-right-radius: 20px !important;
+        box-shadow: 2px 2px 5px 2px rgba(45, 67, 121, 0.15) !important;
     }
 }
-.accordion-item:last-of-type .accordion-button.collapsed {
-    border-radius: 20px;
-}
-.accordion-item {
-   border: 0;
-}
-.accordion-collapse {
-    background: #FFF;
-    border: 2px solid $color-primary;
-    border-top: 0;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
- }
  .accordion-image {
     height: 32px;
     width: 32px;

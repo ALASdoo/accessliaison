@@ -60,4 +60,6 @@ $font-icon: '{{.font_icon | default "Font Awesome 6 Free"}}';
 
 @import 'toc';
 
+@import 'switch';
+
 @import 'custom.scss';

@@ -1,0 +1,166 @@
+.switch {
+    --relative-size: 4px;
+    --color-white: #F8FDFF;
+    --inline-size: calc(var(--relative-size) * 12 );
+    display: inline-block;
+    position: relative;
+}
+
+.switch-track {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  inline-size: var(--inline-size);
+  block-size: calc(var(--relative-size) * 6);
+  padding-inline: var(--relative-size);
+  background-color: #414647;
+  border-radius: 50px;
+  
+  transition-property: background-color;
+  transition-duration: 120ms;
+  transition-timing-function: ease-in-out;
+}
+
+/*
+* Visually hidden, but still interactable.
+* Represents hit-area / hover / focus ring.
+*/
+.switch-input {
+  position: absolute;
+  z-index: 1;
+  inset: calc(var(--relative-size) * -1);
+  border-radius: 50px;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/**
+* Handle
+*/
+.switch-handle {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  inline-size: calc(var(--relative-size) * 4);
+  block-size: calc(var(--relative-size) * 4);
+  margin-inline: 3px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+  transition-property: transform, box-shadow;
+  transition-duration: 120ms, 200ms;
+  transition-timing-function: ease-in-out;
+}
+
+/**
+   * Icon
+   */
+.switch-icon {
+    position: absolute;
+    font-size: 18px;
+    color: var(--color-white);
+    opacity: 0;
+    transition-property: opacity;
+    transition-delay: 100ms;
+    transition-timing-function: linear;
+}
+
+.switch-icon--off {
+    right: calc(var(--relative-size) * 2 );
+    opacity: 1;
+    transition-delay: 0ms;
+}
+
+.switch-icon--on {
+    left: calc(var(--relative-size) * 2 );
+}
+
+/**
+   * On state
+   */
+#switch:checked {
+  & ~ .switch-track {
+    background-color: $color-primary;
+    .switch-handle {
+      transform: translateX(
+        calc(
+          var(--inline-size) -
+          calc( var(--relative-size) * 4 ) - 
+          calc(var(--relative-size) * 1.5 )
+        )
+      ); //magic number 6px
+    }
+
+    .switch-icon--on {
+      opacity: 1;
+      transition-delay: 0ms;
+    }
+
+    .switch-icon--off {
+        opacity: 0;
+        transition-delay: 0ms;
+    }
+  }
+}
+
+
+
+/**
+  * Hover
+  */
+.switch-input:hover + .switch-handle {
+  box-shadow: 0 0 0 calc(var(--relative-size) * 2)
+    var(--prisma--color--background--neutral--tone);
+}
+
+ 
+
+/**
+  * Focus visible
+  */
+.switch-input:focus-visible {
+  outline-offset: 0; // input field has extra space
+  outline: 3px solid $color-primary;
+}
+
+/**
+  * A11y
+  */
+@media (prefers-reduced-motion) {
+  .switch-track,
+  .switch-handle,
+  .switch-icon {
+    transition: none;
+  }
+}
+
+/**
+  * Dark Theme
+  */
+.dark {
+  .switch-track {
+    background-color: #e4edef;
+  }
+  .switch-handle {
+    background-color: #1a2023;
+  }
+
+  .switch-icon {
+    color: #1a2023;
+  }
+
+  #switch:checked {
+    & ~ .switch-track {
+      background-color: $dark-color-primary;
+    }
+  }
+
+  /**
+   * Focus indicator
+   */
+  .switch-input:focus-visible {
+    outline: 3px solid $dark-color-primary;
+  }
+}

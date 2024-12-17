@@ -12,8 +12,8 @@
           {{ if .button.enable }}
           {{ with .button }}
           <!-- TODO: link & button -->
-          <a href="{{ site.Params.navigation_button.link | relLangURL }}" 
-             title="{{ .label }}" 
+          <a href="{{ site.Params.navigation_button.link | relLangURL }}"
+             title="{{ .label }}"
              class="btn btn-gradient m-2">
             {{ .label }}
           </a>
@@ -72,7 +72,7 @@
 {{ end }}
 {{ end }}
 <!-- /CTA - Mission -->
- 
+
 
 <!-- Services - Tab panel -->
  {{ if .Params.services.enable }}
@@ -82,6 +82,104 @@
     <div class="row">
       <div class="col">
         <h2 class="text-center">{{ .title | markdownify }}</h2>
+      </div>
+    </div>
+    <div class="row pb-4">
+      <div class="col">
+        <ul class="nav nav-tabs row" role="tablist">
+          {{range $i, $e := .service_items}}
+          <li class="nav-item col-2" role="presentation">
+            <button class="nav-link p-3 {{if eq $i 0 }}active{{end}}"
+            id="{{.id}}-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#{{.id}}-tab-pane"
+            type="button"
+            role="tab"
+            aria-controls="{{.id}}-tab-pane"
+            aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+            {{if gt $i 0 }} tabindex="-1" {{end}}
+            >
+              {{ partial "image" (dict "Src" .image "Alt" "" "Class" "tab-btn-image") }}
+              <h3 class="tab-btn-text">{{.title}}</h3>
+            </button>
+          </li>
+          {{end}}
+        </ul>
+        <div class="tab-content p-4" id="servicesTabContent">
+          {{range $i, $e := .service_items}}
+          <div class="tab-pane fade
+            {{if eq $i 0 }}show active{{end}}"
+            id="{{.id}}-tab-pane"
+            role="tabpanel"
+            aria-labelledby="{{.id}}-tab"
+            aria-live="polite"
+            >
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6">
+                  <p>{{ .highlights_intro }}</p>
+                  <p>{{ .highlights_list_title }}</p>
+                  <ul>
+                    {{range .highlights_list}}
+                    <li>{{ . }}</li>
+                    {{end}}
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  {{ .description }}
+                </div>
+              </div>
+            </div>
+          </div>
+          {{end}}
+      </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <div class="accordion" id="servicesAccordion">
+          {{range $i, $e := .service_items}}
+          <div class="accordion-item mb-3">
+            <button class="accordion-button {{if ne $i 0 }}collapsed{{end}}"
+              id="{{.id}}-accordion"
+              data-bs-toggle="collapse"
+              data-bs-target="#{{.id}}-accordion-pane"
+              type="button"
+              aria-controls="{{.id}}-accordion-pane"
+              aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+              >
+              {{ partial "image" (dict "Src" .image_small "Alt" "" "Class" "accordion-image") }}
+
+              <h3 class="accordion-header">
+                {{.title}}
+              </h3>
+            </button>
+            <div id="{{.id}}-accordion-pane"
+              class="accordion-collapse collapse {{if eq $i 0 }}show{{end}} p-3"
+              aria-labelledby="{{.id}}-accordion"
+              data-bs-parent="#servicesAccordion">
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <p>{{ .highlights_intro }}</p>
+                    <p>{{ .highlights_list_title }}</p>
+                    <ul>
+                      {{range .highlights_list}}
+                      <li>{{ . }}</li>
+                      {{end}}
+                    </ul>
+                  </div>
+                  <div class="col-lg-6">
+                    {{ .description }}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{end}}
+        </div>
       </div>
     </div>
   </div>
@@ -102,7 +200,7 @@
       </div>
     </div>
     <div class="row">
-      {{ range .items }} 
+      {{ range .items }}
       <div class="col-12 col-md-4">
         <h3> {{ .name }} </h3>
         <p> {{ .content | markdownify }} </p>

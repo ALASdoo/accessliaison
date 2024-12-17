@@ -5,8 +5,7 @@
 <section class="hero banner">
   <div class="container">
     <div class="row h-100">
-
-      <div class="col-lg-6 margin-right-3 h-100 d-flex flex-column justify-content-center">
+      <div class="col-lg-7 margin-right-3 h-100 d-flex flex-column justify-content-center">
         <h1 class="mb-4 pb-2">{{ .title | markdownify }}</h1>
         <div class="mb-4 display-list">{{ .content | markdownify }}</div>
         <div class="mb-5">
@@ -34,7 +33,7 @@
 <section class="section">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-xl-6 mx-auto mb-5 mb-xl-0">
+      <div class="col-12 col-xl-7 mx-auto mb-5 mb-xl-0">
         <div class="">
           <h2 class="section-title h2 mb-4">{{ .title | markdownify }}</h2>
           <div class="content mb-4">
@@ -50,7 +49,7 @@
         <div class="col-3 d-flex">
           <div class="feature-card bg-white rounded-1 d-block d-sm-flex">
             <div class="block">
-              <h4 class="mb-3">{{ .name | title }}</h4>
+              <h4 class="mb-3">{{ .name }}</h4>
               <p class="mb-0">{{ .content | markdownify }}</p>
             </div>
           </div>
@@ -105,7 +104,7 @@
     <div class="row">
       {{ range .items }} 
       <div class="col-12 col-md-4">
-        <h3> {{ .name | title }} </h3>
+        <h3> {{ .name }} </h3>
         <p> {{ .content | markdownify }} </p>
       </div>
       {{ end }}

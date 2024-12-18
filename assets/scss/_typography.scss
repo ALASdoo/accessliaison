@@ -55,7 +55,7 @@ html {
   }
  
   
-  // typo for dark mode
+  // Dark Theme
   body.dark {
     color: $dark-text-color;
 
@@ -72,4 +72,29 @@ html {
       color: $dark-text-light;
     }
   }
+
+
+// Text Large 
+body.text-large {
+  font-size: rfs-value(30px);
   
+  h1 {
+    font-size: rfs-value(64px);
+  }
+
+  h2 {
+    font-size: rfs-value(54px);
+  }
+  
+  h3 {
+    font-size: rfs-value(44px);
+  }
+  
+  h4 {
+    font-size: rfs-value(38px);
+  }
+
+  .hero .display-list {
+    font-size: rfs-value(32px);
+  }
+}

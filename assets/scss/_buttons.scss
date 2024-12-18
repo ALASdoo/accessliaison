@@ -141,6 +141,12 @@
   }
 }
 
+// Text Large 
+.text-large .btn {
+  font-size: rfs-value(30px);
+  padding: rfs-value(24px) rfs-value(30px);
+}
+
 // dark theme
 .dark {
   .btn {

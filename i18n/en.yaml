@@ -100,6 +100,9 @@
 - id: switch_reduce_animation
   translation: Reduce animation
 
+- id: switch_remove_images
+  translation: Remove images
+
 - id: theme_dark 
   translation: Theme dark
 

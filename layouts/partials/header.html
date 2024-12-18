@@ -23,10 +23,6 @@
             {{ i18n "appearance_dropdown" }}
           </button>
           <ul class="dropdown-menu">
-            <li class="dropdown-item">
-              <a class="dropdown-item theme-switcher">Theme Switcher</a>
-            </li>
-
             <ul>
               <li class="dropdown-item">
                 <div class="form-check radio-field">
@@ -84,6 +80,15 @@
 
             <li class="dropdown-item">
               <div class="switch-field">
+                {{ partial "switch" (dict "id" "switch-remove-images") }}
+                <label for="switch-remove-images">
+                  {{ i18n "switch_remove_images"}}
+                </label>
+              </div>
+            </li>
+
+            <li class="dropdown-item">
+              <div class="switch-field">
                 {{ partial "switch" (dict "id" "switch-reduce-animation") }}
                 <label for="switch-reduce-animation">
                   {{ i18n "switch_reduce_animation"}}
@@ -103,33 +108,42 @@
 <!-- theme switcher -->
 {{ if site.Params.theme_switcher }}
 <script>
-  // var darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
-
-  // {{ if eq site.Params.theme_default "automatic" }}
-  // if (window.matchMedia('(prefers-color-scheme: dark)').matches){darkMode = true}
-  // {{ end }}
-
-  // if (localStorage.getItem('theme') === 'dark'){darkMode = true}
-  // else if (localStorage.getItem('theme') === 'light'){darkMode = false}
-  // if (darkMode){document.body.classList.toggle('dark')}
 
   document.addEventListener("DOMContentLoaded", () => {
-    //   var themeSwitch = document.querySelectorAll('.theme-switcher');
-    //   [].forEach.call(themeSwitch, function (ts) {
-    //     // ts.addEventListener('click', () => {
-    //     //   document.body.classList.toggle('dark');
-    //     //   localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
-    //     // });
-    //   })
+ 
 
     const appearanceMenu = document.querySelector(".js--appearance-settings");
     const themeOptions = appearanceMenu.querySelectorAll(
       'input[name="theme-picker"]'
     );
+    const largeTextSwitch = appearanceMenu.querySelector("#switch-large-text");
+    const removeImagesSwitch = appearanceMenu.querySelector("#switch-remove-images");
+    const reduceAnimationsSwitch = appearanceMenu.querySelector("#switch-reduce-animation");
 
- 
+    const LARGE_TEXT_KEY = "large-text-enabled";
+    const REMOVE_IMAGES_KEY = "remove-images-enabled";
+    const REDUCE_ANIMATIONS_KEY = "reduce-animation-enabled";
+    
+
+    /**
+     * Click Handler
+     */
     appearanceMenu.addEventListener("click", (event) => {
       const target = event.target;
+
+      if (largeTextSwitch.contains(target)) {
+        event.preventDefault();
+        handleLargeText(target.checked);
+        saveAppearancePreferences(LARGE_TEXT_KEY, target.checked);
+      }
+
+      if (removeImagesSwitch.contains(target)) {        
+        saveAppearancePreferences(REMOVE_IMAGES_KEY, target.checked);
+      }
+
+      if (reduceAnimationsSwitch.contains(target)) {
+        saveAppearancePreferences(REDUCE_ANIMATIONS_KEY, target.checked);
+      }
 
       if (target.closest('[name="theme-picker"]')) {
         event.preventDefault();
@@ -138,7 +152,30 @@
       }
     });
 
+    /**
+     * Large Text Handler
+     */
+    const handleLargeText = (isTextLarge) => {
+      isTextLarge = isTextLarge || false;
 
+      setTimeout(() => {
+        largeTextSwitch.checked = isTextLarge;
+        isTextLarge
+          ? largeTextSwitch.setAttribute("checked", true)
+          : largeTextSwitch.removeAttribute("checked");
+      });
+
+      if (isTextLarge) {
+        document.body.classList.remove("text-large");
+        document.body.classList.add("text-large");
+      } else {
+        document.body.classList.remove("text-large");
+      }
+    };
+
+    /**
+     * Theme Handler :: START
+     */
     const setLightTheme = () => {
       document.body.classList.remove("dark");
     };
@@ -164,7 +201,7 @@
     const handleThemeChange = (themePreferences) => {
       // sets 'auto' theme by default
       themePreferences = themePreferences ? themePreferences : "auto";
-      
+
       const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
       if (themePreferences !== "auto") {
         mediaQuery.removeEventListener("change", setAutoTheme);
@@ -193,15 +230,21 @@
         });
       });
     };
+    /** Theme Handler :: END */
 
+    /**
+     * Store user preferences
+     */
     const saveAppearancePreferences = (name, value) => {
       localStorage.setItem(name, value);
     };
 
     const getStoredAppearancePreferences = () => {
-      console.log("stored theme", localStorage.getItem("theme"));
       const themePreferences = localStorage.getItem("theme");
       handleThemeChange(themePreferences);
+
+      const largeTextPreferences = localStorage.getItem(LARGE_TEXT_KEY);
+      handleLargeText(JSON.parse(largeTextPreferences));
     };
 
     getStoredAppearancePreferences();

@@ -73,8 +73,10 @@ services:
   service_items:
     - title: 'Accessibility Audit'
       id: 'audit'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      image_light: 'images/services/light/icon_audit.svg'
+      image_dark: 'images/services/dark/icon_audit.svg'
+      image_small_light: 'images/services/light/icon_audit_small.svg'
+      image_small_dark: 'images/services/dark/icon_audit_small.svg'
       highlights_intro: 'Conformance reports don’t have to be overwhelming — we simplify accessibility for you.'
       highlights_list_title: 'Our priorities are:'
       highlights_list:
@@ -92,8 +94,10 @@ services:
 
     - title: 'Remediation'
       id: 'remediation'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      image_light: 'images/services/light/icon_remediation.svg'
+      image_dark: 'images/services/dark/icon_remediation.svg'
+      image_small_light: 'images/services/light/icon_remediation_small.svg'
+      image_small_dark: 'images/services/dark/icon_remediation_small.svg'
       highlights_intro: 'Need remediation of an existing website or a web application? Maybe you want a rebranded new one? Our diverse team will get you there fast.'
       highlights_list_title: 'We can help you with:'
       highlights_list:
@@ -108,9 +112,11 @@ services:
         If you’re looking to build in-house expertise, our accessibility champions can collaborate with your team. We also provide custom training programs.
 
     - title: 'Custom Training'
-      id: 'education'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      id: 'training'
+      image_light: 'images/services/light/icon_training.svg'
+      image_dark: 'images/services/dark/icon_training.svg'
+      image_small_light: 'images/services/light/icon_training_small.svg'
+      image_small_dark: 'images/services/dark/icon_training_small.svg'
       highlights_intro: 'We help your team master the accessibility best practices they need to become self-sufficient.'
       highlights_list_title: 'Learn how to apply knowledge from these areas:'
       highlights_list:
@@ -128,8 +134,10 @@ services:
 
     - title: 'Automated Testing'
       id: 'automation'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      image_light: 'images/services/light/icon_automation.svg'
+      image_dark: 'images/services/dark/icon_automation.svg'
+      image_small_light: 'images/services/light/icon_automation_small.svg'
+      image_small_dark: 'images/services/dark/icon_automation_small.svg'
       highlights_intro: 'If you’re developing software, automated accessibility testing is an excellent starting point for achieving compliance.'
       highlights_list_title: 'Why choose automated accessibility testing?'
       highlights_list:
@@ -146,8 +154,10 @@ services:
 
     - title: 'ACR (VPAT)'
       id: 'vpat'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      image_light: 'images/services/light/icon_vpat.svg'
+      image_dark: 'images/services/dark/icon_vpat.svg'
+      image_small_light: 'images/services/light/icon_vpat_small.svg'
+      image_small_dark: 'images/services/dark/icon_vpat_small.svg'
       highlights_intro: 'Document your digital accessibility — close new deals and keep current customers.'
       description: |
         A completed Voluntary Product Accessibility Template (VPAT), also known as an Accessibility Conformance Report (ACR), is mandatory when selling to most public entities in the United States. It is also becoming a standard requirement in global private-sector business-to-business (B2B) procurement processes.
@@ -158,8 +168,10 @@ services:
 
     - title: 'Document Remediation'
       id: 'document'
-      image: 'images/audit.svg'
-      image_small: 'images/audit_small.svg'
+      image_light: 'images/services/light/icon_documents.svg'
+      image_dark: 'images/services/dark/icon_documents.svg'
+      image_small_light: 'images/services/light/icon_documents_small.svg'
+      image_small_dark: 'images/services/dark/icon_documents_small.svg'
       highlights_intro: 'Make your documents accessible to all users.'
       highlights_list_title: 'The process of making your files accessible:'
       highlights_list:

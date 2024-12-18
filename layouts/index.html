@@ -99,7 +99,8 @@
             aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
             {{if gt $i 0 }} tabindex="-1" {{end}}
             >
-              {{ partial "image" (dict "Src" .image "Alt" "" "Class" "tab-btn-image") }}
+              {{ partial "image" (dict "Src" .image_light "Alt" "" "Class" "tab-btn-image icon-light") }}
+              {{ partial "image" (dict "Src" .image_dark "Alt" "" "Class" "tab-btn-image icon-dark") }}
               <h3 class="tab-btn-text">{{.title}}</h3>
             </button>
           </li>
@@ -149,7 +150,8 @@
               aria-controls="{{.id}}-accordion-pane"
               aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
               >
-              {{ partial "image" (dict "Src" .image_small "Alt" "" "Class" "accordion-image") }}
+              {{ partial "image" (dict "Src" .image_small_light "Alt" "" "Class" "accordion-image icon-light") }}
+              {{ partial "image" (dict "Src" .image_small_dark "Alt" "" "Class" "accordion-image icon-dark") }}
 
               <h3 class="accordion-header">
                 {{.title}}

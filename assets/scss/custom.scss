@@ -58,6 +58,9 @@
     max-height: 80px;
     max-width: 80px;
     margin-bottom: 20px;
+    &.icon-dark {
+        display: none;
+    }
 }
 .tab-btn-text {
     font-size: rfs-value($font-size);
@@ -134,6 +137,9 @@
     height: 32px;
     width: 32px;
     margin-right: 20px;
+    &.icon-dark {
+        display: none;
+    }
  }
 
  /**
@@ -180,7 +186,15 @@
             }
         }
     }
-
+    .tab-btn-image,
+    .accordion-image {
+        &.icon-light {
+            display: none;
+        }
+        &.icon-dark {
+            display: block;
+        }
+    }
     .nav-tabs {
         .nav-link {
             color: $white;

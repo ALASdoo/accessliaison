@@ -146,10 +146,6 @@
 
   @media (min-width: 992px) {
     .navbar .dropdown-menu {
-      display: block;
-      height: 0;
-      visibility: hidden;
-      overflow: hidden;
       transition: 0.2s;
       left: 50%;
       transform: translateX(-50%);
@@ -170,17 +166,10 @@
         box-shadow: 0 10px 30px rgba(22, 28, 45, 0.1);
       }
 
-      li {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-5px);
-      }
     }
 
     .navbar .dropdown:hover .dropdown-menu {
-      height: auto;
-      overflow: visible;
-      visibility: visible;
+ 
 
       &::after {
         height: 100%;

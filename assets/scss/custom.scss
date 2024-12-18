@@ -131,3 +131,50 @@
     width: 32px;
     margin-right: 20px;
  }
+    
+ 
+
+
+ /**
+ * Radio Button 
+ */
+ .radio-field {
+    .form-check-input[type="radio"] {
+        width: $font-size;
+        height: $font-size;
+        border: 2px solid #414647;
+        background-color: unset;
+        &:hover,
+        &:focus {
+          box-shadow: none;
+        }
+
+        &:focus {
+            outline-width: 2px;
+            outline-style: solid;
+            outline-color: $color-primary;
+            outline-offset: 3px;
+        }
+
+        &:checked {
+            background-color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+ }
+
+.dark .radio-field {
+    .form-check-input[type="radio"] {
+        border-color: #e4edef;
+        background-color: #373A3A;
+        &:focus {
+            outline-color: $dark-color-primary;
+        }
+
+        &:checked {
+            background-color: $dark-color-primary;
+            border-color: $dark-color-primary;
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='2' fill='%23373737'/></svg>");
+        }
+    }
+}

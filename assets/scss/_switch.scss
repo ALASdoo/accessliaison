@@ -1,3 +1,15 @@
+.switch-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+  label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+}
+
 .switch {
     --relative-size: 4px;
     --color-white: #F8FDFF;
@@ -55,8 +67,8 @@
 }
 
 /**
-   * Icon
-   */
+  * Icon
+  */
 .switch-icon {
     position: absolute;
     font-size: 18px;
@@ -78,9 +90,9 @@
 }
 
 /**
-   * On state
-   */
-#switch:checked {
+  * On state
+  */
+.switch-input:checked {
   & ~ .switch-track {
     background-color: $color-primary;
     .switch-handle {
@@ -105,8 +117,6 @@
   }
 }
 
-
-
 /**
   * Hover
   */
@@ -114,8 +124,6 @@
   box-shadow: 0 0 0 calc(var(--relative-size) * 2)
     var(--prisma--color--background--neutral--tone);
 }
-
- 
 
 /**
   * Focus visible
@@ -143,6 +151,7 @@
   .switch-track {
     background-color: #e4edef;
   }
+
   .switch-handle {
     background-color: #1a2023;
   }
@@ -151,7 +160,7 @@
     color: #1a2023;
   }
 
-  #switch:checked {
+  .switch-input:checked {
     & ~ .switch-track {
       background-color: $dark-color-primary;
     }

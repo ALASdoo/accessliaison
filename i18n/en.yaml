@@ -90,3 +90,21 @@
   
 - id: search_faq
   translation: Click and search FAQ..
+
+- id: appearance_dropdown
+  translation: Appearance
+
+- id: switch_large_text
+  translation: Large text
+
+- id: switch_reduce_animation
+  translation: Reduce animation
+
+- id: theme_dark 
+  translation: Theme dark
+
+- id: theme_light
+  translation: Theme light
+
+- id: theme_auto
+  translation: Device default

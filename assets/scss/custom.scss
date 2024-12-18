@@ -146,11 +146,14 @@
  * Radio Button
  */
  .radio-field {
+
     .form-check-input[type="radio"] {
         width: $font-size;
         height: $font-size;
         border: 2px solid #414647;
+        margin-top: 5px;
         background-color: unset;
+
         &:hover,
         &:focus {
           box-shadow: none;

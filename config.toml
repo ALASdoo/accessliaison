@@ -70,6 +70,4 @@ link = "plugins/font-awesome/v6/icons.css"
 [[params.plugins.js]]
 link = "plugins/webfont/webfont-loader-2.js"
 [[params.plugins.js]]
-link = "plugins/cookie.js"
-[[params.plugins.js]]
 link = "plugins/lazy-loader.js"

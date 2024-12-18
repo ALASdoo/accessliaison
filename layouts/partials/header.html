@@ -8,30 +8,35 @@
         {{ partial "logo.html" . }}
       </a>
 
-
       <div class="d-flex align-items-center">
-
         {{ if site.Params.navigation_button.enable }}
         <!-- Appearance Settings -->
-        <div class="dropdown">
-          <button class="btn btn-primary ms-lg-4 mt-2 mt-lg-0 dropdown-toggle" 
-            data-bs-toggle="dropdown" 
+        <div class="dropdown js--appearance-settings">
+          <button
+            class="btn btn-primary ms-lg-4 mt-2 mt-lg-0 dropdown-toggle"
+            data-bs-toggle="dropdown"
             aria-haspopup="true"
             aria-expanded="false"
-            data-bs-auto-close="outside">
+            data-bs-auto-close="outside"
+          >
             <i class="fas fa-sliders"></i>
             {{ i18n "appearance_dropdown" }}
           </button>
           <ul class="dropdown-menu">
-            <li class="dropdown-item"> 
-              <a class="dropdown-item theme-switcher">Theme Switcher</a> 
+            <li class="dropdown-item">
+              <a class="dropdown-item theme-switcher">Theme Switcher</a>
             </li>
+
             <ul>
               <li class="dropdown-item">
                 <div class="form-check radio-field">
-                  <input class="form-check-input" type="radio" 
-                    name="theme-picker" 
-                    id="theme-dark">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme-picker"
+                    id="theme-dark"
+                    value="dark"
+                  />
                   <label class="form-check-label" for="theme-dark">
                     {{ i18n "theme_dark" }}
                   </label>
@@ -39,7 +44,13 @@
               </li>
               <li class="dropdown-item">
                 <div class="form-check radio-field">
-                  <input class="form-check-input" type="radio" name="theme-picker" id="theme-light">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme-picker"
+                    id="theme-light"
+                    value="light"
+                  />
                   <label class="form-check-label" for="theme-light">
                     {{ i18n "theme_light" }}
                   </label>
@@ -47,59 +58,153 @@
               </li>
               <li class="dropdown-item">
                 <div class="form-check radio-field">
-                  <input class="form-check-input" type="radio" name="theme-picker" id="theme-auto">
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme-picker"
+                    id="theme-auto"
+                    checked="checked"
+                    value="auto"
+                  />
                   <label class="form-check-label" for="theme-auto">
                     {{ i18n "theme_auto" }}
                   </label>
                 </div>
               </li>
             </ul>
+
             <li class="dropdown-item">
               <div class="switch-field">
-                {{ partial "switch" (dict "id" "switch-large-text") }} 
-                <label for="switch-large-text"> {{ i18n "switch_large_text"}}
+                {{ partial "switch" (dict "id" "switch-large-text") }}
+                <label for="switch-large-text">
+                  {{ i18n "switch_large_text"}}
                 </label>
               </div>
             </li>
 
             <li class="dropdown-item">
               <div class="switch-field">
-                {{ partial "switch" (dict "id" "switch-reduce-animation") }} 
-                <label for="switch-reduce-animation"> {{ i18n "switch_reduce_animation"}}
+                {{ partial "switch" (dict "id" "switch-reduce-animation") }}
+                <label for="switch-reduce-animation">
+                  {{ i18n "switch_reduce_animation"}}
                 </label>
               </div>
             </li>
           </ul>
-        </div> 
+        </div>
 
         {{ end }}
       </div>
-
-
     </nav>
   </div>
 </header>
 <!-- /navigation -->
 
-
 <!-- theme switcher -->
 {{ if site.Params.theme_switcher }}
 <script>
-  var darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
-  {{ if eq site.Params.theme_default "automatic" }}
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches){darkMode = true}
-  {{ end }}
-  if (localStorage.getItem('theme') === 'dark'){darkMode = true}
-  else if (localStorage.getItem('theme') === 'light'){darkMode = false}
-  if (darkMode){document.body.classList.toggle('dark')}
-  document.addEventListener('DOMContentLoaded', () => {
-    var themeSwitch = document.querySelectorAll('.theme-switcher');
-    [].forEach.call(themeSwitch, function (ts) {
-      ts.addEventListener('click', () => {
-        document.body.classList.toggle('dark');
-        localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+  // var darkMode = {{if eq site.Params.theme_default "dark"}}true{{else}}false{{end}};
+
+  // {{ if eq site.Params.theme_default "automatic" }}
+  // if (window.matchMedia('(prefers-color-scheme: dark)').matches){darkMode = true}
+  // {{ end }}
+
+  // if (localStorage.getItem('theme') === 'dark'){darkMode = true}
+  // else if (localStorage.getItem('theme') === 'light'){darkMode = false}
+  // if (darkMode){document.body.classList.toggle('dark')}
+
+  document.addEventListener("DOMContentLoaded", () => {
+    //   var themeSwitch = document.querySelectorAll('.theme-switcher');
+    //   [].forEach.call(themeSwitch, function (ts) {
+    //     // ts.addEventListener('click', () => {
+    //     //   document.body.classList.toggle('dark');
+    //     //   localStorage.setItem('theme', document.body.classList.contains('dark') ? 'dark' : 'light');
+    //     // });
+    //   })
+
+    const appearanceMenu = document.querySelector(".js--appearance-settings");
+    const themeOptions = appearanceMenu.querySelectorAll(
+      'input[name="theme-picker"]'
+    );
+
+ 
+    appearanceMenu.addEventListener("click", (event) => {
+      const target = event.target;
+
+      if (target.closest('[name="theme-picker"]')) {
+        event.preventDefault();
+        handleThemeChange(target.value);
+        saveAppearancePreferences("theme", target.value);
+      }
+    });
+
+
+    const setLightTheme = () => {
+      document.body.classList.remove("dark");
+    };
+
+    const setDarkTheme = () => {
+      if (!document.body.classList.contains("dark")) {
+        document.body.classList.add("dark");
+      }
+    };
+
+    const setAutoTheme = () => {
+      if (!window.matchMedia) {
+        setDarkTheme();
+      }
+
+      if (appearanceMenu.querySelector('input[value="auto"]').checked) {
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+          ? setDarkTheme()
+          : setLightTheme();
+      }
+    };
+
+    const handleThemeChange = (themePreferences) => {
+      // sets 'auto' theme by default
+      themePreferences = themePreferences ? themePreferences : "auto";
+      
+      const mediaQuery = window.matchMedia("(prefers-color-scheme: dark)");
+      if (themePreferences !== "auto") {
+        mediaQuery.removeEventListener("change", setAutoTheme);
+      }
+
+      switch (themePreferences) {
+        case "light":
+          setLightTheme();
+          break;
+        case "dark":
+          setDarkTheme();
+          break;
+        default:
+          setAutoTheme();
+          mediaQuery.addEventListener("change", setAutoTheme);
+      }
+
+      // Marks radio buttons as checked programmatically
+      setTimeout(() => {
+        // hack needed for boostrap to complete update cycle
+        themeOptions.forEach((option) => {
+          themePreferences === option.value
+            ? option.setAttribute("checked", "checked")
+            : option.removeAttribute("checked");
+          option.checked = themePreferences === option.value;
+        });
       });
-    })
+    };
+
+    const saveAppearancePreferences = (name, value) => {
+      localStorage.setItem(name, value);
+    };
+
+    const getStoredAppearancePreferences = () => {
+      console.log("stored theme", localStorage.getItem("theme"));
+      const themePreferences = localStorage.getItem("theme");
+      handleThemeChange(themePreferences);
+    };
+
+    getStoredAppearancePreferences();
   });
 </script>
 {{ end }}

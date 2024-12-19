@@ -173,7 +173,11 @@
     }
  }
 
- .dark {
+body.dark {
+    .bg-white,
+    .bg-light {
+        background-color: $dark-body-light !important;
+    }
     .radio-field {
         .form-check-input[type="radio"] {
             border-color: #e4edef;
@@ -210,12 +214,15 @@
             }
             &.active {
                 border-color: $color-primary;
-                background: #222;
+                background: $dark-body-light;
             }
             .tab-btn-text {
                 color: $white;
             }
         }
+    }
+    .tab-content {
+        background-color: $dark-body-light !important;
     }
     .accordion-item {
         background: $dark-body-bg;

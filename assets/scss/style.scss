@@ -9,9 +9,10 @@ $text-light: {{.text_light | default "#999"}};
 $body-bg: {{.body_color | default "#fff"}};
 $border-color: {{.border_color | default "#ECECEC"}};
 
-// Dark Theme 
+// Dark Theme
 $dark-color-primary: #81DBF7;
 $dark-body-bg: {{.dark_body_color | default "#1e262c"}};
+$dark-body-light: {{.dark_body_light | default "#2f3333"}};
 $dark-text-color: {{.dark_text_color | default "#cbcbcb"}};
 $dark-text-dark: {{.dark_text_dark | default "#999"}};
 $dark-text-light: {{.dark_text_light | default "#ddd"}};

@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 
-<title> 
+<title>
 {{ if .Title }}
   {{.Title}} {{ if .Params.Title_section }}| {{ replace .Params.title_section "-" " " | strings.FirstUpper |   }}{{ end }} | {{ .Site.Title }}
  {{ else }}
@@ -14,7 +14,9 @@
 <link rel="canonical" href="https://accessliaison.com"/>
 
 <!-- favicon -->
-{{ partialCached "favicon" . }}
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="icon" href="favicon_dark.png" type="image/x-icon" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.png" type="image/x-icon" media="(prefers-color-scheme: light)">
 
 <!-- manifest -->
 {{ partialCached "manifest" . }}
@@ -24,7 +26,7 @@
 
 <!-- opengraph and twitter card -->
 {{ partial "basic-seo.html" . }}
- 
+
 <!-- google tag manager -->
 {{ partialCached "gtm.html" . }}
 

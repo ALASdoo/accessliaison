@@ -7,7 +7,8 @@
 }
 
 .dark .hero {
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('images/banner-art.svg');
+    background-image: url('/images/hero_dark.jpg');
+    background-color: #000;
 }
 
 .hero {
@@ -16,7 +17,11 @@
     justify-content: center;
     min-height: calc(100vh - 100px);
     padding: 0;
+    background-position: top center;
+    background-repeat: no-repeat;
     background-image: url('/images/hero.jpg');
+    background-color: #eef5f6;
+
 
     .display-list {
         margin-top: 3rem;
@@ -28,6 +33,17 @@
         li {
             margin-block-end: 2rem;
         }
+    }
+}
+
+@include media-breakpoint-down(xl) {
+    .hero {
+        background-image: url('/images/hero_small.jpg') ;
+        background-position: top right;
+        // background-color: ;
+    }
+    .dark .hero {
+        background-image: url('/images/hero_dark_small.jpg') ;
     }
 }
 

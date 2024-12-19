@@ -3,6 +3,7 @@
 <!-- hero -->
 {{ with .Params.banner }}
 <section class="hero banner">
+</div>
   <div class="container">
     <div class="row h-100">
       <div class="col-lg-7 margin-right-3 h-100 d-flex flex-column justify-content-center">
@@ -32,22 +33,24 @@
 {{ if .enable }}
 <section class="section">
   <div class="container">
+    <div class="row mb-5">
+      <div class="col-12 col-xl-7 mx-auto mb-5 mb-xl-0">
+        <h2 class="section-title text-center h2 mb-4">{{ .title | markdownify }}</h2>
+        <div class="content mb-4">
+          {{.content | markdownify}}
+        </div>
+      </div>
+    </div>
     <div class="row">
       <div class="col-12 col-xl-7 mx-auto mb-5 mb-xl-0">
-        <div class="">
-          <h2 class="section-title h2 mb-4">{{ .title | markdownify }}</h2>
-          <div class="content mb-4">
-            {{.content | markdownify}}
-          </div>
-          <h3 class="mt-4 mb-4 text-center"> {{ .subtitle | markdownify }} </h3>
-          <div class="text-center"> {{ .subtitle_content }} </div>
-        </div>
+        <h3 class="mt-4 mb-4 text-center"> {{ .subtitle | markdownify }} </h3>
+        <div class="text-center"> {{ .subtitle_content }} </div>
       </div>
     </div>
     <div class="row gx-md-5 gy-5 mt-1">
       {{ range .feature_item }}
         <div class="col-3 d-flex">
-          <div class="feature-card bg-white rounded-1 d-block d-sm-flex">
+          <div class="feature-card bg-white rounded-4 shadow d-block d-sm-flex">
             <div class="block">
               <h4 class="mb-3">{{ .name }}</h4>
               <p class="mb-0">{{ .content | markdownify }}</p>
@@ -66,7 +69,7 @@
 <!-- CTA - Mission -->
 {{ if .Params.mission.enable }}
 {{ with .Params.mission }}
-<section class="section bg-light-blue" id="mission">
+<section class="section bg-light-blue cta" id="mission">
   {{ partial "cta" . }}
 </section>
 {{ end }}

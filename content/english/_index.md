@@ -2,7 +2,7 @@
 ####################### Banner #########################
 banner:
   title: 'Web accessibility solutions beyond compliance'
-  image: 'images/banner-art.svg'
+  image: 'images/hero.jpg'
   content: '
     - Achieve compliance quickly while improving quality and user experience
 

@@ -4,16 +4,17 @@
   align-items: center;
   gap: $font-size;
   width: fit-content;
-  padding: 1rem 1.25rem;
+  padding: 1rem 2rem;
   border: 2px solid;
   border-radius: 50px;
 
   font-size: $font-size;
   font-family: $font-primary;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 1;
   transition: 0.3s ease;
+  text-decoration: none !important;
 
   &-sm {
     padding: 0.9em 1.6em;
@@ -31,7 +32,7 @@
   &:focus:not(:focus-visible),
   &:focus-visible {
     box-shadow: none;
-    border-radius: 20px;
+    border-radius: 50px;
   }
 
   &.focus,
@@ -79,6 +80,18 @@
   &:focus-visible {
     outline: 3px solid $color-primary;
     outline-offset: 4px;
+  }
+}
+
+.btn.btn-inverse {
+  background-color: #ecf5f7;
+  color: $color-primary;
+  border-color: $color-primary;
+
+  &:hover,
+  &:active {
+    color: #000406;
+    background-color: #ecf5f7;
   }
 }
 
@@ -141,7 +154,7 @@
   }
 }
 
-// Text Large 
+// Text Large
 .text-large .btn {
   font-size: rfs-value(30px);
   padding: rfs-value(24px) rfs-value(30px);
@@ -173,6 +186,18 @@
       border-color: #f8fdff;
       background: #f8fdff;
       box-shadow: none;
+    }
+  }
+
+  .btn.btn-inverse {
+    background-color: $dark-body-bg;
+    color: $dark-text-color;
+    border-color: $dark-body-bg;
+
+    &:hover,
+    &:active {
+      color: #000406;
+      background-color: #ecf5f7;
     }
   }
 

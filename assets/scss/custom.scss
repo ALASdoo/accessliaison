@@ -15,7 +15,12 @@ ul:not(.nav):not(.footer-nav) {
 .dark ul:not(.nav):not(.footer-nav)  {
     list-style-image: url('/images/bullet_dark.svg');
 }
-
+.dropdown-heading {
+    font-size: rfs-value($font-size);
+}
+.dropdown-theme {
+    border-bottom: 1px solid #6C7575;
+}
 .dark .hero {
     background-image: url('/images/hero_dark.jpg');
     background-color: #000;
@@ -125,9 +130,6 @@ ul:not(.nav):not(.footer-nav) {
     &.icon-dark {
         display: none;
     }
-}
-.tab-btn-text {
-    font-size: rfs-value($font-size);
 }
 .tab-content {
     background: transparent !important;
@@ -312,7 +314,8 @@ ul:not(.nav):not(.footer-nav) {
 
 body.dark {
     .bg-white,
-    .bg-light {
+    .bg-light,
+    .modal-content {
         background-color: $dark-body-light !important;
     }
     .radio-field {
@@ -399,6 +402,28 @@ body.dark {
 
         img {
             max-width: 300px;
+        }
+    }
+}
+
+.dark {
+    .footer {
+        .footer-heading {
+            color: $dark-color-primary;
+        }
+        .footer-list a {
+            color: $dark-text-color;
+
+            &:hover {
+                color: $dark-color-primary;
+            }
+        }
+        .footer-contact a {
+            color: $dark-text-color;
+
+            &:hover {
+                color: $dark-color-primary;
+            }
         }
     }
 }

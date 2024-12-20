@@ -43,6 +43,11 @@ h4 {
   font-weight: 400;
 }
 
+a {
+  color: $color-primary;
+  text-decoration: underline !important;
+}
+
 
 small,
 .small {
@@ -65,6 +70,14 @@ body.dark {
   h5,
   h6 {
     color: $dark-text-light;
+  }
+
+  a {
+    color: $dark-color-primary;
+  }
+
+  .modal-content {
+    color: $white;
   }
 }
 

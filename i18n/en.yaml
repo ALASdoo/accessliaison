@@ -103,11 +103,14 @@
 - id: switch_remove_images
   translation: Remove images
 
+- id: theme_header
+  translation: Theme
+
 - id: theme_dark
-  translation: Theme dark
+  translation: Dark theme
 
 - id: theme_light
-  translation: Theme light
+  translation: Light theme
 
 - id: theme_auto
   translation: Device default

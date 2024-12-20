@@ -10,7 +10,7 @@ banner:
   button:
     enable: true
     label: 'Book a free consultation'
-    link: 'www.google.com/'
+    link: 'https://calendly.com/vilmos/meet'
 
 ##################### Features ##########################
 feature:
@@ -64,7 +64,7 @@ call_to_action:
   button:
     enable: true
     label: 'Book a free consultation'
-    link: 'contact/'
+    link: 'https://calendly.com/vilmos/meet'
 
 ##################### Services ##########################
 services:

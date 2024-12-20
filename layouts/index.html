@@ -7,13 +7,12 @@
   <div class="container">
     <div class="row h-100">
       <div class="col-lg-7 margin-right-3 h-100 d-flex flex-column justify-content-center">
-        <h1 class="mb-4 pb-2">{{ .title | markdownify }}</h1>
+        <h1 class="mt-4 mb-0 pt-5">{{ .title | markdownify }}</h1>
         <div class="mb-4 display-list">{{ .content | markdownify }}</div>
         <div class="mb-5">
           {{ if .button.enable }}
           {{ with .button }}
-          <!-- TODO: link & button -->
-          <a href="{{ site.Params.navigation_button.link | relLangURL }}"
+          <a href="{{ .link | relLangURL }}"
              title="{{ .label }}"
              class="btn btn-gradient m-2">
             {{ .label }}
@@ -110,7 +109,7 @@
             >
               {{ partial "image" (dict "Src" .image_light "Alt" "" "Class" "tab-btn-image icon-light") }}
               {{ partial "image" (dict "Src" .image_dark "Alt" "" "Class" "tab-btn-image icon-dark") }}
-              <h3 class="tab-btn-text">{{.title}}</h3>
+              <div class="tab-btn-text">{{.title}}</div>
             </button>
           </li>
           {{end}}
@@ -231,12 +230,12 @@
 <section class="section p-0 cta-bottom">
   <div class="container">
     <div class="row">
-      <div class="col-12 rounded-4 cta">
+      <div class="col-12 rounded-4 cta p-5">
         <h2 class="cta-heading">{{ .title | markdownify }}</h2>
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
+        <a href="{{ .link | relLangURL }}" title="{{ .label }}" class="btn btn-primary btn-inverse">{{ .label }}</a>
         {{ end }}
         {{ end }}
       </div>

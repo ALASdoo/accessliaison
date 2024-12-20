@@ -7,9 +7,6 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-body">
-        {{ partial "image" (dict "Src" "images/cookies.svg" "Alt" "Cookie image"
-        "Class" "modal-image" "Size" "125x135") }}
-
         <h2 class="h3 text-center" id="modal-header">
           {{ i18n `cookiebanner_heading` }}
         </h2>
@@ -136,7 +133,7 @@
         markCookieRadio(true);
       }
 
-      /* Declines cookies when user clicks on 
+      /* Declines cookies when user clicks on
            Decline button, outside modal or "Cookie Page" link
          */
       if (

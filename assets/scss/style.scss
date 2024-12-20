@@ -17,6 +17,8 @@ $dark-text-color: {{.dark_text_color | default "#cbcbcb"}};
 $dark-text-dark: {{.dark_text_dark | default "#999"}};
 $dark-text-light: {{.dark_text_light | default "#ddd"}};
 $dark-border-color: {{.dark_border_color | default "#ECECEC"}};
+$dark-color-background-light: #F8FDFF;
+
 $black: {{.black | default "#000"}};
 $white: {{.white | default "#fff"}};
 $light: {{.light | default "#EDF6F5"}};

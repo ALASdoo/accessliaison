@@ -123,3 +123,6 @@
 
 - id: cookiebanner_decline
   translation: Decline cookies
+
+- id: skip_to_contact
+  translation: Skip to contact information

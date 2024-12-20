@@ -8,7 +8,7 @@
               <a class="d-block h5 mb-3" href="{{ site.BaseURL | absLangURL}}">
                 {{ partial "logo.html" . }}
               </a>
-              <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
+              <p class="mb-4" id="contact-info">{{ site.Params.footer_content | markdownify }}</p>
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}

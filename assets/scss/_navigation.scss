@@ -157,10 +157,47 @@
         }
       }
     }
+  } 
+
+.skip-to-content {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+  padding: $font-size calc(#{$font-size} * 1.5);
+  margin-top: $font-size;
+  border-radius: 20px;
+
+  cursor: pointer;
+  background-color: $color-primary;
+  color: $white;
+  font-weight: 700;
+
+  &:hover,
+  &:focus {
+    top: 100%;
+    left: unset;
+
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
   }
+}
 
   // dark style
-  .dark .navigation {
+.dark {
+  .skip-to-content {
+    background-color: $dark-color-background-light;
+    color: #000406;
+
+    &:hover,
+    &:focus {
+      color: #000406;
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+  }
+
+  .navigation {
     background-color: #2F3333; // todo
 
     select {
@@ -208,3 +245,4 @@
       }
     }
   }
+}

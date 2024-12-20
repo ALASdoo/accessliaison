@@ -149,11 +149,15 @@
 
 // dark theme
 .dark {
+  a:focus {
+    outline-color: $dark-color-primary;
+  }
+  
   .btn {
     &:focus,
     &.focus,
     &:focus-visible {
-      outline: 3px solid $dark-color-primary;
+      outline-color: $dark-color-primary;
       box-shadow: none;
     }
   }
@@ -186,7 +190,7 @@
     );
 
     &:hover {
-      background: #f8fdff;
+      background: $dark-color-background-light;
     }
   }
 }

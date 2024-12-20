@@ -1,83 +1,78 @@
+body {
+  font-family: $font-primary;
+  font-weight: 400;
+  line-height: 1.6;
+  color: $text-color;
+  font-size: rfs-value($font-size);
+}
 
-html {
-    font-size: 16px;
-  }
-  
-  body {
-    font-family: $font-primary;
-    font-weight: 400;
-    line-height: 1.6;
-    color: $text-color;
-    font-size: rfs-value($font-size);
-  }
-  
-  p {
-    margin-bottom: 1rem;
-  }
+p {
+  margin-bottom: 1rem;
+}
+
+h1,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $color-primary;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: rfs-value(46px);
+  font-weight: 700;
+  letter-spacing: 1.25px;
+}
+
+h2 {
+  font-size: rfs-value(42px);
+  font-family: $font-primary;
+  font-weight: 400;
+  color: $text-light;
+}
+
+h3 {
+  font-size: rfs-value(38px);
+}
+
+h4 {
+  font-size: rfs-value(32px);
+  font-weight: 400;
+}
+
+
+small,
+.small {
+  font-size: 0.8rem;
+}
+
+
+// Dark Theme
+body.dark {
+  color: $dark-text-color;
 
   h1,
   h3,
-  h4,
+  h4 {
+    color: $dark-color-primary;
+  }
+
+
+  h2,
   h5,
   h6 {
-    font-family: $font-primary;
-    font-weight: 400;
-    color: $color-primary;
-    line-height: 1.5;
+    color: $dark-text-light;
   }
- 
-  h1 {
-    font-size: rfs-value(46px);
-    font-weight: 700;
-    letter-spacing: 1.25px;
-  }
-
-  h2 {
-    font-size: rfs-value(42px);
-    font-family: $font-primary;
-    font-weight: 400;
-    color: $text-light;
-  }
-
-  h3 {
-    font-size: rfs-value(38px);
-  }
-
-  h4 {
-    font-size: rfs-value(32px);
-    font-weight: 400;
-  }
+}
 
 
-  small,
-  .small {
-    font-size: 0.8rem;
-  }
- 
-  
-  // Dark Theme
-  body.dark {
-    color: $dark-text-color;
-
-    h1, 
-    h3, 
-    h4 {
-      color: $dark-color-primary;
-    }
-  
-    
-    h2,
-    h5,
-    h6 {
-      color: $dark-text-light;
-    }
-  }
-
-
-// Text Large 
+// Text Large
 body.text-large {
   font-size: rfs-value(30px);
-  
+
   h1 {
     font-size: rfs-value(64px);
   }
@@ -85,11 +80,11 @@ body.text-large {
   h2 {
     font-size: rfs-value(54px);
   }
-  
+
   h3 {
     font-size: rfs-value(44px);
   }
-  
+
   h4 {
     font-size: rfs-value(38px);
   }

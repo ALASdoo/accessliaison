@@ -114,7 +114,7 @@
 <script>
 
   document.addEventListener("DOMContentLoaded", () => {
- 
+
 
     const appearanceMenu = document.querySelector(".js--appearance-settings");
     const themeOptions = appearanceMenu.querySelectorAll(
@@ -127,7 +127,7 @@
     const LARGE_TEXT_KEY = "large-text-enabled";
     const REMOVE_IMAGES_KEY = "remove-images-enabled";
     const REDUCE_ANIMATIONS_KEY = "reduce-animation-enabled";
-    
+
 
     /**
      * Click Handler
@@ -141,7 +141,7 @@
         saveAppearancePreferences(LARGE_TEXT_KEY, target.checked);
       }
 
-      if (removeImagesSwitch.contains(target)) {        
+      if (removeImagesSwitch.contains(target)) {
         saveAppearancePreferences(REMOVE_IMAGES_KEY, target.checked);
       }
 
@@ -172,8 +172,10 @@
       if (isTextLarge) {
         document.body.classList.remove("text-large");
         document.body.classList.add("text-large");
+        document.documentElement.style.fontSize = '16px';
       } else {
         document.body.classList.remove("text-large");
+        document.documentElement.style.fontSize = '';
       }
     };
 

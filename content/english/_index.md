@@ -2,7 +2,7 @@
 ####################### Banner #########################
 banner:
   title: 'Web accessibility solutions beyond compliance'
-  image: 'images/hero.jpg'
+  image: 'images/hero.webp'
   content: '
     - Achieve compliance quickly while improving quality and user experience
 

@@ -22,7 +22,7 @@ ul:not(.nav):not(.footer-nav) {
     border-bottom: 1px solid #6C7575;
 }
 .dark .hero {
-    background-image: url('/images/hero_dark.jpg');
+    background-image: url('/images/hero_dark.webp');
     background-color: #000;
 }
 
@@ -34,7 +34,7 @@ ul:not(.nav):not(.footer-nav) {
     padding: 0;
     background-position: top center;
     background-repeat: no-repeat;
-    background-image: url('/images/hero.jpg');
+    background-image: url('/images/hero.webp');
     background-color: #eef5f6;
     background-size: cover;
 
@@ -53,12 +53,12 @@ ul:not(.nav):not(.footer-nav) {
 
 @include media-breakpoint-down(xl) {
     .hero {
-        background-image: url('/images/hero_small.jpg') ;
+        background-image: url('/images/hero_small.webp') ;
         background-position: top right;
         // background-color: ;
     }
     .dark .hero {
-        background-image: url('/images/hero_dark_small.jpg') ;
+        background-image: url('/images/hero_dark_small.webp') ;
     }
 }
 

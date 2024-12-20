@@ -5,11 +5,12 @@ languageCode = "en-US"
 contentDir = "content/english"
 weight = 1
 ########### footer content ##########
-footer_menu_left = "Company"
-footer_menu_middle = "Products"
-footer_menu_right = "Support"
+footer_title = "Contact information"
+footer_url = "https://www.w3.org/WAI/WCAG2AA-Conformance"
+footer_alt = "Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.2"
+footer_image = "/images/wcag22aa.png"
 footer_content = """
-AccessLiasion by Alas doo
-Dimitrija Tucovica 20, Zrenjanin, Serbia
-[info@alasdoo.com](mailto:info@alasdoo.com)
+AccessLiasion by ALAS doo
+Rudjera Boskovica 20, Novi Sad, Serbia
+[info@accessliaison.com](mailto:info@accessliaison.com)
 """

@@ -5,14 +5,14 @@
 .align-self-center {
     align-self: center;
 }
-ul:not(.nav) {
+ul:not(.nav):not(.footer-nav) {
     list-style-image: url('/images/bullet.svg');
 
     li {
         padding-left: 1rem;
     }
 }
-.dark ul:not(.nav)  {
+.dark ul:not(.nav):not(.footer-nav)  {
     list-style-image: url('/images/bullet_dark.svg');
 }
 
@@ -31,7 +31,7 @@ ul:not(.nav) {
     background-repeat: no-repeat;
     background-image: url('/images/hero.jpg');
     background-color: #eef5f6;
-
+    background-size: cover;
 
     .display-list {
         margin-top: 3rem;
@@ -267,6 +267,18 @@ ul:not(.nav) {
     }
 }
 
+.why-choose-us-item {
+    border-right: 2px solid #3a89cc;
+    border-image: linear-gradient(
+        to bottom,
+        #3a89cc,
+        #26c5f3
+      ) 1 100%;
+    &:last-child {
+        border: 0;
+    }
+}
+
  /**
  * Radio Button
  */
@@ -367,6 +379,26 @@ body.dark {
         &:not(.collapsed) {
             background-color: transparent;
             border-bottom: 1px solid $color-primary !important;
+        }
+    }
+}
+
+.footer {
+    .footer-heading {
+        color: $color-primary;
+    }
+    .footer-contact a {
+        color: $text-color;
+        text-decoration: underline;
+
+        &:hover {
+          color: $color-primary;
+        }
+    }
+    .footer-right {
+
+        img {
+            max-width: 300px;
         }
     }
 }

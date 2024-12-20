@@ -49,22 +49,22 @@ email = "infoalasdoo.com"
 [metadata]
 keywords = [
     "web accessibility",
-    "website accessibility", 
-    "accessibility solutions", 
-    "accessibility training", 
-    "document accessibility", 
-    "European accessibility act", 
-    "EAA", 
-    "WCAG", 
-    "accessibility audit", 
-    "accessibility testing", 
-    "VPAT", 
-    "ADA compliance", 
-    "Section 508"
+    "website accessibility",
+    "accessibility solutions",
+    "accessibility training",
+    "document accessibility",
+    "European accessibility act",
+    "EAA",
+    "WCAG",
+    "accessibility audit",
+    "accessibility testing",
+    "VPAT",
+    "ADA compliance",
+    "Section 508",
 ]
 description = "Experience the full benefits of web accessibility compliance with AccessLiaison: audits, remediation, automated testing, and training."
 author = "Alas doo"
-image = "images/logo_social.png"                           # this image will be used as fallback if a page has no image of its own
+image = "images/logo_social.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
 [matomo]
@@ -104,13 +104,8 @@ button = "I Accept"
 ############################# social site ########################
 [[social]]
 title = "facebook"
-icon = "fab fa-facebook" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
-title = "twitter"
-icon = "fab fa-twitter" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+icon = "fab fa-facebook"                        # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.facebook.com/AccessLiaison"
 
 [[social]]
 title = "instagram"
@@ -118,11 +113,6 @@ icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icon
 link = "#!"
 
 [[social]]
-title = "github"
-icon = "fab fa-github" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
-
-[[social]]
 title = "linkedin"
-icon = "fab fa-linkedin" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+icon = "fab fa-linkedin"                                # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.linkedin.com/company/accessliaison"

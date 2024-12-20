@@ -5,6 +5,16 @@
 .align-self-center {
     align-self: center;
 }
+ul:not(.nav) {
+    list-style-image: url('/images/bullet.svg');
+
+    li {
+        padding-left: 1rem;
+    }
+}
+.dark ul:not(.nav)  {
+    list-style-image: url('/images/bullet_dark.svg');
+}
 
 .dark .hero {
     background-image: url('/images/hero_dark.jpg');
@@ -48,6 +58,10 @@
 }
 
 .cta {
+    &,
+    .cta-heading {
+        color: $white;
+    }
     padding-top: 2rem;
     padding-bottom: 2rem;
     background: linear-gradient(
@@ -75,6 +89,9 @@
       );
 }
 
+.cta-bottom {
+    margin-top: -30px;
+}
 .nav-item {
     flex: 1 1 auto;
 }
@@ -84,7 +101,6 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        border-radius: 20px;
         color: $color-primary;
         height: 100%;
         width: 100%;
@@ -93,6 +109,9 @@
             border-color: $color-primary;
             background: $white;
             text-decoration: underline;
+            border-bottom-left-radius: 0 !important;
+            border-bottom-right-radius: 0 !important;
+            border-bottom: 0 !important;
         }
         &:hover {
             border-color: $color-primary;
@@ -111,11 +130,21 @@
     font-size: rfs-value($font-size);
 }
 .tab-content {
+    background: transparent !important;
+    padding: 0 !important;
+    border: 0;
+}
+.tab-pane {
     background: $white;
     border-color: transparent;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     box-shadow: 2px 2px 5px 2px rgba(45, 67, 121, 0.15) !important;
+
+    &:first-of-type {
+        border-top-left-radius: 0 !important;
+    }
+    &:last-of-type {
+        border-top-right-radius: 0 !important;
+    }
 }
 
 .accordion-button {
@@ -186,6 +215,57 @@
         display: none;
     }
  }
+
+ #services {
+    p:empty {
+        display: none;
+    }
+    ol {
+        position: relative;
+        list-style: decimal;
+        padding-left: 3rem;
+        &:before {
+            position: absolute;
+            left: 1.5rem;
+            height: 100%;
+            width: 19px;
+            border-radius: 50px;
+            content: "";
+            background: #033254;
+            background: linear-gradient(180deg, #033254 0%, #035e85 100%);
+            z-index: 0;
+        }
+        li {
+            padding-left: 1rem;
+            position: relative;
+            margin-bottom: 1rem;
+            z-index: 2;
+            &::before {
+                box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25) !important;
+                position: absolute;
+                left: -2.2rem;
+                top: -0.3rem;
+                background: $white;
+                padding: 1.25rem;
+                border-radius: 1.25rem;
+                content: "";
+                z-index: -1;
+            }
+            &::marker {
+                color: $black;
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+ .dark #services ol {
+    &:before {
+        background: #3a89cc;
+        background: linear-gradient(180deg, #3a89cc 0%, #26c5f3 100%);
+    }
+}
 
  /**
  * Radio Button
@@ -266,7 +346,7 @@ body.dark {
             }
         }
     }
-    .tab-content {
+    .tab-pane {
         background-color: $dark-body-light !important;
     }
     .accordion-item {

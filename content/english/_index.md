@@ -73,16 +73,18 @@ services:
   service_items:
     - title: 'Accessibility Audit'
       id: 'audit'
+      swap: false
+      list_type: ul
       image_light: 'images/services/light/icon_audit.svg'
       image_dark: 'images/services/dark/icon_audit.svg'
       image_small_light: 'images/services/light/icon_audit_small.svg'
       image_small_dark: 'images/services/dark/icon_audit_small.svg'
-      highlights_intro: 'Conformance reports don’t have to be overwhelming — we simplify accessibility for you.'
-      highlights_list_title: 'Our priorities are:'
+      highlights_intro: '**Conformance reports don’t have to be overwhelming — we simplify accessibility for you.**'
+      highlights_list_title: '**We address the most important things first:**'
       highlights_list:
-        - 'Identifying critical issues'
-        - 'Removing barriers for persons with disabilities'
-        - 'Minimizing legal risks'
+        - '**identifying critical issues**'
+        - '**removing barriers for persons with disabilities**'
+        - '**minimizing legal risks**'
       description: |
         Combining innovative tools and thorough manual testing, we cover all accessibility issues for websites, applications, and documents.
 
@@ -94,16 +96,18 @@ services:
 
     - title: 'Remediation'
       id: 'remediation'
+      swap: false
+      list_type: ul
       image_light: 'images/services/light/icon_remediation.svg'
       image_dark: 'images/services/dark/icon_remediation.svg'
       image_small_light: 'images/services/light/icon_remediation_small.svg'
       image_small_dark: 'images/services/dark/icon_remediation_small.svg'
-      highlights_intro: 'Need remediation of an existing website or a web application? Maybe you want a rebranded new one? Our diverse team will get you there fast.'
-      highlights_list_title: 'We can help you with:'
+      highlights_intro: '**Need remediation of an existing website or a web application? Maybe you want a rebranded new one? Our diverse team will get you there fast.**'
+      highlights_list_title: '**We can help you with:**'
       highlights_list:
-        - 'Accessible branding and design'
-        - 'Coding with best practices in mind'
-        - 'Content that boosts marketing and inclusivity'
+        - '**accessible branding and design**'
+        - '**coding with best practices in mind**'
+        - '**content that boosts marketing and inclusivity**'
       description: |
         Our developers specialize in building accessible custom components and design systems. They know best practices and guidelines inside out. The fast track to compliance is to let them fix technical issues. At the same time, certified UX specialists will guide content and design changes.
 
@@ -113,18 +117,20 @@ services:
 
     - title: 'Custom Training'
       id: 'training'
+      swap: false
+      list_type: ul
       image_light: 'images/services/light/icon_training.svg'
       image_dark: 'images/services/dark/icon_training.svg'
       image_small_light: 'images/services/light/icon_training_small.svg'
       image_small_dark: 'images/services/dark/icon_training_small.svg'
-      highlights_intro: 'We help your team master the accessibility best practices they need to become self-sufficient.'
-      highlights_list_title: 'Learn how to apply knowledge from these areas:'
+      highlights_intro: '**We help your team master the accessibility best practices they need to become self-sufficient. Learn how to apply knowledge from these areas:**'
+      highlights_list_title: ''
       highlights_list:
-        - 'Accessible design process'
-        - 'Coding for accessibility'
-        - 'Keyboard and screen reader testing'
-        - 'Writing automated tests'
-        - 'Writing accessible content'
+        - '**accessible design process**'
+        - '**coding for accessibility**'
+        - '**keyboard and screen reader testing**'
+        - '**writing automated tests**'
+        - '**writing accessible content**'
       description: |
         Need to understand WCAG? Want to learn how to create accessible documents? We’ve got you covered.
 
@@ -134,51 +140,77 @@ services:
 
     - title: 'Automated Testing'
       id: 'automation'
+      swap: true
+      list_type: ul
       image_light: 'images/services/light/icon_automation.svg'
       image_dark: 'images/services/dark/icon_automation.svg'
       image_small_light: 'images/services/light/icon_automation_small.svg'
       image_small_dark: 'images/services/dark/icon_automation_small.svg'
-      highlights_intro: 'If you’re developing software, automated accessibility testing is an excellent starting point for achieving compliance.'
-      highlights_list_title: 'Why choose automated accessibility testing?'
+      highlights_intro: ''
+      highlights_list_title: '**Why choose automated accessibility testing?**'
       highlights_list:
-        - 'Fast results'
-        - 'Solid coverage (30–50%)'
-        - 'Cost-effective initial setup'
-        - 'Development of internal expertise'
-        - 'Seamless integration with your CI/CD pipeline'
-        - 'Early identification of accessibility issues'
+        - '**Fast results**'
+        - '**Solid coverage (30–50%)**'
+        - '**Cost-effective initial setup**'
+        - '**Development of internal expertise**'
+        - '**Seamless integration with your CI/CD pipeline**'
+        - '**Early identification of accessibility issues**'
       description: |
+        If you’re developing software, automated accessibility testing is an excellent starting point for achieving compliance.
+
         With nearly 20 years of expertise in software quality assurance, we can help you set up the best tools and start using them effectively.
 
         We can seamlessly integrate accessibility testing into your workflow, no matter your current development process or quality assurance setup.
 
     - title: 'ACR (VPAT)'
       id: 'vpat'
+      swap: true
+      list_type: ul
       image_light: 'images/services/light/icon_vpat.svg'
       image_dark: 'images/services/dark/icon_vpat.svg'
       image_small_light: 'images/services/light/icon_vpat_small.svg'
       image_small_dark: 'images/services/dark/icon_vpat_small.svg'
-      highlights_intro: 'Document your digital accessibility — close new deals and keep current customers.'
+      highlights_intro: ''
+      highlights_list_title: 'Types of VPAT:'
+      highlights_list:
+        - '**VPAT 2.5 508** — documents compliance with Section 508 requirements'
+        - '**VPAT 2.5 WCAG** ­­— documents conformance with the Web Content Accessibility Guidelines (WCAG) 2.2, 2.1, and 2.0'
+        - '**VPAT 2.5 Rev EU** — documents conformance with EN 301 549, the standard for European Accessibility Act (EAA) compliance'
+        - '**VPAT 2.5 INT** — the most comprehensive one, as it includes requirements from VPAT 2.5 508, VPAT 2.5 EU, and VPAT 2.5 WCAG'
       description: |
-        A completed Voluntary Product Accessibility Template (VPAT), also known as an Accessibility Conformance Report (ACR), is mandatory when selling to most public entities in the United States. It is also becoming a standard requirement in global private-sector business-to-business (B2B) procurement processes.
+        **Document your digital accessibility — close new deals and keep current customers.**
 
-        We use the findings from our audits to craft a thorough and professional ACR. This document helps you demonstrate your commitment to accessibility to clients, stakeholders, and regulatory bodies.
+        A completed Voluntary Product Accessibility Template (VPAT), also known as an Accessibility Conformance Report (ACR), is mandatory when selling to public entities in the United States. It is also becoming a standard requirement in global private-sector business-to-business (B2B) procurement processes.
 
-        A VPAT also serves as a valuable tool for guiding your future accessibility efforts by clearly identifying areas for improvement.
+        We use the findings from our audits to craft a thorough and professional ACR.
 
     - title: 'Document Remediation'
       id: 'document'
+      swap: true
+      list_type: ol
       image_light: 'images/services/light/icon_documents.svg'
       image_dark: 'images/services/dark/icon_documents.svg'
       image_small_light: 'images/services/light/icon_documents_small.svg'
       image_small_dark: 'images/services/dark/icon_documents_small.svg'
-      highlights_intro: 'Make your documents accessible to all users.'
-      highlights_list_title: 'The process of making your files accessible:'
+      highlights_intro: ''
+      highlights_list_title: ''
       highlights_list:
-        - 'Send us your files: Send us any PDF, DOC(X), or PPT files you want us to remediate.'
-        - 'Automated fixes: Automation software identifies and resolves common issues.'
-        - 'Manual remediation: Our specialists review the results and fix more complex issues.'
-        - 'Screen reader testing: We test with several screen readers to ensure usability.'
+        - '**Send us your files**
+
+
+          Send us any PDF, DOC(X), or PPT files you want us to remediate.'
+        - '**Automated fixes**
+
+
+        Automation software identifies and resolves common issues.'
+        - '**Manual remediation**
+
+
+        Our specialists review the results and fix more complex issues.'
+        - '**Testing with screen readers**
+
+
+        We test with several screen readers to ensure usability.'
       description: |
         The Americans with Disabilities Act (ADA), Section 508, European Accessibility Act (EAA), and other laws require all documents on websites to be accessible to users with diverse abilities.
 

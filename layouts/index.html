@@ -69,7 +69,7 @@
 <!-- CTA - Mission -->
 {{ if .Params.mission.enable }}
 {{ with .Params.mission }}
-<section class="section bg-light-blue" id="mission">
+<section class="section p-0 bg-light-blue" id="mission">
   <div class="container">
     <div class="row">
       <div class="col-12 rounded-4 cta">
@@ -88,17 +88,17 @@
  {{ with .Params.services }}
 <section class="section bg-light-blue" id="services">
   <div class="container">
-    <div class="row">
+    <div class="row pb-4">
       <div class="col">
         <h2 class="text-center">{{ .title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row pb-4 d-md-none d-lg-block">
+    <div class="row d-md-none d-lg-block">
       <div class="col">
         <ul class="nav nav-tabs row" role="tablist">
           {{range $i, $e := .service_items}}
           <li class="nav-item col-2" role="presentation">
-            <button class="nav-link p-3 {{if eq $i 0 }}active{{end}}"
+            <button class="nav-link rounded-4 p-3 {{if eq $i 0 }}active{{end}}"
             id="{{.id}}-tab"
             data-bs-toggle="tab"
             data-bs-target="#{{.id}}-tab-pane"
@@ -117,7 +117,7 @@
         </ul>
         <div class="tab-content p-4" id="servicesTabContent">
           {{range $i, $e := .service_items}}
-          <div class="tab-pane fade
+          <div class="tab-pane rounded-4 p-4
             {{if eq $i 0 }}show active{{end}}"
             id="{{.id}}-tab-pane"
             role="tabpanel"
@@ -127,16 +127,17 @@
             <div class="container">
               <div class="row">
                 <div class="col-lg-6">
-                  <p>{{ .highlights_intro }}</p>
-                  <p>{{ .highlights_list_title }}</p>
-                  <ul>
+                  <p>{{ .highlights_intro | markdownify  }}</p>
+                  <p>{{ .highlights_list_title | markdownify  }}</p>
+                  {{ $el := .list_type }}
+                  {{ printf "<%s>" $el | safeHTML }}
                     {{range .highlights_list}}
-                    <li>{{ . }}</li>
+                    <li>{{ . | markdownify }}</li>
                     {{end}}
-                  </ul>
+                  {{ printf "</%s>" $el | safeHTML }}
                 </div>
-                <div class="col-lg-6">
-                  {{ .description }}
+                <div class="col-lg-6 {{ if .swap }}order-first{{ end }}">
+                  {{ .description | markdownify }}
                 </div>
               </div>
             </div>
@@ -174,16 +175,17 @@
               <div class="container">
                 <div class="row">
                   <div class="col-lg-6">
-                    <p>{{ .highlights_intro }}</p>
-                    <p>{{ .highlights_list_title }}</p>
-                    <ul>
+                    <p>{{ .highlights_intro | markdownify  }}</p>
+                    <p>{{ .highlights_list_title | markdownify  }}</p>
+                    {{ $el := .list_type }}
+                    {{ printf "<%s>" $el | safeHTML }}
                       {{range .highlights_list}}
-                      <li>{{ . }}</li>
+                      <li>{{ . | markdownify }}</li>
                       {{end}}
-                    </ul>
+                    {{ printf "</%s>" $el | safeHTML }}
                   </div>
                   <div class="col-lg-6">
-                    {{ .description }}
+                    {{ .description | markdownify }}
                   </div>
                 </div>
               </div>
@@ -226,11 +228,11 @@
 <!-- call to action -->
 {{ with .Params.call_to_action }}
 {{ if .enable }}
-<section class="section">
+<section class="section p-0 cta-bottom">
   <div class="container">
     <div class="row">
       <div class="col-12 rounded-4 cta">
-        <h2 class="section-title">{{ .title | markdownify }}</h2>
+        <h2 class="cta-heading">{{ .title | markdownify }}</h2>
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}

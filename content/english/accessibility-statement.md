@@ -5,7 +5,7 @@ title: 'Accessibility statement for AccessLiaison'
 subtitle: ''
 ---
 
-This accessibility statement applies to the [www.alasdoo.com](/) website.
+This accessibility statement applies to the [www.accessliaison.com](/) website.
 
 ## Commitment to accessibility
 

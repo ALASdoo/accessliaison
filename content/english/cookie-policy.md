@@ -43,7 +43,7 @@ cookies:
 
   contact_us: 
     title: 'Contact us'
-    content: 'If you have any questions about our use of cookies or your data privacy, feel free to [contact us](/contact/).'
+    content: 'If you have any questions about our use of cookies or your data privacy, feel free to reach out at [info@accessliaison.com](mailto:info@accessliaison.com).'
 
 
 

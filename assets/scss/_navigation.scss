@@ -9,6 +9,11 @@
     transition: 0.15s ease-out;
     min-height: 98px;
     
+    .navbar {
+      flex-wrap: nowrap;
+      gap: $font-size;
+    }
+
     .navbar-brand {
       font-weight: 700;
       letter-spacing: 0.2px;
@@ -98,8 +103,35 @@
       }
     }
 
+    /**
+     * Dropdown button
+     */  
+    @include media-breakpoint-down(md) {
+      .appearance-btn {
+        padding: 1rem;
+        &::after {
+          display: none;
+        }
+      }
+      .appearance-btn-label {
+        display: none;
+      }
+    }
+    @include media-breakpoint-down(sm) {
+      .appearance-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+      }
+    }
+
+    
+    /**
+     * Dropdown menu
+     */
     .dropdown-menu[data-bs-popper] {
       top: 115%;
+      right: 0;
+      left: unset;
     }
 
     .dropdown-menu {
@@ -112,6 +144,7 @@
         padding: 12px;
         width: 100%;
         max-width: 300px;
+        min-width: fit-content;
         margin-left: auto;
         margin-right: auto;
         columns: 1 !important;
@@ -120,7 +153,7 @@
         padding: 8px 15px;
         display: inline-block;
         @include desktop {
-          padding: 6px;
+          padding: 6px 15px;
         }
 
         font-size: $font-size;
@@ -241,6 +274,7 @@
         }
       }
     }
+
     @media (min-width: 992px) {
       .navbar .dropdown-menu {
         background-color: transparent;

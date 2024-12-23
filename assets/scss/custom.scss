@@ -20,6 +20,17 @@ body.remove-images {
     }
 }
 
+/**
+ * Reduce animations
+ */
+body.reduce-animations {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: translate(0) scale(1) !important;
+        transition-property: none !important;
+    }
+}
+
 /** 
  * Custom styles 
  */

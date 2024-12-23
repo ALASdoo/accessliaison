@@ -185,6 +185,27 @@
       }
     };
 
+    /**
+     * Reduce Animations Handler
+     */
+    const handleReduceAnimations = (isAnimationsReduced) => {
+      isAnimationsReduced = isAnimationsReduced || false;
+
+      setTimeout(() => {
+        reduceAnimationsSwitch.checked = isAnimationsReduced;
+        isAnimationsReduced
+          ? reduceAnimationsSwitch.setAttribute("checked", true)
+          : reduceAnimationsSwitch.removeAttribute("checked");
+      });
+
+      if (isAnimationsReduced) {
+        document.body.classList.remove("reduce-animations");
+        document.body.classList.add("reduce-animations");
+      } else {
+        document.body.classList.remove("reduce-animations");
+      }
+    };
+
 
     /**
      * Large Text Handler
@@ -284,6 +305,9 @@
 
       const removeImagesPreferences = localStorage.getItem(REMOVE_IMAGES_KEY);
       handleRemoveImages(JSON.parse(removeImagesPreferences));
+
+      const reduceAnimationsPreferences = localStorage.getItem(REDUCE_ANIMATIONS_KEY);
+      handleReduceAnimations(JSON.parse(reduceAnimationsPreferences));
     };
 
     getStoredAppearancePreferences();

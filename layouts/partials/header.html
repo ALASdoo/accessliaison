@@ -9,6 +9,7 @@
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
       <!-- navbar brand/logo -->
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
+        <span class="no-image-fallback">AccessLiaison</span>
         {{ partial "logo.html" . }}
       </a>
 
@@ -24,7 +25,9 @@
             data-bs-auto-close="outside"
           >
             <i class="fas fa-sliders"></i>
-            {{ i18n "appearance_dropdown" }}
+            <span class="appearance-btn-label">
+              {{ i18n "appearance_dropdown" }}
+            </span>
           </button>
           <ul class="dropdown-menu p-0">
             <div class="dropdown-heading p-4 pb-0 fw-bold">
@@ -146,6 +149,7 @@
       }
 
       if (removeImagesSwitch.contains(target)) {
+        handleRemoveImages(target.checked);
         saveAppearancePreferences(REMOVE_IMAGES_KEY, target.checked);
       }
 
@@ -159,6 +163,28 @@
         saveAppearancePreferences("theme", target.value);
       }
     });
+
+    /**
+     * Remove Images Handler
+     */
+    const handleRemoveImages = (isImagesRemoved) => {
+      isImagesRemoved = isImagesRemoved || false;
+
+      setTimeout(() => {
+        removeImagesSwitch.checked = isImagesRemoved;
+        isImagesRemoved
+          ? removeImagesSwitch.setAttribute("checked", true)
+          : removeImagesSwitch.removeAttribute("checked");
+      });
+
+      if (isImagesRemoved) {
+        document.body.classList.remove("remove-images");
+        document.body.classList.add("remove-images");
+      } else {
+        document.body.classList.remove("remove-images");
+      }
+    };
+
 
     /**
      * Large Text Handler
@@ -255,6 +281,9 @@
 
       const largeTextPreferences = localStorage.getItem(LARGE_TEXT_KEY);
       handleLargeText(JSON.parse(largeTextPreferences));
+
+      const removeImagesPreferences = localStorage.getItem(REMOVE_IMAGES_KEY);
+      handleRemoveImages(JSON.parse(removeImagesPreferences));
     };
 
     getStoredAppearancePreferences();

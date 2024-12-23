@@ -1,3 +1,29 @@
+/**
+ * Remove Images - global styles
+ */
+.no-image-fallback {
+  display: none;
+}
+
+body.remove-images {
+    .hero,
+    &.dark .hero {
+        background-image: none;
+    }
+
+    img {
+        display: none !important;
+    }
+
+    .no-image-fallback {
+        display: block;
+    }
+}
+
+/** 
+ * Custom styles 
+ */
+
 .margin-right-3 {
     margin-inline-end: 1rem;
 }
@@ -403,6 +429,11 @@ body.dark {
         img {
             max-width: 300px;
         }
+    }
+    .footer-wcag {
+        padding: 1rem;
+        font-size: calc(#{$font-size} * 1.5);
+        color: $text-color;
     }
 }
 

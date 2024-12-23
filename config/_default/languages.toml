@@ -9,6 +9,7 @@ footer_title = "Contact information"
 footer_url = "https://www.w3.org/WAI/WCAG2AA-Conformance"
 footer_alt = "Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.2"
 footer_image = "/images/wcag22aa.png"
+footer_image_fallback = "WCAG Conformance Levels 2.2 AA"
 footer_content = """
 AccessLiasion by ALAS doo<br />
 Rudjera Boskovica 20, Novi Sad, Serbia<br />

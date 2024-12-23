@@ -26,10 +26,15 @@
             </div>
             <div class="col-lg-4 col-sm-6 footer-right d-flex justify-content-center">
               <a href="{{ site.Params.footer_url | relLangURL }}"
-                class="pt-3"
+                class="pt-3 footer-wcag"
                 rel="noopener noreferrer"
-                title="{{ site.Params.footer_title }}">
-                {{ partial "image" (dict "Src" site.Params.footer_image "Alt" site.Params.footer_alt "Class" "wcag") }}
+                title="{{ site.Params.footer_alt }}">
+                <span class="no-image-fallback"> {{ site.Params.footer_image_fallback }} </span>
+                {{ partial "image" (dict 
+                  "Src" site.Params.footer_image 
+                  "Alt" site.Params.footer_alt 
+                  "Class" "wcag")
+                }}
               </a>
             </div>
           </div>

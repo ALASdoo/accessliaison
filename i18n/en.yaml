@@ -119,7 +119,7 @@
   translation: We value your privacy
 
 - id: cookiebanner_description
-  translation: We use analytics cookies to improve your experience. No personal data is collected. For more details or to update your preferences, visit our <a href="/cookie-policy/" data-consent="false"> Cookies page</a>.
+  translation: We use analytics cookies to improve your experience. No personal data is collected. For more details or to update your preferences, visit our <a href="/cookie-policy/" data-consent="false"> Cookie policy page</a>.
 
 - id: cookiebanner_accept
   translation: Accept cookies

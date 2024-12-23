@@ -1,4 +1,11 @@
- 
+.modal {
+  --bs-modal-width: calc(#{$font-size} * 28);
+}
+
+.text-large .modal {
+  --bs-modal-width: calc(#{$large-font-size} * 25);
+}
+
 .modal-backdrop {
   z-index: 9999;
 }

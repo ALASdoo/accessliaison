@@ -4,6 +4,7 @@ body {
   line-height: 1.6;
   color: $text-color;
   font-size: rfs-value($font-size);
+  text-underline-offset: 5px;
 }
 
 p {
@@ -46,6 +47,9 @@ h4 {
 a {
   color: $color-primary;
   text-decoration: underline !important;
+  &:hover {
+    color: $color-primary-darker;
+  }
 }
 
 
@@ -73,7 +77,16 @@ body.dark {
   }
 
   a {
-    color: $dark-color-primary;
+    color: $dark-text-color;
+    text-decoration: underline;
+    
+    &:hover {
+      color: $dark-color-primary;
+    }
+
+    &:visited {
+      color: $white
+    }
   }
 
   .modal-content {
@@ -84,7 +97,7 @@ body.dark {
 
 // Text Large
 body.text-large {
-  font-size: rfs-value(30px);
+  font-size: rfs-value($large-font-size);
 
   h1 {
     font-size: rfs-value(64px);

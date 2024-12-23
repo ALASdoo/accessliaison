@@ -292,3 +292,17 @@ body {
       }
     }
   }
+
+  body.dark div.content {
+    a {
+      color: $dark-text-color;
+
+      &:hover {
+        color: $dark-color-primary;
+      }
+
+      &:visited {
+        color: $white;
+      }
+    }
+  }

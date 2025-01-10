@@ -7,7 +7,7 @@
   <div class="container">
     <div class="row h-100">
       <div class="col-lg-7 margin-right-3 h-100 d-flex flex-column justify-content-center">
-        <h1 class="mt-4 mb-0 pt-5" 
+        <h1 class="mt-4 mb-0 pt-5"
           data-aos="fade-up"
           data-aos-offset="0"
           data-aos-duration="400"
@@ -19,7 +19,7 @@
           data-aos-duration="400"
           data-aos-delay="200"
           data-aos-easing="ease-in-out-sine">{{ .content | markdownify }}</div>
-        <div class="mb-5" 
+        <div class="mb-5"
           data-aos="fade-up"
           data-aos-offset="0"
           data-aos-duration="400"
@@ -122,8 +122,8 @@
             aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
             {{if gt $i 0 }} tabindex="-1" {{end}}
             >
-              {{ partial "image" (dict "Src" .image_light "Alt" "" "Class" "tab-btn-image icon-light") }}
-              {{ partial "image" (dict "Src" .image_dark "Alt" "" "Class" "tab-btn-image icon-dark") }}
+              {{ partial "image" (dict "Src" .image_light "Alt" "" "Class" "tab-btn-image icon-light" "Size" "80x80") }}
+              {{ partial "image" (dict "Src" .image_dark "Alt" "" "Class" "tab-btn-image icon-dark" "Size" "80x80") }}
               <div class="tab-btn-text">{{.title}}</div>
             </button>
           </li>
@@ -174,8 +174,8 @@
               aria-controls="{{.id}}-accordion-pane"
               aria-expanded="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
               >
-              {{ partial "image" (dict "Src" .image_small_light "Alt" "" "Class" "accordion-image icon-light") }}
-              {{ partial "image" (dict "Src" .image_small_dark "Alt" "" "Class" "accordion-image icon-dark") }}
+              {{ partial "image" (dict "Src" .image_small_light "Alt" "" "Class" "accordion-image icon-light" "Size" "80x80") }}
+              {{ partial "image" (dict "Src" .image_small_dark "Alt" "" "Class" "accordion-image icon-dark" "Size" "80x80") }}
 
               <h3 class="accordion-header">
                 {{.title}}

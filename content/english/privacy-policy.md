@@ -1,31 +1,58 @@
 ---
-title: "Privacy & Policy"
-subtitle: ""
-# meta description
-description: "This is meta description"
+date: '2024-11-13'
 draft: false
+title: 'Privacy policy'
+subtitle: ''
 ---
 
-##### Responsibility of Contributors
+Last updated: November 13, 2024
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed 
+At AccessLiaison, we respect your privacy and are committed to protecting your personal data. This Privacy policy explains how we collect, use, and protect your information when you submit it through our contact form.
 
-pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+## Information we collect
 
-##### Gathering of Personal Information
+When you submit a contact form on our website, we collect the following personal information:
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
+- **Full name**
+- **Email address**
 
-##### Protection of  Personal- Information
+We do not collect any other personal data through our website.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. 
+## How we use your information
 
-Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat 
+We use your name and email address to respond to the message or question you submitted.
 
-##### Privacy Policy Changes
+We will not use your personal data for any marketing purposes unless you have explicitly provided consent elsewhere.
 
-1. Sll the Themefisher items are designed to be with the latest , We check all
-2. comments that threaten or harm the reputation of any person or organization
-3. personal information including, but  limited to, email addresses, telephone numbers
-4. Any Update come in The technology  Customer will get automatic  Notification.
+## Data retention
+
+We retain your personal information for as long as necessary to fulfill the purposes for which it was collected (e.g., responding to your inquiries) or as required by applicable laws and regulations. Once the data is no longer needed, it will be securely deleted from our systems.
+
+## How we protect your data
+
+We take your privacy seriously and implement appropriate technical and organizational security measures to safeguard your personal data from unauthorized access, alteration, disclosure, or destruction.
+
+However, please note that no method of transmission over the internet or electronic storage is 100% secure, and we cannot guarantee absolute security.
+
+## Third-party sharing
+
+We do not share, sell, or rent your personal data to any third parties unless required by law.
+
+## Your data rights
+
+Under Data Protection Law, you have the following rights regarding your personal data:
+
+- **Access**: You have the right to request access to the personal data we hold about you.
+- **Correction**: You can request that we correct any inaccuracies in your personal data.
+- **Deletion**: You can request that we delete your personal data from our records.
+- **Objection**: You have the right to object to the processing of your data for certain purposes.
+
+If you wish to exercise any of these rights, please contact us at [info@accessliaison.com](mailto:info@accessliaison.com).
+
+## Changes to this Privacy policy
+
+We may update this Privacy policy from time to time to reflect changes in our practices or for legal or regulatory reasons. Please check this page periodically to stay informed about how we protect your data.
+
+## Contact Us
+
+If you have any questions about this Privacy policy or how your personal data is handled, please contact us at [info@accessliaison.com](mailto:info@accessliaison.com).

@@ -110,8 +110,8 @@ link = "https://www.facebook.com/AccessLiaison"
 
 [[social]]
 title = "instagram"
-icon = "fab fa-instagram" # fontawesome icon pack : https://fontawesome.com/icons/
-link = "#!"
+icon = "fab fa-instagram"                        # fontawesome icon pack : https://fontawesome.com/icons/
+link = "https://www.instagram.com/accessliaison"
 
 [[social]]
 title = "linkedin"

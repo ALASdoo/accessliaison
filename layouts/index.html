@@ -107,7 +107,7 @@
         <h2 class="text-center">{{ .title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row d-md-none d-lg-block">
+    <div class="row d-none d-lg-block">
       <div class="col">
         <ul class="nav nav-tabs row" role="tablist">
           {{range $i, $e := .service_items}}
@@ -242,7 +242,7 @@
 <!-- call to action -->
 {{ with .Params.call_to_action }}
 {{ if .enable }}
-<section class="section p-0 cta-bottom">
+<section class="section p-0 cta-bottom reverse-bg">
   <div class="container">
     <div class="row">
       <div class="col-12 rounded-4 cta p-5">

@@ -39,7 +39,28 @@ body {
     &:focus {
       outline: 3px solid $color-primary;
       outline-offset: 4px;
-      border-radius: 20px;
+    }
+  }
+
+  .reverse-bg {
+    a,
+    button,
+    select {
+      &:focus {
+        outline-color: $dark-color-primary !important;
+      }
+    }
+  }
+
+  .dark {
+    .reverse-bg {
+      a,
+      button,
+      select {
+        &:focus {
+          outline-color: $color-primary !important;
+        }
+      }
     }
   }
 

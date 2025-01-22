@@ -4,7 +4,7 @@
   align-items: center;
   gap: $font-size;
   width: fit-content;
-  padding: 1rem 2rem;
+  padding: 1.5rem 2.5rem;
   border: 2px solid;
   border-radius: 50px;
 
@@ -165,7 +165,7 @@
   a:focus {
     outline-color: $dark-color-primary;
   }
-  
+
   .btn {
     &:focus,
     &.focus,

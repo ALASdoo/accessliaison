@@ -31,8 +31,8 @@ body.reduce-animations {
     }
 }
 
-/** 
- * Custom styles 
+/**
+ * Custom styles
  */
 
 .margin-right-3 {
@@ -86,7 +86,15 @@ ul:not(.nav):not(.footer-nav) {
             margin-block-end: 2rem;
         }
     }
+
+    .btn {
+        font-size: rfs-value(24px);
+    }
 }
+// Text Large
+.text-large .hero .btn {
+    padding: 2rem 3rem;
+  }
 
 @include media-breakpoint-down(xl) {
     .hero {
@@ -139,6 +147,9 @@ ul:not(.nav):not(.footer-nav) {
 }
 .nav-tabs {
     border-bottom: 0;
+    position: relative;
+    z-index: 2;
+    margin-bottom: -2px;
     .nav-link {
         display: flex;
         flex-direction: column;
@@ -172,10 +183,12 @@ ul:not(.nav):not(.footer-nav) {
     background: transparent !important;
     padding: 0 !important;
     border: 0;
+    position: relative;
+    z-index: 1;
 }
 .tab-pane {
     background: $white;
-    border-color: transparent;
+    border: 2px solid $color-primary;
     box-shadow: 2px 2px 5px 2px rgba(45, 67, 121, 0.15) !important;
 
     &:first-of-type {
@@ -336,10 +349,10 @@ ul:not(.nav):not(.footer-nav) {
         }
 
         &:focus {
-            outline-width: 2px;
+            outline-width: 3px;
             outline-style: solid;
             outline-color: $color-primary;
-            outline-offset: 3px;
+            outline-offset: 4px;
         }
 
         &:checked {
@@ -388,9 +401,10 @@ body.dark {
             &.focus,
             &:focus-visible {
                 outline: 3px solid $dark-color-primary;
+                border-color: $dark-color-primary;
             }
             &.active {
-                border-color: $color-primary;
+                border-color: $dark-color-primary;
                 background: $dark-body-light;
             }
             .tab-btn-text {
@@ -400,6 +414,7 @@ body.dark {
     }
     .tab-pane {
         background-color: $dark-body-light !important;
+        border-color: $dark-color-primary;
     }
     .accordion-item {
         background: $dark-body-bg;

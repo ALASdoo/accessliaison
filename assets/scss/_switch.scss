@@ -1,3 +1,11 @@
+:root {
+  --svg-fill: #ffffff; 
+}
+
+.dark {
+  --svg-fill: #000000;
+}
+
 .switch-field {
   display: flex;
   align-items: center;
@@ -78,6 +86,7 @@
     transition-property: opacity;
     transition-delay: 100ms;
     transition-timing-function: linear;
+    fill: var(--svg-fill);
 }
 
 .switch-icon--off {

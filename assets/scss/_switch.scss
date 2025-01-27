@@ -71,7 +71,8 @@
   */
 .switch-icon {
     position: absolute;
-    font-size: 18px;
+    height: 16px;
+    width: 16px;
     color: var(--color-white);
     opacity: 0;
     transition-property: opacity;
@@ -83,6 +84,8 @@
     right: calc(var(--relative-size) * 2 );
     opacity: 1;
     transition-delay: 0ms;
+    width: 14px;
+    height: auto;
 }
 
 .switch-icon--on {

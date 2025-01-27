@@ -1,12 +1,16 @@
+<div class="switch">
+  <input id="{{ .id }}" type="checkbox" role="switch" class="switch-input">
+  <div class="switch-track">
+    <span class="switch-handle"></span>
 
-<div class="switch"> 
-    <input id="{{ .id }}" type="checkbox" role="switch" class="switch-input">
-    <div class="switch-track">
-      <span class="switch-handle"></span>
+    <svg class="switch-icon switch-icon--on" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path d="M5.72 13.718c-.298 0-.584-.115-.813-.332L.334 8.813a1.139 1.139 0 0 1 0-1.612 1.139 1.139 0 0 1 1.612 0l3.762 3.761 8.346-8.345a1.139 1.139 0 0 1 1.612 0 1.139 1.139 0 0 1 0 1.612l-9.158 9.157a1.123 1.123 0 0 1-.812.332z" style="stroke-width:1.14327" />
+    </svg>
 
-      <i class="fa-solid fa-check switch-icon switch-icon--on"></i>
-      <i class="fa-solid fa-xmark switch-icon switch-icon--off"></i>
-    </div>
- 
+    <svg class="switch-icon switch-icon--off" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+      <path d="m10.23 8.002 5.272-5.272a1.586 1.586 0 0 0 0-2.246 1.586 1.586 0 0 0-2.246 0L7.984 5.756 2.712.484a1.586 1.586 0 0 0-2.246 0 1.586 1.586 0 0 0 0 2.246l5.272 5.272-5.272 5.272a1.586 1.586 0 0 0 1.13 2.708c.415 0 .813-.16 1.132-.462L8 10.248l5.272 5.272c.319.319.717.462 1.131.462.414 0 .813-.16 1.131-.462a1.586 1.586 0 0 0 0-2.246l-5.272-5.272Z" style="stroke-width:1.14327" />
+    </svg>
+  </div>
+
   </label>
 </div>

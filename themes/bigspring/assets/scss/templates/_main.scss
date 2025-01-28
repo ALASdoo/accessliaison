@@ -75,11 +75,13 @@
   a {
     color: $color-primary;
     text-align: center;
-    height: 40px;
-    width: 40px;
     line-height: 40px;
-    border-radius: 50%;
-    display: block;
+    display: inline-block;
+
+    img {
+      height: 40px;
+      width: 40px;
+    }
 
     [class*="social-dark"] {
       display: none;

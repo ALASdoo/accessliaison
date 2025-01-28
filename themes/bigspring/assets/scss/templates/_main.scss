@@ -76,14 +76,16 @@
     color: $color-primary;
     text-align: center;
     line-height: 40px;
-    display: inline-block;
+    display: block;
 
     img {
       height: 40px;
       width: 40px;
+      display: block;
     }
 
-    [class*="social-dark"] {
+    .social-dark--default,
+    .social-dark--hover {
       display: none;
     }
     
@@ -93,7 +95,7 @@
 
     &:hover {
       .social-light--hover {
-          display: inline-block;
+          display: block;
       }
 
       .social-light--default {
@@ -104,13 +106,14 @@
 }
  
 .dark {
-  [class*="social-light"]  {
+  .social-light--default,
+  .social-light--hover  {
     display: none !important;
   }
 
   .social-icons a {
     .social-dark--default {
-      display: inline-block;
+      display: block;
     }
 
     &:hover {
@@ -118,7 +121,7 @@
         display: none;
       }
       .social-dark--hover {
-        display: inline-block;
+        display: block;
       }
     }
   }

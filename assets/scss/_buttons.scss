@@ -66,8 +66,9 @@
 
 .btn.btn-primary {
   background: $color-primary;
-  color: $white;
   border-color: $color-primary;
+  color: $white;
+  fill: $white;
 
   &:hover {
     color: $white;
@@ -177,12 +178,14 @@
 
   .btn.btn-primary {
     background: transparent;
-    color: $dark-color-primary;
     border-color: $dark-color-primary;
+    color: $dark-color-primary;
+    fill: $dark-color-primary;
 
     &:hover,
     &:active {
       color: #000406;
+      fill: #000406;
       border-color: #f8fdff;
       background: #f8fdff;
       box-shadow: none;

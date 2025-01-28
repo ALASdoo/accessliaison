@@ -19,25 +19,25 @@
 
                   {{ partial "image" (dict
                   "Src" $defaultImage
-                  "Alt" (print "/images/social/" .title "_lt" ".png")
+                  "Alt" .title
                   "Class" "social-light--default"
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $defaultHover
-                  "Alt" (print .image "_dark")
+                  "Alt" .title
                   "Class" "social-light--hover"
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkImage
-                  "Alt" (print .image "_dark")
+                  "Alt" .title
                   "Class" "social-dark--default"
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkHover
-                  "Alt" $darkHover
+                  "Alt" .title
                   "Class" "social-dark--hover"
                   )}}
 

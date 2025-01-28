@@ -107,7 +107,12 @@
     * Dropdown button
     */
     .appearance-btn {
-      padding: 1rem 2rem;
+      padding: 1rem 2rem; 
+      .appearance-icon {
+        display: block;
+        height: rfs-value(30px);
+        fill: inherit;
+      }
     }
     @include media-breakpoint-down(md) {
       .appearance-btn {

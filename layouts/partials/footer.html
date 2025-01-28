@@ -21,24 +21,29 @@
                   "Src" $defaultImage
                   "Alt" .title
                   "Class" "social-light--default"
+                  "Loading" "eager" 
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $defaultHover
                   "Alt" .title
                   "Class" "social-light--hover"
+                  "Loading" "eager" 
+                  
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkImage
                   "Alt" .title
                   "Class" "social-dark--default"
+                  "Loading" "eager" 
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkHover
                   "Alt" .title
                   "Class" "social-dark--hover"
+                  "Loading" "eager" 
                   )}}
 
                   <span class="no-image-fallback">{{.title}}</span>

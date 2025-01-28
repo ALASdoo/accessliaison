@@ -10,7 +10,37 @@
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}
-                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}" class="social-link"><i class="{{ .icon }}"></i></a></li>
+                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}" class="social-link">
+                  {{ $imagePath := "/images/social/" }}
+                  {{ $defaultImage := (print $imagePath .title "_lt" ".png") }}
+                  {{ $defaultHover := (print $imagePath .title "_lt" "_hover" ".png") }}
+                  {{ $darkImage := (print $imagePath .title "_dt" ".png") }}
+                  {{ $darkHover := (print $imagePath .title "_dt" "_hover" ".png") }}
+
+                  {{ partial "image" (dict
+                  "Src" $defaultImage
+                  "Alt" (print "/images/social/" .title "_lt" ".png")
+                  "Class" "social-light--default"
+                  )}}
+
+                  {{ partial "image" (dict
+                  "Src" $defaultHover
+                  "Alt" (print .image "_dark")
+                  "Class" "social-light--hover"
+                  )}}
+
+                  {{ partial "image" (dict
+                  "Src" $darkImage
+                  "Alt" (print .image "_dark")
+                  "Class" "social-dark--default"
+                  )}}
+
+                  {{ partial "image" (dict
+                  "Src" $darkHover
+                  "Alt" $darkHover
+                  "Class" "social-dark--hover"
+                  )}}
+                  </a></li>
                 {{ end }}
               </ul>
               {{ end }}
@@ -26,16 +56,16 @@
             </div>
             <div class="col-lg-4 col-sm-6 footer-right d-flex justify-content-center">
               <a href="{{ site.Params.footer_url | relLangURL }}"
-                class="pt-3 footer-wcag"
-                rel="noopener noreferrer"
-                title="{{ site.Params.footer_alt }}">
-                <span class="no-image-fallback"> {{ site.Params.footer_image_fallback }} </span>
-                {{ partial "image" (dict 
-                  "Src" site.Params.footer_image 
-                  "Alt" site.Params.footer_alt 
-                  "Class" "wcag")
-                }}
-              </a>
+              class="pt-3 footer-wcag"
+              rel="noopener noreferrer"
+              title="{{ site.Params.footer_alt }}">
+              <span class="no-image-fallback"> {{ site.Params.footer_image_fallback }} </span>
+              {{ partial "image" (dict 
+                "Src" site.Params.footer_image 
+                "Alt" site.Params.footer_alt 
+                "Class" "wcag")
+              }}
+            </a>
             </div>
           </div>
         </div>

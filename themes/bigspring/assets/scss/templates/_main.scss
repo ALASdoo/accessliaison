@@ -78,13 +78,46 @@
     height: 40px;
     width: 40px;
     line-height: 40px;
-    border: 1px solid $color-primary;
     border-radius: 50%;
     display: block;
 
+    [class*="social-dark"] {
+      display: none;
+    }
+    
+    .social-light--hover {
+      display: none;
+    }
+
     &:hover {
-      color: $white;
-      background-color: $color-primary;
+      .social-light--hover {
+          display: inline-block;
+      }
+
+      .social-light--default {
+        display: none;  
+      }
+    }
+  }
+}
+ 
+.dark {
+  [class*="social-light"]  {
+    display: none !important;
+  }
+
+  .social-icons a {
+    .social-dark--default {
+      display: inline-block;
+    }
+
+    &:hover {
+      .social-dark--default{
+        display: none;
+      }
+      .social-dark--hover {
+        display: inline-block;
+      }
     }
   }
 }

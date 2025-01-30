@@ -58,6 +58,11 @@ ul:not(.nav):not(.footer-nav) {
 .dropdown-theme {
     border-bottom: 1px solid #6C7575;
 }
+
+.dropdown-section {
+    padding-left: 2rem;
+}
+
 .dark .hero {
     background-image: url('/images/hero_dark.webp');
     background-color: #000;
@@ -335,12 +340,25 @@ ul:not(.nav):not(.footer-nav) {
  * Radio Button
  */
  .radio-field {
+    display: flex;
+    padding-left: 0;
+
+    &:hover {
+        color: $color-primary;
+    }
+
+    label {
+        padding-left: 1rem;
+    }
 
     .form-check-input[type="radio"] {
+        float: none;
+        flex-shrink: 0;
         width: $font-size;
         height: $font-size;
         border: 2px solid #414647;
         margin-top: 5px;
+        margin-left: 0;
         background-color: unset;
 
         &:hover,
@@ -369,6 +387,9 @@ body.dark {
         background-color: $dark-body-light !important;
     }
     .radio-field {
+        &:hover {
+            color: $dark-color-primary;
+        }
         .form-check-input[type="radio"] {
             border-color: #e4edef;
             background-color: #373A3A;

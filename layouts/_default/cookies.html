@@ -31,14 +31,14 @@
         <p>{{ .subtitle }}</p>
         <form>
           <div class="form-check radio-field mb-2">
-            <input type="radio" class="form-check-input radio-button mt-3" name="cookie-policy" id="cookie-accept">
+            <input type="radio" class="form-check-input radio-button mt-2" name="cookie-policy" id="cookie-accept">
             <label class="form-check-label" for="cookie-accept">
               {{ .accept_cookie_label | markdownify}}
             </label>
           </div>
 
           <div class="form-check radio-field">
-            <input type="radio" class="form-check-input radio-button mt-3" name="cookie-policy" id="cookie-decline">
+            <input type="radio" class="form-check-input radio-button mt-2" name="cookie-policy" id="cookie-decline">
             <label class="form-check-label" for="cookie-decline">
               {{ .decline_cookie_label | markdownify }}
             </label>

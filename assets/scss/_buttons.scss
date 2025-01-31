@@ -84,6 +84,29 @@
   }
 }
 
+.btn.btn-outlined {
+  background: transparent;
+  border-color: $color-primary;
+  color: $color-primary;
+  fill: $color-primary;
+
+  &:hover,
+  &:focus,
+  &:focus-within {
+    color: $white;
+    fill: $white;
+    border-color: $color-primary-darker;
+    background-color: $color-primary-darker;
+  }
+
+  &:focus,
+  &.focus,
+  &:focus-visible {
+    outline: 3px solid $color-primary;
+    outline-offset: 4px;
+  }
+}
+
 .btn.btn-inverse {
   background-color: #ecf5f7;
   color: $color-primary;
@@ -175,7 +198,7 @@
       box-shadow: none;
     }
   }
-
+  
   .btn.btn-primary {
     background: transparent;
     border-color: $dark-color-primary;
@@ -191,6 +214,25 @@
       box-shadow: none;
     }
   }
+
+  .btn.btn-outlined {
+    background: transparent;
+    border-color: $dark-color-primary;
+    color: $dark-color-primary;
+    fill: $dark-color-primary;
+
+    &:hover,
+    &:active,
+    &:focus,
+    &:focus-within {
+      color: #000406;
+      fill: #000406;
+      border-color: #f8fdff;
+      background: #f8fdff;
+      box-shadow: none;
+    }
+  }
+  
 
   .btn.btn-inverse {
     background-color: $dark-body-bg;

@@ -482,6 +482,19 @@ body.dark {
         font-size: calc(#{$font-size} * 1.5);
         color: $text-color;
     }
+    .copyright-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;        
+    }
+
+    .back-to-top-btn {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
 .dark {

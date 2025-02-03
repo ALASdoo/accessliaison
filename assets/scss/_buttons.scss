@@ -17,8 +17,12 @@
   text-decoration: none !important;
 
   &-sm {
-    padding: 0.9em 1.6em;
+    padding: calc(#{$font-size} / 2) $font-size;
     font-size: 1em;
+    svg {
+      height: $font-size;
+      width: $font-size;
+    }
   }
 
   &:hover,

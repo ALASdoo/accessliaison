@@ -76,8 +76,15 @@
             </div>
           </div>
         </div>
-        <div class="text-center py-1">
-          {{ replace site.Params.copyright "year" (now.Year) | markdownify}}
+        <div class="text-center py-3 copyright-container">
+          <div class="copyright-label">
+            {{ replace site.Params.copyright "year" (now.Year) | markdownify}}
+          </div>
+
+          <button class="btn btn-sm btn-outlined back-to-top-btn" id="back-to-top" aria-label="Back to top">
+            <svg viewBox="0 0 14 8" xmlns="http://www.w3.org/2000/svg">
+              <path d="M.268 6.31 6.288.29c.39-.39 1.03-.39 1.42 0l6.02 6.02a1 1 0 0 1-.05 1.42c-.38.36-.98.36-1.37 0l-5.31-5.31-5.31 5.31a1 1 0 0 1-1.42-.05c-.36-.39-.36-.98 0-1.37z" /></svg>
+            {{ i18n "back_to_top" }}</button>
         </div>
       </div>
     </div>

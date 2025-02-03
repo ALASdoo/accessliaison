@@ -115,6 +115,9 @@
 - id: theme_auto
   translation: Device default
 
+- id: back_to_top
+  translation: Back to top
+
 - id: cookiebanner_heading
   translation: We value your privacy
 

@@ -482,18 +482,36 @@ body.dark {
         font-size: calc(#{$font-size} * 1.5);
         color: $text-color;
     }
+
     .copyright-container {
         position: relative;
         display: flex;
         justify-content: center;
-        width: 100%;        
+        width: 100%;
     }
 
-    .back-to-top-btn {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        transform: translateY(-50%);
+    @media (max-width: 992px) { // Mobile 
+        .back-to-top-btn {
+            margin-left: auto;
+        }
+        
+        .copyright-container {
+            flex-direction: column;
+        }
+
+        .copyright-label {
+            order: 1;
+            margin-top: 10px;
+        }
+    }
+
+    @media (min-width: 992px) { // Desktop
+        .back-to-top-btn {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     }
 }
 

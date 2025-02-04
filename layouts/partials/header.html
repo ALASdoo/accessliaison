@@ -161,6 +161,7 @@
       }
 
       if (reduceAnimationsSwitch.contains(target)) {
+        handleReduceAnimations(target.checked);
         saveAppearancePreferences(REDUCE_ANIMATIONS_KEY, target.checked);
       }
 

@@ -32,6 +32,29 @@ body.reduce-animations {
 }
 
 /**
+ * Large Text 
+ */
+body.text-large {
+    .hero .btn {
+        padding: 2rem 3rem;
+    }
+
+    #services ol {
+        &:before {
+            left: 1.25rem;
+        }
+
+        li::before {
+            top: 0;
+            left: -2.75rem;
+            padding: 1.5rem;
+            border-radius: 1.5rem;
+        }
+    }
+}
+
+
+/**
  * Custom styles
  */
 
@@ -96,10 +119,7 @@ ul:not(.nav):not(.footer-nav) {
         font-size: rfs-value(24px);
     }
 }
-// Text Large
-.text-large .hero .btn {
-    padding: 2rem 3rem;
-  }
+
 
 @include media-breakpoint-down(xl) {
     .hero {
@@ -273,7 +293,11 @@ ul:not(.nav):not(.footer-nav) {
     }
  }
 
+ /**
+  * Servicecs section
+  */
  #services {
+
     p:empty {
         display: none;
     }
@@ -317,24 +341,16 @@ ul:not(.nav):not(.footer-nav) {
         }
     }
 }
- .dark #services ol {
+
+
+.dark #services ol {
     &:before {
         background: #3a89cc;
         background: linear-gradient(180deg, #3a89cc 0%, #26c5f3 100%);
     }
 }
 
-.why-choose-us-item {
-    border-right: 2px solid #3a89cc;
-    border-image: linear-gradient(
-        to bottom,
-        #3a89cc,
-        #26c5f3
-      ) 1 100%;
-    &:last-child {
-        border: 0;
-    }
-}
+
 
  /**
  * Radio Button

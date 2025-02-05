@@ -107,7 +107,7 @@
         <h2 class="text-center">{{ .title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row d-none d-lg-block">
+    <div class="row services-tab-panel">
       <div class="col">
         <ul class="nav nav-tabs row" role="tablist">
           {{range $i, $e := .service_items}}
@@ -161,7 +161,7 @@
       </div>
     </div>
 
-    <div class="row d-lg-none d-md-block">
+    <div class="row services-accordion">
       <div class="col">
         <div class="accordion" id="servicesAccordion">
           {{range $i, $e := .service_items}}
@@ -226,9 +226,9 @@
         <h2 class="section-title h2">{{ .title | markdownify }}</h2>
       </div>
     </div>
-    <div class="row">
+    <div class="why-choose-us-container">
       {{ range .items }}
-      <div class="col-12 col-md-4 why-choose-us-item px-5">
+      <div class="why-choose-us-item">
         <h3> {{ .name }} </h3>
         <p> {{ .content | markdownify }} </p>
       </div>

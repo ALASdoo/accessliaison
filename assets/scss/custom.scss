@@ -210,7 +210,21 @@ ul:not(.nav):not(.footer-nav) {
     border: 0;
     position: relative;
     z-index: 1;
+    
+    /** for equal panel height */
+    display: flex; 
+    & > .tab-pane {
+        /** for equal panel height */
+        display: block;  
+        visibility: hidden;
+        margin-right: -100%;
+        width: 100%;
+      }
+    & > .active {
+        visibility: visible;
+    }
 }
+
 .tab-pane {
     background: $white;
     border: 2px solid $color-primary;

@@ -1,7 +1,7 @@
 <footer class="section pb-0 footer">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-11">
+    <div class="row justify-content-between">
+      <div class="col-xl-12">
         <div class="section pt-0 pb-2">
           <div class="row gy-4">
             <div class="col-lg-4 col-sm-6 footer-left" id="contact-info">
@@ -52,7 +52,7 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-lg-4 col-sm-6">
+            <div class="col-lg-4 col-sm-6 footer-center">
               {{ if site.Menus.footer }}
               <ul class="list-unstyled footer-nav footer-list">
                 {{ range site.Menus.footer }}
@@ -61,18 +61,16 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-lg-4 col-sm-6 footer-right d-flex justify-content-center">
-              <a href="{{ site.Params.footer_url | relLangURL }}"
-              class="pt-3 footer-wcag"
-              rel="noopener noreferrer"
-              title="{{ site.Params.footer_alt }}">
-              <span class="no-image-fallback"> {{ site.Params.footer_image_fallback }} </span>
-              {{ partial "image" (dict 
+            <div class="col-lg-4 col-sm-6 ms-auto footer-right align-right">
+              <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
+                title="Explanation of WCAG 2 Level AA conformance">
+                <span class="no-image-fallback">{{ site.Params.footer_image_fallback }}</span>
+                {{ partial "image" (dict 
                 "Src" site.Params.footer_image 
-                "Alt" site.Params.footer_alt 
+                "Alt" site.Params.footer_alt
                 "Class" "wcag")
-              }}
-            </a>
+                }}          
+              </a>
             </div>
           </div>
         </div>

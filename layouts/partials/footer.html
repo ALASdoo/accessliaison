@@ -10,7 +10,11 @@
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}
-                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}" class="social-link">
+                <li class="list-inline-item">
+                  <a href="{{ .link | safeURL }}" 
+                     aria-label="{{ .title }} external link" 
+                     class="social-link" 
+                     rel="external">
                   {{ $imagePath := "/images/social/" }}
                   {{ $defaultImage := (print $imagePath .title "_lt" ".png") }}
                   {{ $defaultHover := (print $imagePath .title "_lt" "_hover" ".png") }}
@@ -62,12 +66,14 @@
               {{ end }}
             </div>
             <div class="col-lg-4 col-sm-6 ms-auto footer-right align-right">
-              <a href="https://www.w3.org/WAI/WCAG2AA-Conformance"
-                title="Explanation of WCAG 2 Level AA conformance">
-                <span class="no-image-fallback">{{ site.Params.footer_image_fallback }}</span>
+              <!-- external link -->
+              <a href="{{ site.Params.footer_url }}"
+                title="{{ site.Params.footer_alt }} external link"
+                rel="external">
+                <span aria-hidden="true" class="no-image-fallback">{{ site.Params.footer_alt }}</span>
                 {{ partial "image" (dict 
                 "Src" site.Params.footer_image 
-                "Alt" site.Params.footer_alt
+                "Alt" site.Params.footer_alt 
                 "Class" "wcag")
                 }}          
               </a>

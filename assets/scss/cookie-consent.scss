@@ -1,5 +1,5 @@
 .modal {
-  --bs-modal-width: calc(#{$font-size} * 28);
+  --bs-modal-width: calc(#{$font-size} * 30);
 }
 
 .text-large .modal {
@@ -57,6 +57,10 @@
     @media screen and (min-width: 768px) {
       justify-content: space-between;
       gap:0;
+      flex-wrap: nowrap;
+    }
+    .btn {
+      text-wrap: nowrap;
     }
   }
 }

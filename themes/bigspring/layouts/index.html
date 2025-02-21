@@ -11,7 +11,11 @@
         <div class="mb-5">
           {{ if .button.enable }}
           {{ with .button }}
-          <a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-outline-primary m-2">{{ .label }}</a>
+          <a href="{{ .link | safeURL }}" 
+            class="btn btn-outline-primary m-2"
+            title="{{ .label }}" >
+            {{ .label }}
+          </a>
           {{ end }}
           {{ end }}
         </div>

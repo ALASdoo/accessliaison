@@ -379,6 +379,9 @@ ul:not(.nav):not(.footer-nav) {
 
     label {
         padding-left: 1rem;
+        &:hover {
+            cursor: pointer;
+        }
     }
 
     .form-check-input[type="radio"] {
@@ -512,12 +515,13 @@ body.dark {
             display: inline-block;
         }
         img {
+            display: block;
+            width: 100%;
             max-width: 300px;
         }
     }
     .footer-wcag {
         padding: 1rem;
-        font-size: calc(#{$font-size} * 1.5);
         color: $text-color;
     }
 

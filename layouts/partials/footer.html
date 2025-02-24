@@ -56,7 +56,7 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-lg-4 col-sm-6 footer-center">
+            <div class="col-6 col-lg-4 col-sm-6 footer-center">
               {{ if site.Menus.footer }}
               <ul class="list-unstyled footer-nav footer-list">
                 {{ range site.Menus.footer }}
@@ -65,13 +65,14 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-lg-4 col-sm-6 ms-auto footer-right align-right">
+            <div class="col-6 col-lg-4 col-sm-6 footer-right">
               <!-- external link -->
-              <a href="{{ site.Params.footer_url }}"
-                title="{{ site.Params.footer_alt }} external link"
-                rel="external">
-                <span aria-hidden="true" class="no-image-fallback">{{ site.Params.footer_alt }}</span>
-                {{ partial "image" (dict 
+              <a href="{{ site.Params.footer_url | relLangURL }}"
+              class="pt-3 footer-wcag"
+              rel="noopener noreferrer external"
+              title="{{ site.Params.footer_alt }} external link">
+              <span aria-hidden="true" class="no-image-fallback"> {{ site.Params.footer_alt }} </span>
+              {{ partial "image" (dict 
                 "Src" site.Params.footer_image 
                 "Alt" site.Params.footer_alt 
                 "Class" "wcag")

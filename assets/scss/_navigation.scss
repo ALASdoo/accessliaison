@@ -177,7 +177,9 @@
         &:active {
           color: $color-primary !important;
           background-color: transparent;
+          cursor: pointer;
         }
+        // adds full width background to the dropdown item on hover
         &::before {
           content: "";
           position: absolute;

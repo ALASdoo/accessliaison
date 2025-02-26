@@ -1,7 +1,8 @@
 ---
-title: "Latest News"
-subtitle: "Read all latest blog posts"
+title: "Blog"
+subtitle: "Elevate your insights about web accessibility, best-practices, and the latest in industry developments"
 # meta description
-description: "Read all latest blog posts"
+description: "Elevate your insights about web accessibility, best-practices, and the latest in industry developments"
 draft: false
+section: 'blog'
 ---

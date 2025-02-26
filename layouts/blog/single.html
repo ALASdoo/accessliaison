@@ -1,0 +1,98 @@
+{{define "main"}}
+
+{{ partial "page-header.html" . }}
+
+<section class="section blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          {{ if .Params.image }}
+          {{ partial "image" (dict
+            "Src" .Params.image 
+            "Alt" .Title 
+            "Class" "rounded-2 w-100 mb-5"
+          ) }}
+          {{ end }}
+          
+           
+          <span class="fw-500">
+            {{i18n `published_on`}} 
+            <time>{{ time.Format ":date_long" .PublishDate }}</time>
+             <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}} 
+            
+            <!-- author -->
+            {{ if .Params.AuthorLink }}
+              <span aria-hidden="true">|</span>
+              <a href="{{ .Params.AuthorLink }}" rel="author" title="Author {{ .Params.Author }}">
+                {{ .Params.Author }}
+              </a>
+            {{ else if .Params.Author }}
+              <span aria-hidden="true">|</span>
+              <span rel="author" aria-label="Author {{ .Params.Author }}">
+                {{ .Params.Author }}
+              </span>
+            {{ end }} <!-- /author -->
+          </span>
+  
+          <!-- <h2 class="h3 my-3">{{ .Title }}</h2> -->
+  
+          <div class="mt-5 content">{{.Content}}</div>
+          
+          {{ with site.GetPage (string .Params.Author | urlize | lower) }}
+          {{if .Title}}
+          <div class="d-block d-sm-flex border p-5 pb-4 rounded-2 mt-5">
+            <div class="mb-3" style="min-width: 110px">
+               {{ if .Params.image }}
+              {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "80x80") }}
+              {{ else }}
+              <i class="far fa-user-circle mb-1" style="font-size:82px"></i>
+              {{ end }}
+            </div>
+            <div>
+              <h3 class="h5 title mb-1"><a href="{{.RelPermalink}}" class="text-dark">{{ .Title }}</a></h3>
+              <div class="content">{{ .Content | truncate 135}}</div>
+              <ul class="list-inline social-icons justify-content-start mt-3 mb-0">
+                {{ range .Params.social }}
+                <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+         
+          
+          <!-- call to action -->
+          <section class="section cta-bottom pb-0 reverse-bg">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 rounded-4 cta p-5">
+                  {{ if i18n "cta_title" }}
+                  <h2 class="cta-heading">{{  i18n "cta_title" }}</h2>
+                  {{ end }}
+                  <p class="mb-4">{{ i18n "cta_content" }}</p>                 
+                  <a href='{{  i18n "cta_btn_link" }}' class="btn btn-primary btn-inverse" 
+                    rel="external">
+                    {{ i18n "cta_btn_label" }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /call to action -->
+
+          <!-- comments -->  
+          <!-- {{ if site.DisqusShortname }}
+          <div class="border p-5 rounded-2 mt-5">
+            {{ template "_internal/disqus.html" . }}
+          </div>
+          {{ end }} -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+{{end}}

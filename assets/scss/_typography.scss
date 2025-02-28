@@ -5,6 +5,12 @@ body {
   color: $text-color;
   font-size: rfs-value($font-size);
   text-underline-offset: 5px;
+
+  text-rendering: optimizeLegibility;
+  hyphenate-character: "–";
+  text-wrap: pretty;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 p {

@@ -26,7 +26,7 @@ If you're a website owner without deep accessibility expertise, you may have bee
 
 However, **accessibility overlays do not ensure compliance** with these regulations. To save yourself **time, resources, legal risks, and brand tarnish**, you should know that overlays are not an acceptable alternative or a substitute for fixing the website itself. 
 
-## What is an accessibility overlay? {#what-is-an-accessibility-overlay?}
+## What is an accessibility overlay? 
 
 Accessibility overlays, plug-ins, or widgets are software add-ons to a website that enable users to **quickly change the appearance of a web page**. Usually, they allow users to change contrast, font size, type of font, and cursor visibility to preset values. 
 
@@ -39,7 +39,7 @@ Overlays often duplicate accessibility functions already built into web browsers
 
 Some newer overlay products claim to improve code by detecting and “fixing” certain elements automatically. In the further text, we will address the limitations of such fixes.
 
-## Why overlays fall short {#why-overlays-fall-short}
+## Why overlays fall short 
 
 Overlays **cannot make your website compliant** with EAA, ADA, and other accessibility laws. Neither can they guarantee conformance with standards like Web Content Accessibility Guidelines (WCAG), EN 301549, and Section 508\. Products with such claims raise a major red flag.
 
@@ -49,7 +49,7 @@ Overlays **cannot make your website compliant** with EAA, ADA, and other accessi
 [The European Disability Forum and the International Association of Accessibility Professionals in their joint statement](https://www.edf-feph.org/publications/joint-statement-on-accessibility-overlays/) confirm that the **“widgets” cannot repair all possible issues**, meaning that they cannot provide compliance. Here’s why.
 
 
-### Incomplete fixes {#incomplete-fixes}
+### Incomplete fixes 
 
 Some overlay products offer repairs to the underlying page when loaded in the browser. While some trivial accessibility problems can be repaired this way, the accuracy of such repairs is limited. The problem is that overlays may fix surface-level issues but **fail to address deeper structural, semantic, or navigational barriers**. 
 
@@ -90,19 +90,19 @@ In addition to the above, overlays **do not repair content in Flash, Java, Silve
 
 If you are considering using the widget for monitoring, you should know that most of the issues reported are similar to those discovered by **free web accessibility checkers** such as [Wave](https://wave.webaim.org/) and [axe DevTools Chrome extension](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd). These, and similar tools, provide a more systematic report of the issues, and you get that for free\!
 
-### Interference with assistive technologies {#interference-with-assistive-technologies}
+### Interference with assistive technologies 
 
 Users with disabilities carefully set their assistive devices/software to best suit their needs. Overlays’ generic approach interferes with these settings. This results in complicating, and even blocking, access for persons with disabilities.
 
 ❗Important: **Screen reader users often comment that they avoid websites that use overlay plugins. Unpredictable changes that overlays create hinder the usability and accessibility of the page for them.**
 
-### Privacy risks {#privacy-risks}
+### Privacy risks 
 
 Accessibility overlays may automatically detect assistive technology, exposing a user's disability status without their consent. Disability, like age, gender, or ethnicity, is sensitive personal information. Laws such as the **General Data Protection Regulation (GDPR)** and the **California Consumer Privacy Act (CCPA)** require explicit user consent before collecting such data. Additionally, some overlays track user settings across multiple sites, creating further **data privacy violations**.
 
 Important: **Adding an overlay to your site could put you at risk of non-compliance with privacy regulations, leading to fines, legal action, and loss of user trust.** 
 
-## Properly implemented accessibility is the only way to compliance {#properly-implemented-accessibility-is-the-only-way-to-compliance}
+## Properly implemented accessibility is the only way to compliance to-compliance}
 
 Accessibility overlays might sound appealing as a quick fix, but they don’t deliver what they promise. While no law explicitly bans such tools, they all stress **the** **importance of accessibility being built into the design and functionality** of digital products, ensuring an inclusive experience for users with disabilities without relying on secondary aids.
 

@@ -1,6 +1,7 @@
 body {
-    background-color: $body-bg;
     overflow-x: hidden;
+    background-color: $body-bg;
+    text-wrap: pretty;
   }
 
   .preloader {

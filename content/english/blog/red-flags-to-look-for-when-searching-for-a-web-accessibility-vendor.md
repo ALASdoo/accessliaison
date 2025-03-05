@@ -56,7 +56,7 @@ The point of accessibility changes is to make the product itself accessible and 
 
 Overlays may help with surface-level issues like color contrast, but they cannot address deeper issues, such as semantic HTML, keyboard navigation, and heading hierarchy.
 
-Learn more about accessibility overlays here: [Accessibility overlays: Do they really improve websites’ accessibility?](https://docs.google.com/document/d/1CqKt_k2IuOXlGEJPeafNUodmfVLU84-4ATP3T02Uu-g/edit?usp=sharing)
+Learn more about accessibility overlays here: [Accessibility overlays: Do they really improve websites’ accessibility?](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/)
 
 ### Minimal focus on user experience (UX) 
 

@@ -144,3 +144,6 @@
 
 - id: cta_btn_link
   translation: https://calendly.com/vilmos/meet
+
+- id: read_more_blog_post
+  translation: Explore more accessibility articles 

@@ -1,11 +1,17 @@
 {{define "main"}}
 
-{{ partial "page-header.html" . }}
-
-<section class="section blog">
+<section class="section blog pb-0">
+  <div class="container">
     <div class="container">
       <div class="row">
         <div class="col-lg-10 mx-auto">
+         
+          <h1 class="mb-3">{{ .Title | markdownify }}</h1>
+          {{ with .Params.subtitle }}
+          <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
+          {{ end }}
+
+
           {{ if .Params.image }}
           {{ partial "image" (dict
             "Src" .Params.image 
@@ -33,7 +39,16 @@
               </span>
             {{ end }} <!-- /author -->
           </span>
-  
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section blog pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
           <!-- <h2 class="h3 my-3">{{ .Title }}</h2> -->
   
           <div class="mt-5 content">{{.Content}}</div>

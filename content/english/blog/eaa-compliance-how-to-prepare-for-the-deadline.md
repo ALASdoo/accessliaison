@@ -73,7 +73,7 @@ Requirements for the non-web documents are explained in [Guidance on Applying WC
 ### Don’t rely on accessibility overlays and plug-ins 
 
 
-Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about what plugins are useful for and their limitations here: [How useful are accessibility overlays and plugins?](https://docs.google.com/document/d/1CqKt_k2IuOXlGEJPeafNUodmfVLU84-4ATP3T02Uu-g/edit?usp=sharing)
+Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about what plugins are useful for and their limitations here: [How useful are accessibility overlays and plugins?](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/)
 
 The EAA specifically requires that digital products are designed and produced to be accessible.
 
@@ -151,4 +151,4 @@ Navigating the complexities of EAA compliance can be challenging. Partnering wit
 
 However, choosing the right partner requires careful consideration. Not knowing the ins and outs of complex accessibility requirements can lead to frustration and wasted time. To avoid trial and error, it’s crucial to recognize potential **red flags** when evaluating accessibility vendors. We’ve outlined them here: [Red flags to look for when searching for a web accessibility vendor](/blog/red-flags-to-look-for-when-searching-for-a-web-accessibility-vendor/). 
 
-**AccessLiaison** is a web accessibility brand of ALAS d.o.o. Our experts have 2 decades of providing top-quality IT services for different industries. Our accessibility services combine advanced technology with manual testing, accessible design, and development. We can address all your accessibility concerns and help you swiftly achieve legal compliance, ensure enjoyable experiences for all users, and maintain accessibility over time.  
+[**AccessLiaison**](/) is a web accessibility brand of [ALAS d.o.o.](https://www.alasdoo.com) Our experts have 2 decades of providing top-quality IT services for different industries. Our accessibility services combine advanced technology with manual testing, accessible design, and development. We can address all your accessibility concerns and help you swiftly achieve legal compliance, ensure enjoyable experiences for all users, and maintain accessibility over time.  

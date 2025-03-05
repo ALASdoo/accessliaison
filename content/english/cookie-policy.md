@@ -3,10 +3,11 @@ date: "2024-11-13"
 title: 'Cookie policy'
 draft: false
 layout: 'cookies'
-subtitle: 'Last updated: November 13, 2024 
-
-
-At Alas doo, we are committed to protecting your privacy. The cookies we use do not store any personal information.'
+subtitle: ''
+intro: |
+  Last updated: November 13, 2024 
+  
+  At Alas doo, we are committed to protecting your privacy. The cookies we use do not store any personal information.
 
 
 cookies:

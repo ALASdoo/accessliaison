@@ -21,17 +21,41 @@ Don’t go searching for quick fixes just yet\! In this article, we’ll help yo
 
 For more information about the EAA, read our first blog post from this series: [EAA Compliance: Understanding the scope and the impact on web accessibility](/blog/eea-compliance-understanding-the-scope-and-the-impact-on-web-accessibility/)
 
-## Ensure conformance with relevant standards 
+\
+**In this blog post you can read about:**
+1. [Ensure conformance with relevant standards](#ensure-conformance-with-relevant-standards)
+   1. [Start with WCAG 2.1](#start-with-wcag-21)
+   1. [Cover requirements beyond WCAG 2.1](#cover-requirements-beyond-wcag-2.1)
+   1. [Consider aiming for WCAG 2.2 Level AA](#consider-aiming-for-wcag-22-level-aa)
+   1. [Make documents accessible](#make-documents-accessible)
+   1. [Don’t rely on accessibility overlays and plug-ins](#dont-rely-on-accessibility-overlays-and-plug-ins)
+1. [Conduct regular testing](#conduct-regular-testing)
+1. [Document accessibility efforts](#document-accessibility-efforts)
+1. [Ensure accessibility of third-party tools](#ensure-accessibility-of-third-party-tools)
+1. [Keep Accessibility Up to Date](#keep-accessibility-up-to-date)
+1. [Foster a culture of accessibility](#foster-a-culture-of-accessibility)
+1. [Speed up your accessibility efforts with an expert partner](#speed-up-your-accessibility-efforts-with-an-expert-partner)
 
 
-### Start with WCAG 2.1 
+
+## Ensure conformance with relevant standards
+
+
+### Start with WCAG 2.1
 
 
 To ensure compliance with the EAA for digital services (websites and applications) follow **EN 301 549**. It is the primary European standard for ICT accessibility, incorporating the Web Content Accessibility Guidelines (WCAG) 2.1 Level A and AA. This means if your digital experiences already meet the **WCAG 2.1 Level AA**, you’re well on your way to conforming with EN 301 549 too.
 
+### Cover requirements beyond WCAG 2.1
 
-### Consider aiming for WCAG 2.2 Level AA 
+Although EN 301 549 builds on top of WCAG 2.1 Level AA, there are additional requirements for:
 
+* **User preferences and settings** (dark mode, fonts, color contrast, motion…)  
+* **Documents and support services (**accessibility statement and help pages are both examples of documenting accessibility and compatibility features)  
+* **Authoring tools** (e.g. comment section on the website (review) is considered an authoring tool)  
+* **Biometrics, voice and video communication, real-time text**
+
+### Consider aiming for WCAG 2.2 Level AA2-level-aa
 
 WCAG 2.2 will soon be part of EN 301 549, and with that, a part of WAD and the EAA. An update to EN 301 549 is scheduled for 2025\. It is expected that version 4.1.1 of EN 301 549 will incorporate WCAG 2.2 by the end of 2025 or early 2026\. 
 
@@ -59,8 +83,8 @@ The EAA specifically requires that digital products are designed and produced to
 Use a combination of:
 
 * **Automated tools** (e.g., axe, WAVE) to catch basic issues.  
-  * **Manual reviews** using assistive technology conducted by accessibility specialists to verify compliance with WCAG 2.1 AA.  
-  * **User testing** with people who rely on assistive technologies (e.g., screen readers, voice control, keyboard navigation).
+* **Manual reviews** using assistive technology conducted by accessibility specialists to verify compliance with WCAG 2.1 AA.  
+* **User testing** with people who rely on assistive technologies (e.g., screen readers, voice control, keyboard navigation).
 
 ## Document accessibility efforts 
 

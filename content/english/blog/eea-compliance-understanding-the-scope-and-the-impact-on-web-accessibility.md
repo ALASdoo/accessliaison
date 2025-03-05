@@ -17,7 +17,7 @@ draft: false
 The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities. Businesses operating in the EU, including e-commerce, banking, and transport, must comply with these regulations by **June 28, 2025**, or face penalties. Responsibility for accessibility violations lies with the website or app owners, even if third-party tools contribute to non-compliance. As the deadline approaches, businesses must take proactive steps to meet **WCAG 2.1** standards and ensure compliance to avoid legal and financial consequences.
 
 \
-In this blog post you can read about: 
+**In this blog post you can read about:** 
 1. [What is the EAA](#what-is-the-eaa)
     1. [The aim of the EAA](#the-aim-of-the-eaa)
     1. [The deadline and consequences of non-compliance](#the-deadline-and-consequences-of-non-compliance)
@@ -27,7 +27,7 @@ In this blog post you can read about:
     1. [Are businesses not based in the EU affected?](#are-businesses-not-based-in-the-eu-affected)
     1. [Which digital services does the EAA cover?](#which-digital-services-does-the-eaa-cover)
     1. [Sectors that can be indirectly affected](#sectors-that-can-be-indirectly-affected)
-1. [Are there any exemptions from the EAA?](#are-there-any-exemptions-from-the-eaa)
+    1. [Are there any exemptions from the EAA?](#are-there-any-exemptions-from-the-eaa)
 1. [How to comply with the EAA?](#how-to-comply-with-the-eaa)
     1. [Need help navigating the complexity of the EAA compliance?](#need-help-navigating-the-complexity-of-the-eaa-compliance) <br /> <br />
 

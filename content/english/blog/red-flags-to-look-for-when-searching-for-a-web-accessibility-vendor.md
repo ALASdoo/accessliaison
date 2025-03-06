@@ -15,7 +15,7 @@ draft: false
 ---
 
 
-​​According to the [2024 WebAIM Million Report](https://webaim.org/projects/million/), 95.9% of home pages had Web Content Accessibility Guidelines (WCAG) failures. An average of 57 WCAG failures per page were detected, just using the WAVE tool, meaning failures that could be found by manual review were not included.
+​​According to the {{< link_external url="https://webaim.org/projects/million/" >}}2024 WebAIM Million Report{{< /link_external >}}, 95.9% of home pages had Web Content Accessibility Guidelines (WCAG) failures. An average of 57 WCAG failures per page were detected, just using the WAVE tool, meaning failures that could be found by manual review were not included.
 
 How can this be happening when so many businesses already invest in their website’s accessibility? Many of them rely on so-called ‘accessibility solutions’ that ultimately don’t work. How do you avoid this trap?
 
@@ -57,7 +57,7 @@ The point of accessibility changes is to make the product itself accessible and 
 Overlays may help with surface-level issues like color contrast, but they cannot address deeper issues, such as semantic HTML, keyboard navigation, and heading hierarchy.
 
 Learn more about accessibility overlays here: [Accessibility overlays: Do they really improve websites’ accessibility?](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/)
-
+ 
 ### Minimal focus on user experience (UX) 
 
 Accessibility isn't just about compliance — it’s about creating a positive experience for users with disabilities. If the vendor focuses solely on meeting the letter of the law without considering the user experience, they may be missing a key component of web accessibility.
@@ -65,6 +65,7 @@ Accessibility isn't just about compliance — it’s about creating a positive e
 ### Inadequate knowledge of legal and compliance requirements 
 
 You could put your organization at risk if a vendor doesn’t stay up to date with current legal requirements. They must be able to explain how their services align with laws and standards such as Web Content Accessibility Guidelines (WCAG) 2.2, European ICT standard EN 301 549, or the USA’s procurement standard Section 508 of the Rehabilitation Act.
+
 
 ## Red flag 2: Unreal promises 
 
@@ -97,7 +98,7 @@ An accessibility statement on the vendor’s website should be easy to find and 
 
 ### No certified experts 
 
-The only recognized body for accessibility certification is the [International Association of Accessibility Professionals (IAAP)](https://www.accessibilityassociation.org/s/). You can require confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile. Not all accessibility experts need to have the certificate to do their job properly. It’s a red flag only if no one in the organization holds a certification. It means that they do not invest in education enough and are probably missing the bigger picture.
+The only recognized body for accessibility certification is the {{< link_external url="https://www.accessibilityassociation.org/s/" >}}International Association of Accessibility Professionals (IAAP){{< /link_external >}}. You can require confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile. Not all accessibility experts need to have the certificate to do their job properly. It’s a red flag only if no one in the organization holds a certification. It means that they do not invest in education enough and are probably missing the bigger picture.
 
 ### Unclear or unreasonable pricing 
 

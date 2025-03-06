@@ -30,7 +30,7 @@
           <a href="{{ .link | relLangURL }}"
              class="btn btn-gradient m-2"
              aria-label="{{ .label }} external link"
-             rel="external">
+             rel="external noopener">
             {{ .label }}
           </a>
           {{ end }}
@@ -259,7 +259,7 @@
         <a href="{{ .link | relLangURL }}" 
           class="btn btn-primary btn-inverse" 
           aria-label="{{ .label }} external link" 
-          rel="external">
+          rel="external noopener">
           {{ .label }}
         </a>
         {{ end }}

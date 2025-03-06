@@ -53,9 +53,9 @@ Some newer overlay products claim to improve code by detecting and “fixing” 
 Overlays **cannot make your website compliant** with EAA, ADA, and other accessibility laws. Neither can they guarantee conformance with standards like Web Content Accessibility Guidelines (WCAG), EN 301549, and Section 508\. Products with such claims raise a major red flag.
 
 
-**Overlay providers are facing lawsuits** for breach of contract. In one case, a business was sued by a blind user for having an inaccessible website — despite using an overlay widget. The business then [sued the overlay provider](https://www.lflegal.com/2024/07/accessibe-class-action/#article-updates), arguing that the widget’s effectiveness was overstated and its claims were “materially misleading and false”. The lawsuit further stated that the overlay actually hindered accessibility rather than improving it.
+**Overlay providers are facing lawsuits** for breach of contract. In one case, a business was sued by a blind user for having an inaccessible website — despite using an overlay widget. The business then {{< link_external url="https://www.lflegal.com/2024/07/accessibe-class-action/#article-updates" >}}sued the overlay provider{{< /link_external >}}, arguing that the widget’s effectiveness was overstated and its claims were “materially misleading and false”. The lawsuit further stated that the overlay actually hindered accessibility rather than improving it.
 
-[The European Disability Forum and the International Association of Accessibility Professionals in their joint statement](https://www.edf-feph.org/publications/joint-statement-on-accessibility-overlays/) confirm that the **“widgets” cannot repair all possible issues**, meaning that they cannot provide compliance. Here’s why.
+{{< link_external url="https://www.edf-feph.org/publications/joint-statement-on-accessibility-overlays/" >}}The European Disability Forum and the International Association of Accessibility Professionals in their joint statement{{< /link_external >}} confirm that the **“widgets” cannot repair all possible issues**, meaning that they cannot provide compliance. Here’s why.
 
 
 ### Incomplete fixes 
@@ -96,7 +96,7 @@ In addition to the above, overlays **do not repair content in Flash, Silverlight
 
 
 {{< notice note >}}
-If you are considering using the widget for monitoring, you should know that most of the issues reported are similar to those discovered by **free web accessibility checkers** such as [Wave](https://wave.webaim.org/) and [axe DevTools Chrome extension](https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd). These, and similar tools, provide a more systematic report of the issues, and you get that for free\!{{</ notice >}}
+If you are considering using the widget for monitoring, you should know that most of the issues reported are similar to those discovered by **free web accessibility checkers** such as {{< link_external url="https://wave.webaim.org/" >}}Wave{{< /link_external >}} and {{< link_external url="https://chromewebstore.google.com/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd" >}}axe DevTools Chrome extension{{< /link_external >}}. These, and similar tools, provide a more systematic report of the issues, and you get that for free\!{{</ notice >}}
 
 ### Interference with assistive technologies 
 

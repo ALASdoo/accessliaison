@@ -68,7 +68,7 @@ EN 301 549 also applies to digital and downloadable documents. All HTML document
 
 Exception: Documents published before 28th June 2025, if not updated or edited, are considered archives and do not have to comply.
 
-Requirements for the non-web documents are explained in [Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)](https://www.w3.org/TR/wcag2ict-22/)**.** Guidelines you can find here are referenced and incorporated in EN 301 549, and standards in countries beyond the EU (e.g., India, Kenya, Australia, USA).
+Requirements for the non-web documents are explained in {{< link_external url="https://www.w3.org/TR/wcag2ict-22/" >}}Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT){{< /link_external >}}. Guidelines you can find here are referenced and incorporated in EN 301 549, and standards in countries beyond the EU (e.g., India, Kenya, Australia, USA).
 
 ### Don’t rely on accessibility overlays and plug-ins 
 
@@ -151,4 +151,4 @@ Navigating the complexities of EAA compliance can be challenging. Partnering wit
 
 However, choosing the right partner requires careful consideration. Not knowing the ins and outs of complex accessibility requirements can lead to frustration and wasted time. To avoid trial and error, it’s crucial to recognize potential **red flags** when evaluating accessibility vendors. We’ve outlined them here: [Red flags to look for when searching for a web accessibility vendor](/blog/red-flags-to-look-for-when-searching-for-a-web-accessibility-vendor/). 
 
-[**AccessLiaison**](/) is a web accessibility brand of [ALAS d.o.o.](https://www.alasdoo.com) Our experts have 2 decades of providing top-quality IT services for different industries. Our accessibility services combine advanced technology with manual testing, accessible design, and development. We can address all your accessibility concerns and help you swiftly achieve legal compliance, ensure enjoyable experiences for all users, and maintain accessibility over time.  
+[**AccessLiaison**](/) is a web accessibility brand of {{< link_external url="https://www.alasdoo.com" >}}ALAS d.o.o.{{< /link_external >}}. Our experts have 2 decades of providing top-quality IT services for different industries. Our accessibility services combine advanced technology with manual testing, accessible design, and development. We can address all your accessibility concerns and help you swiftly achieve legal compliance, ensure enjoyable experiences for all users, and maintain accessibility over time.  

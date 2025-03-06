@@ -22,7 +22,9 @@
 
           <!-- author -->
           {{ if .Params.AuthorLink }}
-          <a href="{{ .Params.AuthorLink }}" rel="author" title="Author {{ .Params.Author }}">
+          <a href="{{ .Params.AuthorLink }}" 
+            rel="author external"    
+            aria-label="Author: {{ .Params.Author }} external link">
             {{ .Params.Author }}</a>
           <span aria-hidden="true">|</span>
 
@@ -87,7 +89,10 @@
                 <h2 class="cta-heading">{{ i18n "cta_title" }}</h2>
                 {{ end }}
                 <p class="mb-4">{{ i18n "cta_content" }}</p>
-                <a href='{{  i18n "cta_btn_link" }}' class="btn btn-primary btn-inverse" rel="external">
+                <a href='{{  i18n "cta_btn_link" }}' 
+                  class="btn btn-primary btn-inverse" 
+                  aria-label='{{ i18n "cta_btn_label" }} external link'
+                  rel="external">
                   {{ i18n "cta_btn_label" }}
                 </a>
               </div>

@@ -162,14 +162,18 @@
         position: relative;
         padding: 8px 15px;
         display: inline-block;
-        @include desktop {
-          padding: 6px 15px;
-        }
 
         font-size: $font-size;
         line-height: 1.5;
         color: $text-dark !important;
         border-radius: 6px;
+        .text-large & {
+          font-size: rfs-value($large-font-size);
+        }
+        
+        @include desktop {
+          padding: 6px 15px;
+        }
 
         &:focus,
         &:hover,

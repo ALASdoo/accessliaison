@@ -371,6 +371,7 @@ ul:not(.nav):not(.footer-nav) {
  */
  .radio-field {
     display: flex;
+    align-items: baseline;
     padding-left: 0;
 
     &:hover {

@@ -222,7 +222,7 @@ ul:not(.nav):not(.footer-nav) {
             border-bottom-left-radius: 0 !important;
             border-bottom-right-radius: 0 !important;
             border-bottom: 0 !important;
-            
+            color: $color-primary; 
             .dark & {
                 border-color: $dark-color-primary;
                 background: $dark-body-light;

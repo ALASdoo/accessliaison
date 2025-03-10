@@ -61,9 +61,9 @@
               <ul class="list-unstyled footer-nav footer-list">
                 {{ $currentPage := . }}
                 {{ range site.Menus.footer }}
-                {{ $menuURL := .URL | absLangURL }}
-                {{ $pageURL:= $currentPage.Permalink | absLangURL }}
-                {{ $active := eq $menuURL $pageURL }}
+                {{ $navItemURL := .URL | absLangURL }}
+                {{ $currentPageURL:= $currentPage.RelPermalink | absLangURL }}
+                {{ $active := eq $navItemURL $currentPageURL }}
                 <li>
                   <a href="{{ .URL | relLangURL }}" 
                      title="{{ .Name }}"

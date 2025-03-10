@@ -1,6 +1,6 @@
 ---
 date: "2024-11-13"
-title: 'Cookies'
+title: 'Cookie policy'
 draft: false
 layout: 'cookies'
 subtitle: 'Last updated: November 13, 2024 

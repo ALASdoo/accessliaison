@@ -1,7 +1,7 @@
 ################################### English language #####################################
 [en]
 languageName = "EN"
-languageCode = "en-US"
+languageCode = "en"
 contentDir = "content/english"
 weight = 1
 ########### footer content ##########

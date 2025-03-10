@@ -1,5 +1,5 @@
 baseURL = 'https://accessliaison.com/'
-languageCode = 'en-us'
+languageCode = 'en'
 title = 'AccessLiaison: Web accessibility solutions beyond compliance'
 
 # This file is for render site varibles and plugins

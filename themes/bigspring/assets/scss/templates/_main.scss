@@ -69,8 +69,11 @@
 // social-icons
 .social-icons {
   margin-bottom: 0;
-  li {
+  li.list-inline-item {
     margin-bottom: 10px;
+    &:first-child {
+      padding-left: 0;
+    }
   }
   a {
     color: $color-primary;

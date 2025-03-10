@@ -547,11 +547,13 @@ body.dark {
 			}
 		}
 	}
+
 	.footer-center {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 	}
+
 	.footer-right {
 		text-align: right;
 		a {
@@ -563,6 +565,20 @@ body.dark {
 			max-width: 300px;
 		}
 	}
+    
+    .footer-nav {
+        a {
+            text-decoration: none;
+        }
+        .active {
+            text-decoration: underline;
+            color: $color-primary;
+            .dark & {
+                color: $dark-color-primary;
+            }
+        }
+    }
+
 	.footer-wcag {
 		padding: 1rem;
 		color: $text-color;

@@ -46,7 +46,7 @@ h4 {
 
 a {
   color: $color-primary;
-  text-decoration: underline !important;
+  text-decoration: underline;
   &:hover {
     color: $color-primary-darker;
   }

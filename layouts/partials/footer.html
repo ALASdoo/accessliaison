@@ -50,7 +50,7 @@
                   "Loading" "eager" 
                   )}}
 
-                  <span class="no-image-fallback">{{.title}}</span>
+                  <span class="no-image-fallback">{{.no_image_fallback}}</span>
                   </a></li>
                 {{ end }}
               </ul>
@@ -59,8 +59,17 @@
             <div class="col-6 col-lg-4 col-sm-6 footer-center">
               {{ if site.Menus.footer }}
               <ul class="list-unstyled footer-nav footer-list">
+                {{ $currentPage := . }}
                 {{ range site.Menus.footer }}
-                <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
+                {{ $menuURL := .URL | absLangURL }}
+                {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+                {{ $active := eq $menuURL $pageURL }}
+                <li>
+                  <a href="{{ .URL | relLangURL }}" 
+                     title="{{ .Name }}"
+                     class="{{ if $active }}active{{ end }}"
+                     {{ if $active }}aria-current="page"{{ end }}
+                  >{{ .Name }}</a></li>
                 {{ end }}
               </ul>
               {{ end }}

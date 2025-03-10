@@ -63,10 +63,6 @@
               {{ $navItemURL := .URL | absLangURL }}
               {{ $currentPageURL := $.Permalink | absLangURL }}
               {{ $active := eq $navItemURL $currentPageURL }}
-              
-              Permalink: {{ $currentPageURL }} <br>
-              navItemURL: {{ $navItemURL }} <br> 
-              active {{ $active }}
               <li><a
                   href="{{ .URL | relLangURL }}" 
                   title="{{ .Name }}"

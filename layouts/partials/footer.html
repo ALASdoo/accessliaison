@@ -59,10 +59,13 @@
             <div class="col-6 col-lg-4 col-sm-6 footer-center">
               {{ if site.Menus.footer }}
               <ul class="list-unstyled footer-nav footer-list">
+              {{ $currentPage := . }}
+              {{ $pageURL:= $currentPage.Permalink | absLangURL }}
+
               {{ range site.Menus.footer }}
               {{ $navItemURL := .URL | absLangURL }}
-              {{ $currentPageURL := $.Permalink | absLangURL }}
-              {{ $active := eq $navItemURL $currentPageURL }}
+              {{ $active := eq $navItemURL $pageURL }}
+
               <li><a
                   href="{{ .URL | relLangURL }}" 
                   title="{{ .Name }}"

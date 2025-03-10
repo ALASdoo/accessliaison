@@ -169,15 +169,15 @@ weight = 30
 # footer menu left
 [[footer]]
 name = "Accessibility statement"
-url = "accessibility-statement/"
+url = "/accessibility-statement/"
 weight = 1
 
 [[footer]]
 name = "Cookie policy"
-url = "cookie-policy/"
+url = "/cookie-policy/"
 weight = 2
 
 [[footer]]
 name = "Privacy policy"
-url = "privacy-policy/"
+url = "/privacy-policy/"
 weight = 3

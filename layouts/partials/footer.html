@@ -62,12 +62,15 @@
                 {{ $currentPage := . }}
                 {{ range site.Menus.footer }}
                 {{ $navItemURL := .URL | absLangURL }}
-                {{ $currentPageURL:= $currentPage.RelPermalink | absLangURL }}
+                {{ $currentPageURL := $currentPage.Permalink | absLangURL }}
                 {{ $active := eq $navItemURL $currentPageURL }}
-                <li>
-                  <a href="{{ .URL | relLangURL }}" 
-                     title="{{ .Name }}"
-                     class="{{ if $active }}active{{ end }}"
+                Permalink: {{ $currentPageURL }} <br>
+                navItemURL: {{ $navItemURL }} <br> 
+                active {{ $active }}
+                <li><a
+                  href="{{ .URL | relLangURL }}" 
+                  title="{{ .Name }}"
+                  class="{{ if $active }}active{{ end }}"
                      {{ if $active }}aria-current="page"{{ end }}
                   >{{ .Name }}</a></li>
                 {{ end }}

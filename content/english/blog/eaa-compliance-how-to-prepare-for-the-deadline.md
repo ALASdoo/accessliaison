@@ -24,11 +24,6 @@ For more information about the EAA, read our first blog post from this series: [
 \
 **In this blog post you can read about:**
 1. [Ensure conformance with relevant standards](#ensure-conformance-with-relevant-standards)
-   1. [Start with WCAG 2.1](#start-with-wcag-21)
-   1. [Cover requirements beyond WCAG 2.1](#cover-requirements-beyond-wcag-2.1)
-   1. [Consider aiming for WCAG 2.2 Level AA](#consider-aiming-for-wcag-22-level-aa)
-   1. [Make documents accessible](#make-documents-accessible)
-   1. [Don’t rely on accessibility overlays and plug-ins](#dont-rely-on-accessibility-overlays-and-plug-ins)
 1. [Conduct regular testing](#conduct-regular-testing)
 1. [Document accessibility efforts](#document-accessibility-efforts)
 1. [Ensure accessibility of third-party tools](#ensure-accessibility-of-third-party-tools)

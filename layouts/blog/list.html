@@ -14,8 +14,8 @@
         <div class="content">
           <ul class="gy-4 list-unstyled">
             {{range where site.RegularPages "Section" .Params.section}}
-          
-           {{ $button := dict
+
+            {{ $button := dict
             "enable" true
             "type" "link-stretched"
             "label" "Read article"
@@ -23,11 +23,11 @@
             }}
             <li>
               <article class="mb-5">
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-              <span class="article-time mb-2">
-                {{i18n `published_on`}} <time>{{ time.Format ":date_long" .PublishDate }}</time>
-              </span>
-              <p>{{ .Summary }}</p>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <span class="article-time mb-2">
+                  {{i18n `published_on`}} <time>{{ time.Format ":date_long" .PublishDate }}</time>
+                </span>
+                <p>{{ .Summary }}</p>
               </article>
             </li>
             {{end}}

@@ -19,17 +19,9 @@ The **European Accessibility Act (EAA)** is a directive that standardizes access
 \
 **In this blog post you can read about:** 
 1. [What is the EAA](#what-is-the-eaa)
-    1. [The aim of the EAA](#the-aim-of-the-eaa)
-    1. [The deadline and consequences of non-compliance](#the-deadline-and-consequences-of-non-compliance)
-    1. [Who holds responsibility for accessibility violations?](#who-holds-responsibility-for-accessibility-violations)
 1. [Which laws are based on the EAA?](#which-laws-are-based-on-the-eaa)
 1. [Who does the EAA apply to?](#who-does-the-eaa-apply-to)
-    1. [Are businesses not based in the EU affected?](#are-businesses-not-based-in-the-eu-affected)
-    1. [Which digital services does the EAA cover?](#which-digital-services-does-the-eaa-cover)
-    1. [Sectors that can be indirectly affected](#sectors-that-can-be-indirectly-affected)
-    1. [Are there any exemptions from the EAA?](#are-there-any-exemptions-from-the-eaa)
 1. [How to comply with the EAA?](#how-to-comply-with-the-eaa)
-    1. [Need help navigating the complexity of the EAA compliance?](#need-help-navigating-the-complexity-of-the-eaa-compliance) <br /> <br />
 
  
 

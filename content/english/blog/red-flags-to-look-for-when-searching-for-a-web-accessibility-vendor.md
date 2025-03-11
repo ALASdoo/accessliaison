@@ -15,29 +15,17 @@ draft: false
 ---
 
 
-​​According to the {{< link_external url="https://webaim.org/projects/million/" >}}2024 WebAIM Million Report{{< /link_external >}}, 95.9% of home pages had Web Content Accessibility Guidelines (WCAG) failures. An average of 57 WCAG failures per page were detected, just using the WAVE tool, meaning failures that could be found by manual review were not included.
-
-How can this be happening when so many businesses already invest in their website’s accessibility? Many of them rely on so-called ‘accessibility solutions’ that ultimately don’t work. How do you avoid this trap?
+Some businesses that have already invested in their website’s accessibility are getting sued. That happens because they rely on so-called ‘accessibility solutions’ that don’t work. How can you avoid this trap?
 
 The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility. How can you do that if you are not an expert yourself? It might not be an easy task, but there is a lot you **can** do. Make sure you learn the most important facts and watch out for the red flags.
 
 \
 **In this blog post you can read about:** 
-1. [Red flag 1: Too narrow scope](#red-flag-1-too-narrow-scope)
-    1. [Failure to offer ongoing support](#failure-to-offer-ongoing-support)
-    1. [Overlay widgets/plugins as compliance solutions](#overlay-widgetsplugins-as-compliance-solutions)
-    1. [Inadequate knowledge of legal and compliance requirements](#inadequate-knowledge-of-legal-and-compliance-requirements)
-1. [Red flag 2: Unreal promises](#red-flag-2-unreal-promises)
-    1. [Overpromising results](#overpromising-results)
-    1. [Claim their audits are done only by testers who are blind](#claim-their-audits-are-done-only-by-testers-who-are-blind)
-1. [Red flag 3: Does not apply accessibility best practices](#red-flag-3-does-not-apply-accessibility-best-practices)
-    1. [Inadequate level of accessibility on their website](#inadequate-level-of-accessibility-on-their-website)
-    1. [Non-existent or vague accessibility statement](#non-existent-or-vague-accessibility-statement)
-1. [Red flag 4: Lacking professionalism and reliability](#red-flag-4-lacking-professionalism-and-reliability)
-    1. [No certified experts](#no-certified-experts)
-    1. [Unclear or unreasonable pricing](#unclear-or-unreasonable-pricing)
-    1. [Unclear communication or lack of transparency](#unclear-communication-or-lack-of-transparency)
-1. [Conclusion: The right vendor will have your best interest at heart](#conclusion-the-right-vendor-will-have-your-best-interest-at-heart)
+- [Red flag 1: Too narrow scope](#red-flag-1-too-narrow-scope)
+- [Red flag 2: Unreal promises](#red-flag-2-unreal-promises)
+- [Red flag 3: Does not apply accessibility best practices](#red-flag-3-does-not-apply-accessibility-best-practices)
+- [Red flag 4: Lacking professionalism and reliability](#red-flag-4-lacking-professionalism-and-reliability)
+- [Conclusion: The right vendor will have your best interest at heart](#conclusion-the-right-vendor-will-have-your-best-interest-at-heart)
  
 
 

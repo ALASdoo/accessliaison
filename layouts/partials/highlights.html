@@ -1,0 +1,8 @@
+<p>{{ .highlights_intro | markdownify }}</p>
+<p>{{ .highlights_list_title | markdownify }}</p>
+{{ $el := .list_type }}
+{{ printf "<%s>" $el | safeHTML }}
+    {{range .highlights_list}}
+    <li>{{ . | markdownify }}</li>
+    {{end}}
+{{ printf "</%s>" $el | safeHTML }}

@@ -141,19 +141,24 @@
             >
             <div class="container">
               <div class="row">
-                <div class="col-lg-6">
-                  <p>{{ .highlights_intro | markdownify  }}</p>
-                  <p>{{ .highlights_list_title | markdownify  }}</p>
-                  {{ $el := .list_type }}
-                  {{ printf "<%s>" $el | safeHTML }}
-                    {{range .highlights_list}}
-                    <li>{{ . | markdownify }}</li>
-                    {{end}}
-                  {{ printf "</%s>" $el | safeHTML }}
-                </div>
-                <div class="col-lg-6 {{ if .swap }}order-first{{ end }}">
-                  {{ .description | markdownify }}
-                </div>
+
+
+                <!-- SWAP layout -->
+                {{if .swap }} 
+                  <div class="col-lg-6">
+                    {{ .description | markdownify }}
+                  </div>
+                  <div class="col-lg-6">
+                    {{ partial "highlights" . }}
+                  </div> <!-- /SWAP layout -->
+                {{ else }} <!-- Regular layout -->
+                  <div class="col-lg-6">
+                    {{ partial "highlights" . }}
+                  </div>
+                  <div class="col-lg-6">
+                    {{ .description | markdownify }}
+                  </div>
+                {{ end }} <!-- /Regular layout -->
               </div>
             </div>
           </div>

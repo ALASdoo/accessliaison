@@ -38,7 +38,8 @@
             <span class="fw-500">
               <!-- publish date -->
               {{i18n `published_on`}}
-              <time>{{ time.Format ":date_long" .PublishDate }}</time>
+              <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
+                {{ time.Format ":date_long" .PublishDate }}</time>
               <!-- /publish date -->
               <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}}
             </span>

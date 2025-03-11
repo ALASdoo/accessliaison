@@ -25,7 +25,9 @@
               <article class="mb-5">
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 <span class="article-time mb-2">
-                  {{i18n `published_on`}} <time>{{ time.Format ":date_long" .PublishDate }}</time>
+                  {{i18n `published_on`}} <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
+                    {{ time.Format ":date_long" .PublishDate }}
+                  </time>
                 </span>
                 <p>{{ .Summary }}</p>
               </article>

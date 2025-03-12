@@ -1,5 +1,5 @@
 ---
-title: 'EAA compliance (Part 1): Understanding the scope and the impact on web accessibility'
+title: 'EAA compliance: Understanding the scope and the impact on web accessibility'
 date: 2025-02-11T10:07:21+06:00
 # post image
 # image: 'images/blog/post-1.jpg'

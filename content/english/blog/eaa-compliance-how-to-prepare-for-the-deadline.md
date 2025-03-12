@@ -1,5 +1,5 @@
 ---
-title: 'EAA compliance (Part 2): How to prepare for the deadline'
+title: 'EAA compliance: How to prepare for the deadline'
 date: 2025-02-12T10:07:21+06:00
 # post image
 # image: 'images/blog/post-1.jpg'
@@ -12,6 +12,7 @@ authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 description: 'This is meta description'
 # post draft
 draft: false
+cta_content: ""
 ---
 
 

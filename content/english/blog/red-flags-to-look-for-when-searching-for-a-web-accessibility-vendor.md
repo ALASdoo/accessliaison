@@ -14,8 +14,8 @@ description: 'This is meta description'
 draft: false
 
 cta: 
-    title: ''
-    content: "Contact us today to learn how we can help you achieve full compliance, and create a positive user experience while being mindful of your budget and timeframe."
+    title: 'Tackle accessibility with confidence'
+    content: "Ensuring accessibility can feel overwhelming, but you don’t have to do it alone. Chat with an accessibility expert to see how we can help."
     btn_label: 'Book a free consultation'
     btn_link: 'https://calendly.com/vilmos/meet'
 
@@ -113,7 +113,4 @@ When meeting with a potential vendor, ask yourself the following questions:
 * Do they address the broader context of ongoing accessibility and the evolving legal landscape in your market?
 
 A good sign is when the vendor asks about the specifics of your product, considering the types of content and issues that may arise. They should also discuss the conformance levels you need to focus on. A reliable vendor will demonstrate their expertise by analyzing your current processes and identifying areas where accessibility best practices can be applied.
-
-## Tackle accessibility with confidence
-Ensuring accessibility can feel overwhelming, but you don’t have to do it alone. Chat with an accessibility expert to see how we can help. 
 

@@ -1,18 +1,13 @@
 {{ define "main" }}
 
-<section class="pt-3 cookies-page">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xl-8 col-lg-10 mx-auto">
-        <h1 class="mb-3 mt-3 text-center">{{ .Title | markdownify }}</h1>
-      </div>
-    </div>
-  </div>
+{{ partial "page-header.html" . }}
+
+<section class="section cookies-page">
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 mx-auto content">
-        <div>{{ .Params.subtitle | markdownify}}</div>
+      <div class="col-lg-10 mx-auto content">
+        <div>{{ .Params.intro | markdownify}}</div>
         {{ with .Params.cookies }}
           {{range $i, $e := .policy_item}} 
             {{ if .title }} <h2>{{.title}}</h2> {{ end }}
@@ -46,7 +41,7 @@
         </form>
         <p>{{ .content }}</p>
         {{ end }}
-        <!-- Manage Cookies section :: END -->
+        <!-- /Manage Cookies section -->
 
 
         <h2>{{ .your_data_privacy.title | markdownify }}</h2>

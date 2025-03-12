@@ -1,0 +1,7 @@
+ 
+{{- $ariaLabel := .Get "alt_text" | default .Inner -}}
+
+<a href='{{ .Get "url" }}' 
+   rel="noopener external" 
+   aria-label="{{ $ariaLabel }} external link">
+    {{ .Inner }}</a>

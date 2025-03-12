@@ -168,16 +168,21 @@ weight = 30
 
 # footer menu left
 [[footer]]
+name = "Blog"
+url = "/blog/"
+weight = 1
+
+[[footer]]
 name = "Accessibility statement"
 url = "/accessibility-statement/"
-weight = 1
+weight = 2
 
 [[footer]]
 name = "Cookie policy"
 url = "/cookie-policy/"
-weight = 2
+weight = 3
 
 [[footer]]
 name = "Privacy policy"
 url = "/privacy-policy/"
-weight = 3
+weight = 4

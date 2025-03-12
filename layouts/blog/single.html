@@ -1,0 +1,132 @@
+{{define "main"}}
+<article class="blog">
+  <section class="section pb-0">
+    <div class="container">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+
+            <h1 class="mb-3">{{ .Title | markdownify }}</h1>
+            {{ with .Params.subtitle }}
+            <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
+            {{ end }}
+
+
+            {{ if .Params.image }}
+            {{ partial "image" (dict
+            "Src" .Params.image
+            "Alt" .Title
+            "Class" "rounded-2 w-100 mb-5"
+            ) }}
+            {{ end }}
+
+            <!-- author -->
+            {{ if .Params.AuthorLink }}
+            <a href="{{ .Params.AuthorLink }}" 
+              rel="author external"
+              aria-label="Author: {{ .Params.Author }} external link">
+              {{ .Params.Author }}</a>
+            <span aria-hidden="true">|</span>
+
+            {{ else if .Params.Author }}
+            <span rel="author" aria-label="Author {{ .Params.Author }}">
+              {{ .Params.Author }}
+            </span>
+            <span aria-hidden="true">|</span>
+            {{ end }} <!-- /author -->
+
+            <span class="fw-500">
+              <!-- publish date -->
+              {{i18n `published_on`}}
+              <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
+                {{ time.Format ":date_long" .PublishDate }}</time>
+              <!-- /publish date -->
+              <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}}
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section blog pt-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <!-- <h2 class="h3 my-3">{{ .Title }}</h2> -->
+
+          <div class="mt-5 content">{{.Content}}</div>
+
+          {{ with site.GetPage (string .Params.Author | urlize | lower) }}
+          {{if .Title}}
+          <div class="d-block d-sm-flex border p-5 pb-4 rounded-2 mt-5">
+            <div class="mb-3" style="min-width: 110px">
+              {{ if .Params.image }}
+              {{ partial "image" (dict "Src" .Params.image "Alt" .Title "Class" "rounded-circle" "Command" "Fill" "Size" "80x80") }}
+              {{ else }}
+              <i class="far fa-user-circle mb-1" style="font-size:82px"></i>
+              {{ end }}
+            </div>
+            <div>
+              <h3 class="h5 title mb-1"><a href="{{.RelPermalink}}" class="text-dark">{{ .Title }}</a></h3>
+              <div class="content">{{ .Content | truncate 135}}</div>
+              <ul class="list-inline social-icons justify-content-start mt-3 mb-0">
+                {{ range .Params.social }}
+                <li class="list-inline-item"><a class="d-inline-block" href="{{ .link | safeURL}}"><i class="{{ .icon }}"></i></a></li>
+                {{ end }}
+              </ul>
+            </div>
+          </div>
+          {{ end }}
+          {{ end }}
+
+
+          <!-- call to action -->
+          <section class="section cta-bottom reverse-bg pb-0">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 rounded-4 cta p-5">
+                  {{ if i18n "cta_title" }}
+                  <h2 class="cta-heading">{{ i18n "cta_title" }}</h2>
+                  {{ end }}
+                  <p class="mb-4">{{ i18n "cta_content" }}</p>
+                  <a href='{{  i18n "cta_btn_link" }}' 
+                    class="btn btn-primary btn-inverse" 
+                    aria-label='{{ i18n "cta_btn_label" }} external link' 
+                    rel="external">
+                    {{ i18n "cta_btn_label" }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /call to action -->
+
+          <aside class="section pb-0">
+            <h2>{{ i18n "read_more_blog_post" }}</h2>
+            <nav class="post-navigation" aria-label="More accessibility articles">
+              {{ $currentPage := . }}
+              {{ $pages := where site.RegularPages "Section" "blog" }}
+              {{ $count := 0 }}
+              <ul>
+                {{ range $pages}}
+                {{ if and (ne .Permalink $currentPage.Permalink) (lt $count 4) }}
+                <li>
+                  <a aria-label="Read {{ .Title }}" href="{{ .RelPermalink }}">{{ .Title }} </a>
+                </li>
+                {{ $count = add $count 1 }}
+                {{ end }}
+                {{ end }}
+              </ul>
+            </nav>
+          </aside>
+
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+
+
+{{end}}

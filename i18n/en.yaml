@@ -20,7 +20,10 @@
   translation: by
 
 - id: min_read
-  translation: min Read
+  translation: min read
+
+- id: published_on
+  translation: Published on
 
 - id: admin
   translation: Admin
@@ -132,3 +135,15 @@
 
 - id: skip_to_contact
   translation: Skip to contact information
+
+- id: cta_content
+  translation: Contact us today to learn how we can help you achieve full compliance, and create a positive user experience while being mindful of your budget and time frame.
+
+- id: cta_btn_label
+  translation: Book a free consultation
+
+- id: cta_btn_link
+  translation: https://calendly.com/vilmos/meet
+
+- id: read_more_blog_post
+  translation: Explore more accessibility articles 

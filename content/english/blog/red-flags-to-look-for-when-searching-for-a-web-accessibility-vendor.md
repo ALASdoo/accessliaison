@@ -36,7 +36,7 @@ The most efficient solution is to choose a trusted web accessibility solution pr
  
 
 
-\
+
 ## Red flag 1: Too narrow scope 
 
 Web accessibility involves a broad range of expertise, from legal knowledge to design, development, quality assurance (QA), and user experience (UX). If a vendor focuses on just one aspect and neglects the others, they may not have the depth of knowledge needed to support your project in the long run. This can create gaps in your accessibility strategy, forcing you to seek additional support later, which takes more time and resources.

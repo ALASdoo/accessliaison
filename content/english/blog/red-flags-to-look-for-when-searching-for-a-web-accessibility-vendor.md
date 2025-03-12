@@ -12,6 +12,13 @@ authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 description: 'This is meta description'
 # post draft
 draft: false
+
+cta: 
+    title: ''
+    content: "Contact us today to learn how we can help you achieve full compliance, and create a positive user experience while being mindful of your budget and timeframe."
+    btn_label: 'Book a free consultation'
+    btn_link: 'https://calendly.com/vilmos/meet'
+
 ---
 
 

@@ -1,0 +1,26 @@
+<section class="section cta-bottom reverse-bg pb-0">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 rounded-4 cta p-5">
+         
+          {{if .title }}
+          <h2 class="cta-heading">{{ .title }} </h2>
+          {{ end }}
+       
+          {{if .content }}
+          <p class="mb-4">{{ .content }}</p>
+          {{ end }}
+
+          {{if .btn_link }}
+          <a href='{{ .btn_link }}' 
+            class="btn btn-primary btn-inverse" 
+            aria-label='{{ .btn_label }} external link' 
+            rel="external">
+            {{ .btn_label }}
+          </a>
+          {{ end }}
+
+        </div>
+      </div>
+    </div>
+  </section>

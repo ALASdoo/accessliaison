@@ -68,35 +68,122 @@ Overlays **cannot make your website compliant** with EAA, ADA, and other accessi
 
 Some overlay products offer repairs to the underlying page when loaded in the browser. While some trivial accessibility problems can be repaired this way, the accuracy of such repairs is limited. The problem is that overlays may fix surface-level issues but **fail to address deeper structural, semantic, or navigational barriers**. 
 
-**Limitations of automatic fixes by overlay products**
 
-| Fix   | Aim   | Limitation |
-| :---- | :---- | :---- |
-| **Enabled basic keyboard navigation** | Ensures all interactive elements (such as buttons, links, and forms) are navigable via keyboard | Does not check focus order and keyboard traps |
-| **Improved color contrast** | Enhances contrast to improve readability | Ruins user experience with random color combinations; overrides user’s preferences |
-| **ALT text detection and generation** | Detects missing ALT text and automatically generates it for images | Cannot detect when an alt text is redundant (decorative image, already existent text); auto-generated text is not meaningful |
-| **Offered generic accessibility statement**  | Provides a ready-to-use draft for your website's accessibility statement | A valid accessibility statement cannot be provided without a proper audit; the draft may not match the template required by the law |
-| **Enabled language identification** | Assists with language identification, ensuring screen readers correctly interpret and pronounce text | If your website does not have the language set, you should consider changing the platform/theme/developer, as this is a basis for a decent code |
-| **Improved text resizing and line spacing** | Offers text resizing and line spacing options to improve readability | WCAG does not require this, instead, it requires for user’s preferences to be respected, without any loss in content; the widget’s settings usually interfere with the browser’s zoom, failing WCAG criteria |
-| **Enhanced cursor visibility** | Offers the option for a more visible cursor | Not required for WCAG conformance |
+{{< custom-table >}}
+<table>
+  <caption>Limitations of automatic fixes by overlay products</caption>
+  <thead>
+    <tr>
+      <th>Fix</th>
+      <th>Aim</th>
+      <th>Limitation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Enabled basic keyboard navigation</strong></td>
+      <td>Ensures all interactive elements (such as buttons, links, and forms) are navigable via keyboard</td>
+      <td>Does not check focus order and keyboard traps</td>
+    </tr>
+    <tr>
+      <td><strong>Improved color contrast</strong></td>
+      <td>Enhances contrast to improve readability</td>
+      <td>Ruins user experience with random color combinations; overrides user’s preferences</td>
+    </tr>
+    <tr>
+      <td><strong>ALT text detection and generation</strong></td>
+      <td>Detects missing ALT text and automatically generates it for images</td>
+      <td>Cannot detect when an alt text is redundant (decorative image, already existent text); auto-generated text is not meaningful</td>
+    </tr>
+    <tr>
+      <td><strong>Offered generic accessibility statement</strong></td>
+      <td>Provides a ready-to-use draft for your website's accessibility statement</td>
+      <td>A valid accessibility statement cannot be provided without a proper audit; the draft may not match the template required by the law</td>
+    </tr>
+    <tr>
+      <td><strong>Enabled language identification</strong></td>
+      <td>Assists with language identification, ensuring screen readers correctly interpret and pronounce text</td>
+      <td>If your website does not have the language set, you should consider changing the platform/theme/developer, as this is a basis for a decent code</td>
+    </tr>
+    <tr>
+      <td><strong>Improved text resizing and line spacing</strong></td>
+      <td>Offers text resizing and line spacing options to improve readability</td>
+      <td>WCAG does not require this, instead, it requires for user’s preferences to be respected, without any loss in content; the widget’s settings usually interfere with the browser’s zoom, failing WCAG criteria</td>
+    </tr>
+    <tr>
+      <td><strong>Enhanced cursor visibility</strong></td>
+      <td>Offers the option for a more visible cursor</td>
+      <td>Not required for WCAG conformance</td>
+    </tr>
+  </tbody>
+</table>
+{{< /custom-table >}}
 
 
-**Issues that overlay products cannot fix explained**
+ 
 
-| The issue that cannot be fixed | Explanation |
-| :---- | :---- |
-| Semantic HTML | Cannot add missing semantic elements and cannot correct the ones that are not properly assigned |
-| Non-descriptive elements | Cannot fix non-descriptive links, headings, buttons, and form labels |
-| Headings | Cannot detect incorrect heading levels and  not-meaningful heading text; can overwhelm screen reader users by marking non-heading elements as headings |
-| ARIA roles and attributes | The incorrect use of ARIA roles and attributes must be manually remediated |
-| Inaccessible PDFs | PDFs embedded on your site must be remediated separately (using automated tools, manual remediation, and testing with a screen reader) to ensure they are accessible |
-| Custom widgets and interactive elements | Cannot remediate custom JavaScript-based widgets, such as dropdowns, sliders, or modals |
-| Form validation feedback | The widget does not address form validation accessibility (e.g. error messages must be conveyed correctly to screen readers through proper coding). |
-| iFrames | Third-party content embedded via iFrames, such as external widgets or maps, cannot be made accessible by the overlay widget |
-| Complex layout and navigation issues | Does not address structural layout problems, such as inaccessible table designs, improper use of flexbox/grid for content layout, or incorrect stacking order, which could affect navigation and readability |
-| Skip links | Cannot add skip links (e.g., "skip to main content"), which are critical for keyboard and screen reader users. |
-| Responsive design | Cannot resolve issues related to improper responsive design, such as elements becoming inaccessible on smaller screens or touch targets being too small |
-| Focus management | While the widget improves focus visibility, it does not manage focus order, prevent keyboard traps, or handle focus when interacting with dynamic content or modal dialogs |
+{{< custom-table >}}
+<table>
+  <caption>Issues that overlay products cannot fix explained</caption>
+  <thead>
+    <tr>
+      <th>The issue that cannot be fixed</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Semantic HTML</td>
+      <td>Cannot add missing semantic elements and cannot correct the ones that are not properly assigned</td>
+    </tr>
+    <tr>
+      <td>Non-descriptive elements</td>
+      <td>Cannot fix non-descriptive links, headings, buttons, and form labels</td>
+    </tr>
+    <tr>
+      <td>Headings</td>
+      <td>Cannot detect incorrect heading levels and  not-meaningful heading text; can overwhelm screen reader users by marking non-heading elements as headings</td>
+    </tr>
+    <tr>
+      <td>ARIA roles and attributes</td>
+      <td>The incorrect use of ARIA roles and attributes must be manually remediated</td>
+    </tr>
+    <tr>
+      <td>Inaccessible PDFs</td>
+      <td>PDFs embedded on your site must be remediated separately (using automated tools, manual remediation, and testing with a screen reader) to ensure they are accessible</td>
+    </tr>
+    <tr>
+      <td>Custom widgets and interactive elements</td>
+      <td>Cannot remediate custom JavaScript-based widgets, such as dropdowns, sliders, or modals</td>
+    </tr>
+    <tr>
+      <td>Form validation feedback</td>
+      <td>The widget does not address form validation accessibility (e.g. error messages must be conveyed correctly to screen readers through proper coding).</td>
+    </tr>
+    <tr>
+      <td>iFrames</td>
+      <td>Third-party content embedded via iFrames, such as external widgets or maps, cannot be made accessible by the overlay widget</td>
+    </tr>
+    <tr>
+      <td>Complex layout and navigation issues</td>
+      <td>Does not address structural layout problems, such as inaccessible table designs, improper use of flexbox/grid for content layout, or incorrect stacking order, which could affect navigation and readability</td>
+    </tr>
+    <tr>
+      <td>Skip links</td>
+      <td>Cannot add skip links (e.g., “skip to main content”), which are critical for keyboard and screen reader users.</td>
+    </tr>
+    <tr>
+      <td>Responsive design</td>
+      <td>Cannot resolve issues related to improper responsive design, such as elements becoming inaccessible on smaller screens or touch targets being too small</td>
+    </tr>
+    <tr>
+      <td>Focus management</td>
+      <td>While the widget improves focus visibility, it does not manage focus order, prevent keyboard traps, or handle focus when interacting with dynamic content or modal dialogs</td>
+    </tr>
+  </tbody>
+</table>
+{{< /custom-table >}}
+
 
 In addition to the above, overlays **do not repair content in Flash, Silverlight, HTML5 Canvas, SVG, or media files**. Also, overlays **do not address user experience (UX) and consistency**. These are the basis for many of the WCAG criteria. They must be tested and remediated manually.
 

@@ -14,6 +14,12 @@
         vertical-align: middle;
         word-break: normal !important;
         margin-bottom: 3rem;
+        caption-side: top;
+        caption {
+            text-align: center;
+            color: inherit;
+            font-weight: 600;
+        }
     }
 
     tr {

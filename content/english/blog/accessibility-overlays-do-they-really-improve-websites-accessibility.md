@@ -12,6 +12,12 @@ authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 description: 'This is meta description'
 # post draft
 draft: false
+
+cta: 
+    title: 'Tackle accessibility with confidence'
+    content: "Ensuring accessibility can feel overwhelming, but you don’t have to do it alone. Chat with an accessibility expert to see how we can help."
+    btn_label: 'Book a free consultation'
+    btn_link: 'https://calendly.com/vilmos/meet'
 ---
 
 

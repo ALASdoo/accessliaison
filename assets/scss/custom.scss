@@ -76,6 +76,11 @@ ul:not(.nav):not(.footer-nav) {
 .dark ul:not(.nav):not(.footer-nav)  {
     list-style-image: url('/images/bullet_dark.svg');
 }
+
+.width-fit-content {
+    max-width: fit-content;
+}
+
 .dropdown-heading {
     font-size: rfs-value($font-size);
 }

@@ -107,5 +107,6 @@ When meeting with a potential vendor, ask yourself the following questions:
 
 A good sign is when the vendor asks about the specifics of your product, considering the types of content and issues that may arise. They should also discuss the conformance levels you need to focus on. A reliable vendor will demonstrate their expertise by analyzing your current processes and identifying areas where accessibility best practices can be applied.
 
-If you're ready to take the next step in ensuring accessibility for your website or app, don't hesitate to reach out to our team at **AccessLiaison**. Our experts will guide you through the process tailored to meet your unique needs. 
+## Tackle accessibility with confidence
+Ensuring accessibility can feel overwhelming, but you don’t have to do it alone. Chat with an accessibility expert to see how we can help. 
 

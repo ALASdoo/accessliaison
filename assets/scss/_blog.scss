@@ -10,34 +10,44 @@
 
     table {
         width: 100%;
-        border-collapse: collapse;
         vertical-align: middle;
-        word-break: normal !important;
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
         caption-side: top;
+        
+        border-collapse: collapse;
+        border-color: $color-primary;
+        word-break: normal !important;
+
         caption {
             text-align: center;
             color: inherit;
             font-weight: 600;
         }
-    }
 
-    tr {
-        display: table-row;
-        vertical-align: inherit;   
-    }
+        thead {
+            background: $color-primary;
+            color: white;
+        }
 
-    th,
-    td {
-        padding: 0.75rem;
+        tr {
+            display: table-row;
+            vertical-align: inherit; 
+            &:not(:last-child) {
+                border-bottom: 1px solid $color-primary;
+            }  
+        }
+        th,
+        td {
+            padding: 0.75rem;
 
-        white-space: normal;
-        text-wrap: pretty;
-        word-wrap: normal;
-        overflow-wrap: break-word;
-        word-break: normal;
-        * {
-            word-break: normal !important;
+            white-space: normal;
+            text-wrap: pretty;
+            word-wrap: normal;
+            overflow-wrap: break-word;
+            word-break: normal;
+            * {
+                word-break: normal !important;
+            }
         }
     }
 }

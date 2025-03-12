@@ -74,44 +74,44 @@ Some overlay products offer repairs to the underlying page when loaded in the br
   <caption>Limitations of automatic fixes by overlay products</caption>
   <thead>
     <tr>
-      <th>Fix</th>
-      <th>Aim</th>
-      <th>Limitation</th>
+      <th scope="col">Fix</th>
+      <th scope="col">Aim</th>
+      <th scope="col">Limitation</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><strong>Enabled basic keyboard navigation</strong></td>
+      <th scope="row"><strong>Enabled basic keyboard navigation</strong></th>
       <td>Ensures all interactive elements (such as buttons, links, and forms) are navigable via keyboard</td>
       <td>Does not check focus order and keyboard traps</td>
     </tr>
     <tr>
-      <td><strong>Improved color contrast</strong></td>
+      <th scope="row"><strong>Improved color contrast</strong></th>
       <td>Enhances contrast to improve readability</td>
       <td>Ruins user experience with random color combinations; overrides user’s preferences</td>
     </tr>
     <tr>
-      <td><strong>ALT text detection and generation</strong></td>
+      <th scope="row"><strong>ALT text detection and generation</strong></th>
       <td>Detects missing ALT text and automatically generates it for images</td>
       <td>Cannot detect when an alt text is redundant (decorative image, already existent text); auto-generated text is not meaningful</td>
     </tr>
     <tr>
-      <td><strong>Offered generic accessibility statement</strong></td>
+      <th scope="row"><strong>Offered generic accessibility statement</strong></th>
       <td>Provides a ready-to-use draft for your website's accessibility statement</td>
       <td>A valid accessibility statement cannot be provided without a proper audit; the draft may not match the template required by the law</td>
     </tr>
     <tr>
-      <td><strong>Enabled language identification</strong></td>
+      <th scope="row"><strong>Enabled language identification</strong></th>
       <td>Assists with language identification, ensuring screen readers correctly interpret and pronounce text</td>
       <td>If your website does not have the language set, you should consider changing the platform/theme/developer, as this is a basis for a decent code</td>
     </tr>
     <tr>
-      <td><strong>Improved text resizing and line spacing</strong></td>
+      <th scope="row"><strong>Improved text resizing and line spacing</strong></th>
       <td>Offers text resizing and line spacing options to improve readability</td>
       <td>WCAG does not require this, instead, it requires for user’s preferences to be respected, without any loss in content; the widget’s settings usually interfere with the browser’s zoom, failing WCAG criteria</td>
     </tr>
     <tr>
-      <td><strong>Enhanced cursor visibility</strong></td>
+      <th scope="row"><strong>Enhanced cursor visibility</strong></th>
       <td>Offers the option for a more visible cursor</td>
       <td>Not required for WCAG conformance</td>
     </tr>
@@ -127,8 +127,8 @@ Some overlay products offer repairs to the underlying page when loaded in the br
   <caption>Issues that overlay products cannot fix explained</caption>
   <thead>
     <tr>
-      <th>The issue that cannot be fixed</th>
-      <th>Explanation</th>
+      <th scope="col">The issue that cannot be fixed</th>
+      <th scope="col">Explanation</th>
     </tr>
   </thead>
   <tbody>

@@ -12,28 +12,27 @@
     <div class="row">
       <div class="col-lg-10 mx-auto">
         <div class="content">
-          <ul class="gy-4 list-unstyled">
-            {{range where site.RegularPages "Section" .Params.section}}
+          {{range where site.RegularPages "Section" .Params.section}}
 
-            {{ $button := dict
-            "enable" true
-            "type" "link-stretched"
-            "label" "Read article"
-            "link" .RelPermalink
-            }}
-            <li>
-              <article class="mb-5">
-                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                <span class="article-time mb-2">
-                  {{i18n `published_on`}} <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
-                    {{ time.Format ":date_long" .PublishDate }}
-                  </time>
-                </span>
-                <p>{{ .Summary }}</p>
-              </article>
-            </li>
-            {{end}}
-          </ul>
+          {{ $button := dict
+          "enable" true
+          "type" "link-stretched"
+          "label" "Read article"
+          "link" .RelPermalink
+          }}
+
+          <article class="mb-5">
+            <h2>
+              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            </h2>
+            <span class="article-time mb-2">
+              {{i18n `published_on`}} <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
+                {{ time.Format ":date_long" .PublishDate }}
+              </time>
+            </span>
+            <p>{{ .Summary }}</p>
+          </article>
+          {{end}}
         </div>
       </div>
     </div>

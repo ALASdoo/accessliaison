@@ -58,11 +58,24 @@ a {
   }
 }
 
-
 small,
 .small {
   font-size: 0.8rem;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p, 
+a, 
+li {
+  max-width: 70ch;
+}
+
+
 
 
 // Dark Theme

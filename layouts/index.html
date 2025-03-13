@@ -252,18 +252,20 @@
   <div class="container">
     <div class="row">
       <div class="col-12 rounded-4 cta p-5">
-        <h2 class="cta-heading">{{ .title | markdownify }}</h2>
-        {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-        {{ if .button.enable }}
-        {{ with .button }}
-        <a href="{{ .link | relLangURL }}" 
-          class="btn btn-primary btn-inverse" 
-          aria-label="{{ .label }} external link" 
-          rel="external noopener">
-          {{ .label }}
-        </a>
-        {{ end }}
-        {{ end }}
+        <div class="mx-auto width-fit-content">
+          <h2 class="cta-heading">{{ .title | markdownify }}</h2>
+          {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
+          {{ if .button.enable }}
+          {{ with .button }}
+          <a href="{{ .link | relLangURL }}" 
+            class="btn btn-primary btn-inverse" 
+            aria-label="{{ .label }} external link" 
+            rel="external noopener">
+            {{ .label }}
+          </a>
+          {{ end }}
+          {{ end }}
+        </div>
       </div>
     </div>
   </div>

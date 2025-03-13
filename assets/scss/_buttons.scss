@@ -14,7 +14,11 @@
   letter-spacing: 0.8px;
   line-height: 1;
   transition: 0.3s ease;
-  text-decoration: none !important;
+  text-decoration: none;
+  
+  .dark & {
+    text-decoration: none;
+  }
 
   &-sm {
     padding: calc(#{$font-size} / 2) $font-size;
@@ -38,11 +42,13 @@
     box-shadow: none;
     border-radius: 50px;
   }
-
+  &:hover {
+    text-decoration: underline;
+  }
   &.focus,
   &:focus,
-  &:focus:not(:focus-visible) {
-    outline-width: 3px;
+  &:focus-visible {
+    outline: 3px solid $color-primary;
     outline-offset: 4px;
     box-shadow: none;
   }

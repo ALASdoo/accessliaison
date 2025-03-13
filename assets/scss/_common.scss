@@ -34,30 +34,26 @@ body {
     &:focus {
       outline: 3px solid $color-primary;
       outline-offset: 4px;
+      border-radius: 4px;
     }
   }
 
-  .reverse-bg {
-    a,
-    button,
-    select {
-      &:focus {
-        outline-color: $dark-color-primary !important;
-      }
-    }
-  }
+/* CTA banner - reverse background  */
+.reverse-bg {
 
-  .dark {
-    .reverse-bg {
-      a,
-      button,
-      select {
-        &:focus {
-          outline-color: $color-primary !important;
-        }
+  a,
+  button,
+  select,
+  .btn {
+    &:focus {
+      outline-color: #ecf5f7;
+
+      .dark & {
+        outline-color: $dark-body-bg;
       }
     }
   }
+}
 
   a:hover {
     color: $color-primary;
@@ -312,16 +308,17 @@ body {
     }
   }
 
-  body.dark div.content {
-    a {
-      color: $dark-text-color;
+/* Dark Mode */
+body.dark div.content {
+  a {
+    color: $dark-text-color;
 
-      &:hover {
-        color: $dark-color-primary;
-      }
+    &:hover {
+      color: $dark-color-primary;
+    }
 
-      &:visited {
-        color: $white;
-      }
+    &:visited {
+      color: $white;
     }
   }
+}

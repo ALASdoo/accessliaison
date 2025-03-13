@@ -5,8 +5,30 @@
         <div class="section pt-0 pb-2">
           <div class="row gy-4">
             <div class="col-lg-4 col-sm-6 footer-left" id="contact-info">
-              <p class="footer-heading mb-0">{{ site.Params.footer_title | markdownify }}</p>
-              <p class="footer-contact mb-4">{{ site.Params.footer_content | markdownify }}</p>
+              <a href="/" class="footer-logo">
+                <img
+                  fetchpriority="high"
+                  loading="preload"
+                  decoding="async"
+                  class="img-fluid mb-0 only-light" width="250" 
+                  height="47"
+                  src="/images/logo_light.svg"
+                  alt="AccessLiaison">
+                <img
+                  fetchpriority="high"
+                  loading="preload"
+                  decoding="async"
+                  class="img-fluid mb-0 only-dark" width="250" 
+                  height="47"
+                  src="/images/logo_dark.svg"
+                  alt="AccessLiaison">
+              </a>
+              <p class="footer-contact mb-4">
+                <span class="visually-hidden">
+                  {{ site.Params.footer_title | markdownify }}
+                </span>
+                {{ site.Params.footer_content | markdownify }}
+              </p>
               {{ with site.Params.social }}
               <ul class="list-inline social-icons">
                 {{ range . }}

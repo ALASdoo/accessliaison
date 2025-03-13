@@ -108,16 +108,20 @@
     */
     .appearance-btn {
       padding: 1rem 2rem; 
+      &::after {
+        display: none;
+      }
       .appearance-icon {
         display: block;
         height: rfs-value(30px);
         fill: inherit;
       }
     }
+
     @include media-breakpoint-down(md) {
       .appearance-btn {
         padding: 1rem;
-        &::after {
+        .dropdown-icon {
           display: none;
         }
       }
@@ -125,6 +129,7 @@
         display: none;
       }
     }
+
     @include media-breakpoint-down(sm) {
       .appearance-btn {
         padding: 0.75rem;

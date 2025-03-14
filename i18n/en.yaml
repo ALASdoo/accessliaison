@@ -103,6 +103,9 @@
 - id: switch_reduce_animation
   translation: Reduce animation
 
+- id: reset_defaults
+  translation: Reset to defaults
+
 - id: switch_remove_images
   translation: Remove images
 

@@ -234,6 +234,47 @@
     }
   }
 
+.reset-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  width: 100%;
+  border: none;
+  padding: 6px;
+  padding-left: 24px;
+
+  background-color: transparent;
+  color: $text-color;
+  fill: $text-color;
+  .text-large & {
+    padding-left: 20px;
+  }
+  .dark & {
+    color: $dark-text-color;
+    fill: $dark-text-color;
+  }
+  img,
+  svg {
+    width: 24px;
+    height: 24px;
+    .text-large & {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &::before {
+  
+    // content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('images/refresh.svg'); 
+ 
+    background-size: contain;
+  }
+}
+
 .skip-to-content {
   position: absolute;
   left: -999px;

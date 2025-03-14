@@ -9,7 +9,9 @@
     <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
       <!-- navbar brand/logo -->
       <a class="navbar-brand" href="{{ site.BaseURL | relLangURL }}">
-        <span class="no-image-fallback"><h1>AccessLiaison</h1></span>
+        <span class="no-image-fallback">
+          <h1>AccessLiaison</h1>
+        </span>
         {{ partial "logo.html" . }}
       </a>
 
@@ -25,7 +27,7 @@
           data-bs-auto-close="outside">
             <svg class="appearance-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38 38">
               <g><path d="M29.1,12.2h-9.7c-.6-1.9-2.3-3.4-4.5-3.4s-3.9,1.4-4.5,3.4h-1.7c-.7,0-1.3.6-1.3,1.3s.6,1.3,1.3,1.3h1.7c.6,1.9,2.3,3.4,4.5,3.4s3.9-1.4,4.5-3.4h9.7c.7,0,1.3-.6,1.3-1.3s-.6-1.3-1.3-1.3ZM15,15.6c-1.2,0-2.1-.9-2.1-2.1s.9-2.1,2.1-2.1,2.1.9,2.1,2.1-.9,2.1-2.1,2.1Z" />
-<path d="M29.1,23.2h-1.7c-.6-1.9-2.3-3.4-4.5-3.4s-3.9,1.4-4.5,3.4h-9.7c-.7,0-1.3.6-1.3,1.3s.6,1.3,1.3,1.3h9.7c.6,1.9,2.3,3.4,4.5,3.4s3.9-1.4,4.5-3.4h1.7c.7,0,1.3-.6,1.3-1.3,0-.7-.6-1.3-1.3-1.3ZM23,26.6c-1.2,0-2.1-.9-2.1-2.1s.9-2.1,2.1-2.1,2.1.9,2.1,2.1c0,1.2-.9,2.1-2.1,2.1Z" />
+                <path d="M29.1,23.2h-1.7c-.6-1.9-2.3-3.4-4.5-3.4s-3.9,1.4-4.5,3.4h-9.7c-.7,0-1.3.6-1.3,1.3s.6,1.3,1.3,1.3h9.7c.6,1.9,2.3,3.4,4.5,3.4s3.9-1.4,4.5-3.4h1.7c.7,0,1.3-.6,1.3-1.3,0-.7-.6-1.3-1.3-1.3ZM23,26.6c-1.2,0-2.1-.9-2.1-2.1s.9-2.1,2.1-2.1,2.1.9,2.1,2.1c0,1.2-.9,2.1-2.1,2.1Z" />
               </g>
               <path d="M19,38c-5.1,0-9.8-2-13.4-5.6C2,28.8,0,24.1,0,19S2,9.2,5.6,5.6,13.9,0,19,0s9.8,2,13.4,5.6c3.6,3.6,5.6,8.4,5.6,13.4s-2,9.8-5.6,13.4c-3.6,3.6-8.4,5.6-13.4,5.6ZM19,2.5c-4.4,0-8.5,1.7-11.6,4.8s-4.8,7.2-4.8,11.6,1.7,8.5,4.8,11.6c3.1,3.1,7.2,4.8,11.6,4.8s8.5-1.7,11.6-4.8c3.1-3.1,4.8-7.2,4.8-11.6s-1.7-8.5-4.8-11.6c-3.1-3.1-7.2-4.8-11.6-4.8Z" />
             </svg>
@@ -116,6 +118,18 @@
                 </label>
               </div>
             </li>
+
+            <li class="dropdown-item js--dropdown-item">
+              <button class="reset-button" >
+                <svg xmlns="http://www.w3.org/2000/svg" 
+                  height="24px"
+                  width="24px"
+                  role="presentation" 
+                  aria-hidden="true" viewBox="0 -960 960 960"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></svg>
+                <span> {{i18n "reset_defaults" }} </span>
+              </button>
+            </li>
+
           </ul>
         </div>
 
@@ -140,10 +154,12 @@
     const largeTextSwitch = appearanceMenu.querySelector("#switch-large-text");
     const removeImagesSwitch = appearanceMenu.querySelector("#switch-remove-images");
     const reduceAnimationsSwitch = appearanceMenu.querySelector("#switch-reduce-animation");
+    const resetButton = appearanceMenu.querySelector(".reset-button");
 
     const LARGE_TEXT_KEY = "large-text-enabled";
     const REMOVE_IMAGES_KEY = "remove-images-enabled";
     const REDUCE_ANIMATIONS_KEY = "reduce-animation-enabled";
+    const PREFERRED_THEME_KEY = "preferred-theme";
 
 
     /**
@@ -171,7 +187,20 @@
       if (target.closest('[name="theme-picker"]')) {
         event.preventDefault();
         handleThemeChange(target.value);
-        saveAppearancePreferences("theme", target.value);
+        saveAppearancePreferences(PREFERRED_THEME_KEY, target.value);
+      }
+
+      if (resetButton.contains(target)) {
+        event.preventDefault();
+        [
+          LARGE_TEXT_KEY, 
+          REMOVE_IMAGES_KEY, 
+          REDUCE_ANIMATIONS_KEY, 
+          PREFERRED_THEME_KEY
+        ].forEach((key) => {
+          removeAppearancePreferences(key);
+        });
+        location.reload();
       }
     });
 
@@ -307,8 +336,12 @@
       localStorage.setItem(name, value);
     };
 
+    const removeAppearancePreferences = (name) => {
+      localStorage.removeItem(name);
+    };
+
     const getStoredAppearancePreferences = () => {
-      const themePreferences = localStorage.getItem("theme");
+      const themePreferences = localStorage.getItem(PREFERRED_THEME_KEY);
       handleThemeChange(themePreferences);
 
       const largeTextPreferences = localStorage.getItem(LARGE_TEXT_KEY);

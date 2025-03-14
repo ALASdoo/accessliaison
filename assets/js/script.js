@@ -22,7 +22,7 @@
       item.addEventListener('click', (event) => { 
         event.preventDefault();
         const itemOption = item.querySelector('input');
-        itemOption.click(); 
+        itemOption?.click(); 
       });
     });
 
@@ -30,4 +30,4 @@
 
  
 
-  })();
+})();

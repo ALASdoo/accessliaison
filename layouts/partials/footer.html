@@ -4,7 +4,10 @@
       <div class="col-xl-12">
         <div class="section pt-0 pb-2">
           <div class="row gy-4">
-            <div class="col-lg-4 col-sm-6 footer-left" id="contact-info">
+            <div 
+              class="col-lg-4 col-sm-6 footer-left" 
+              id="contact-info"
+              tabindex="-1">
               <a href="/" class="footer-logo">
                 <img
                   fetchpriority="high"
@@ -24,7 +27,7 @@
                   alt="AccessLiaison">
               </a>
               <p class="footer-contact mb-4">
-                <span class="visually-hidden">
+                <span class="visually-hidden contact-title">
                   {{ site.Params.footer_title | markdownify }}
                 </span>
                 {{ site.Params.footer_content | markdownify }}

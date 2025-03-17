@@ -6,7 +6,7 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-lg-10 mx-auto content">
+      <div class="col-lg-10 mx-auto content content-70ch">
         <div>{{ .Params.intro | markdownify}}</div>
         {{ with .Params.cookies }}
           {{range $i, $e := .policy_item}} 

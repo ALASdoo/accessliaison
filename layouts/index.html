@@ -49,15 +49,15 @@
 <section class="section">
   <div class="container">
     <div class="row mb-5">
-      <div class="col-12 col-xl-7 mx-auto mb-5 mb-xl-0">
-        <h2 class="section-title text-md-center h2 mb-4">{{ .title | markdownify }}</h2>
+      <div class="col-12 col-xl-7 mx-auto mb-xl-0">
+        <h2 class="section-title text-md-center mb-4">{{ .title | markdownify }}</h2>
         <div class="content mb-4">
           {{.content | markdownify}}
         </div>
       </div>
     </div>
     <div class="row">
-      <div class="col-12 col-xl-7 mx-auto mb-5 mb-xl-0">
+      <div class="col-12 col-xl-7 mx-auto mb-xl-0">
         <h3 class="mt-4 mb-4 text-md-center"> {{ .subtitle | markdownify }} </h3>
         <div class="text-md-center"> {{ .subtitle_content }} </div>
       </div>
@@ -67,7 +67,7 @@
         <div class="col-12 col-sm-6 col-lg-3 d-flex">
           <div class="feature-card bg-white rounded-4 shadow d-block d-sm-flex">
             <div class="block">
-              <h4 class="">{{ .name }}</h4>
+              <h4 class="mb-4">{{ .name }}</h4>
               <p class="mb-0">{{ .content | markdownify }}</p>
             </div>
           </div>
@@ -105,7 +105,7 @@
   <div class="container">
     <div class="row pb-4">
       <div class="col">
-        <h2 class="text-md-center">{{ .title | markdownify }}</h2>
+        <h2 class="text-md-center mb-4">{{ .title | markdownify }}</h2>
       </div>
     </div>
     <div class="row services-tab-panel">
@@ -229,13 +229,13 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-7 mb-4 text-md-center mx-auto">
-        <h2 class="section-title h2">{{ .title | markdownify }}</h2>
+        <h2 class="section-title mb-4">{{ .title | markdownify }}</h2>
       </div>
     </div>
     <div class="why-choose-us-container">
       {{ range .items }}
       <div class="why-choose-us-item">
-        <h3> {{ .name }} </h3>
+        <h3 class="mb-4"> {{ .name }} </h3>
         <p> {{ .content | markdownify }} </p>
       </div>
       {{ end }}
@@ -252,7 +252,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 rounded-4 cta p-5">
-        <h2 class="cta-heading">{{ .title | markdownify }}</h2>
+        <h2 class="cta-heading mb-4">{{ .title | markdownify }}</h2>
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}

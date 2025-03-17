@@ -52,27 +52,30 @@
     .why-choose-us-item {
         position: relative;
 
+        /* Vertical Separators */
         &:last-child::after {
             content: none;
         }
-
-        &:after {
-            content: '';
-            position: absolute;
-            bottom: -3rem;
-            display: block;
-            width: 100%;
-            height: 2px;
-            background: linear-gradient(to bottom, #3a89cc, #26c5f3);
-        }
-
-        @media (min-width: 768px) { 
+        @include media-breakpoint-up(md) {
             &:after {
+                content: '';
+                position: absolute;
+                display: block;
                 top: 0;
                 right: -3rem;
                 width: 2px;
                 height: 100%;
                 background: linear-gradient(to right, #3a89cc, #26c5f3);
+            }
+            .text-large &::after {
+                display: none;
+            }
+        }
+
+        /* Large Text - enable vertical separators*/
+        @include media-breakpoint-up(lg) {
+            .text-large &::after {
+                display: block;
             }
         }
     }

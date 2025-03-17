@@ -93,7 +93,6 @@
 
               <li><a
                   href="{{ .URL | relLangURL }}" 
-                  title="{{ .Name }}"
                   class="{{ if $active }}active{{ end }}"
                   {{ if $active }}aria-current="page"{{ end }}
                   >{{ .Name }}</a></li>
@@ -108,11 +107,10 @@
               rel="noopener noreferrer external"
               title="{{ site.Params.footer_alt }} external link">
               <span aria-hidden="true" class="no-image-fallback"> {{ site.Params.footer_alt }} </span>
-              {{ partial "image" (dict 
-                "Src" site.Params.footer_image 
-                "Alt" site.Params.footer_alt 
-                "Class" "wcag")
-                }}          
+              <img src="{{site.Params.footer_image}}" 
+                alt="{{site.Params.footer_alt}}"
+                class="wcag">
+                
               </a>
             </div>
           </div>

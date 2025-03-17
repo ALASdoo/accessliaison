@@ -312,6 +312,7 @@ ul:not(.nav):not(.footer-nav) {
 }
 .accordion-header {
     font-size: rfs-value($font-size);
+    margin-bottom: 0 !important;
 }
 .accordion-item {
     border: 2px solid $color-primary !important;

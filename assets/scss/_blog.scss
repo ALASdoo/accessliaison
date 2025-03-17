@@ -82,6 +82,7 @@
     p {
         @extend .bg-white;
         border-color: transparent !important;
+        padding: 1rem 1.5rem;
 
         .text-large & {
             border-top-width: 3rem !important;
@@ -92,6 +93,7 @@
 
         &::before {
             top: 8px;
+            left: 1rem;
             margin-right: 2px;
             border: none;
 

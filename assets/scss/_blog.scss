@@ -49,6 +49,18 @@
                 word-break: normal !important;
             }
         }
+        th {
+            &:first-child {
+                border-radius: 0;
+                border-top-left-radius: var(--bs-border-radius-xl);
+                border-bottom-left-radius: var(--bs-border-radius-xl);
+            }
+            &:last-child {
+                border-radius: 0;
+                border-top-right-radius: var(--bs-border-radius-xl);
+                border-bottom-right-radius: var(--bs-border-radius-xl);
+            }
+        }
     }
 
     .custom-table {
@@ -60,6 +72,7 @@
 
 
 .notices {
+    @extend .rounded-4;
     &.note p {
         &::before {
             content: '📌';

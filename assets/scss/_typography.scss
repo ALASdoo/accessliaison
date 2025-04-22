@@ -1,4 +1,5 @@
 body {
+  --max-with-70char: 70ch;
   font-family: $font-primary;
   font-weight: 400;
   line-height: 1.6;
@@ -64,8 +65,11 @@ small,
   font-size: 0.8rem;
 }
 
-h1, h2, h3, h4, h5, h6, p { 
-  max-width: 70ch;
+h1, h2, h3, h4, h5, h6, p, ol,
+blockquote, 
+table, 
+.content-70ch { 
+  max-width: var(--max-with-70char);
 }
 
 // Dark Theme

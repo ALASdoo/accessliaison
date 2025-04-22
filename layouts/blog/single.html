@@ -1,58 +1,56 @@
 {{define "main"}}
 <article class="blog">
   <section class="section pb-0">
-    <div class="container">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 mx-auto">
+    <div class="container content-70ch">
+      <div class="row">
+        <div class="mx-auto">
 
-            <h1 class="mb-3">{{ .Title | markdownify }}</h1>
-            {{ with .Params.subtitle }}
-            <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
-            {{ end }}
+          <h1 class="mb-4">{{ .Title | markdownify }}</h1>
+          {{ with .Params.subtitle }}
+          <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
+          {{ end }}
 
 
-            {{ if .Params.image }}
-            {{ partial "image" (dict
-            "Src" .Params.image
-            "Alt" .Title
-            "Class" "rounded-2 w-100 mb-5"
-            ) }}
-            {{ end }}
+          {{ if .Params.image }}
+          {{ partial "image" (dict
+          "Src" .Params.image
+          "Alt" .Title
+          "Class" "rounded-2 w-100 mb-5"
+          ) }}
+          {{ end }}
 
-            <!-- author -->
-            {{ if .Params.AuthorLink }}
-            <a href="{{ .Params.AuthorLink }}" 
-              rel="author external"
-              aria-label="Author: {{ .Params.Author }} external link">
-              {{ .Params.Author }}</a>
-            <span aria-hidden="true">|</span>
+          <!-- author -->
+          {{ if .Params.AuthorLink }}
+          <a href="{{ .Params.AuthorLink }}" 
+            rel="author external"
+            aria-label="Author: {{ .Params.Author }} external link">
+            {{ .Params.Author }}</a>
+          <span aria-hidden="true">|</span>
 
-            {{ else if .Params.Author }}
-            <span rel="author" aria-label="Author {{ .Params.Author }}">
-              {{ .Params.Author }}
-            </span>
-            <span aria-hidden="true">|</span>
-            {{ end }} <!-- /author -->
+          {{ else if .Params.Author }}
+          <span rel="author" aria-label="Author {{ .Params.Author }}">
+            {{ .Params.Author }}
+          </span>
+          <span aria-hidden="true">|</span>
+          {{ end }} <!-- /author -->
 
-            <span class="fw-500">
-              <!-- publish date -->
-              {{i18n `published_on`}}
-              <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
-                {{ time.Format ":date_long" .PublishDate }}</time>
-              <!-- /publish date -->
-              <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}}
-            </span>
-          </div>
+          <span class="fw-500">
+            <!-- publish date -->
+            {{i18n `published_on`}}
+            <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
+              {{ time.Format ":date_long" .PublishDate }}</time>
+            <!-- /publish date -->
+            <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}}
+          </span>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="section blog pt-3">
-    <div class="container">
+  <section class="section pt-3">
+    <div class="container content-70ch">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="mx-auto">
           <!-- <h2 class="h3 my-3">{{ .Title }}</h2> -->
 
           <div class="mt-5 content">{{.Content}}</div>
@@ -82,7 +80,7 @@
 
           <!-- read more articles -->
           <aside class="section pb-0">
-            <h2>{{ i18n "read_more_blog_post" }}</h2>
+            <h2 class="mb-4">{{ i18n "read_more_blog_post" }}</h2>
             <nav class="post-navigation" aria-label="More accessibility articles">
               {{ $currentPage := . }}
               {{ $pages := where site.RegularPages "Section" "blog" }}
@@ -99,28 +97,28 @@
               </ul>
             </nav>
           </aside><!--/read more articles -->
-
-
-          <!-- call to action -->
-          {{ if .Params.cta }}
-          {{ $cta := dict
-            "title" .Params.cta.title
-            "content" .Params.cta.content
-            "btn_link"  .Params.cta.btn_link
-            "btn_label"  .Params.cta.btn_label
-          }}
-
-          {{ partial "cta-inverse" $cta }}
-          {{ end }}
-          <!-- /call to action -->
-
-
-
         </div>
       </div>
     </div>
   </section>
 </article>
+
+  <!-- TODO: reusable cta -->
+    <!-- call to action -->
+    {{ if .Params.cta }}
+    {{ $cta := dict
+      "title" .Params.cta.title
+      "content" .Params.cta.content
+      "btn_link"  .Params.cta.btn_link
+      "btn_label"  .Params.cta.btn_label
+    }}
+
+    {{ partial "cta-inverse" $cta }}
+    {{ end }}
+    <!-- /call to action -->
+
+
+
 
 
 

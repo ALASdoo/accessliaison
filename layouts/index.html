@@ -144,7 +144,7 @@
 
 
                 <!-- SWAP layout -->
-                {{if .swap }} 
+                {{if .swap }}
                   <div class="col-lg-6">
                     {{ .description | markdownify }}
                   </div>
@@ -256,9 +256,9 @@
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
-        <a href="{{ .link | relLangURL }}" 
-          class="btn btn-primary btn-inverse" 
-          aria-label="{{ .label }} external link" 
+        <a href="{{ .link | relLangURL }}"
+          class="btn btn-primary btn-inverse"
+          aria-label="{{ .label }} external link"
           rel="external noopener">
           {{ .label }}
         </a>

@@ -107,7 +107,7 @@
     * Dropdown button
     */
     .appearance-btn {
-      padding: 1rem 2rem; 
+      padding: 1rem 2rem;
       &::after {
         display: none;
       }
@@ -115,6 +115,14 @@
         display: block;
         height: rfs-value(30px);
         fill: inherit;
+      }
+      .dropdown-icon {
+        transition: 0.3s;
+      }
+      &.show {
+        .dropdown-icon {
+          rotate: 180deg;
+        }
       }
     }
 
@@ -175,7 +183,7 @@
         .text-large & {
           font-size: rfs-value($large-font-size);
         }
-        
+
         @include desktop {
           padding: 6px 15px;
         }
@@ -264,13 +272,13 @@
     }
   }
   &::before {
-  
+
     // content: "";
     display: inline-block;
     width: 24px;
     height: 24px;
-    background-image: url('images/refresh.svg'); 
- 
+    background-image: url('images/refresh.svg');
+
     background-size: contain;
   }
 }

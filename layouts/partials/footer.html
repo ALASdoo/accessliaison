@@ -4,8 +4,8 @@
       <div class="col-xl-12">
         <div class="section pt-0 pb-2">
           <div class="row gy-4">
-            <div 
-              class="col-lg-4 col-sm-6 footer-left" 
+            <div
+              class="col-lg-4 col-sm-6 footer-left"
               id="contact-info"
               tabindex="-1">
               <a href="/" class="footer-logo">
@@ -13,7 +13,7 @@
                   fetchpriority="high"
                   loading="preload"
                   decoding="async"
-                  class="img-fluid mb-0 only-light" width="250" 
+                  class="img-fluid mb-0 only-light" width="250"
                   height="47"
                   src="/images/logo_light.svg"
                   alt="AccessLiaison">
@@ -21,7 +21,7 @@
                   fetchpriority="high"
                   loading="preload"
                   decoding="async"
-                  class="img-fluid mb-0 only-dark" width="250" 
+                  class="img-fluid mb-0 only-dark" width="250"
                   height="47"
                   src="/images/logo_dark.svg"
                   alt="AccessLiaison">
@@ -36,9 +36,9 @@
               <ul class="list-inline social-icons">
                 {{ range . }}
                 <li class="list-inline-item">
-                  <a href="{{ .link | safeURL }}" 
-                     aria-label="Connect with us on {{ .title }} external link" 
-                     class="social-link" 
+                  <a href="{{ .link | safeURL }}"
+                     aria-label="Connect with us on {{ .title }} external link"
+                     class="social-link"
                      rel="external">
                   {{ $imagePath := "/images/social/" }}
                   {{ $defaultImage := (print $imagePath .title "_lt" ".png") }}
@@ -50,29 +50,29 @@
                   "Src" $defaultImage
                   "Alt" .title
                   "Class" "social-light--default"
-                  "Loading" "eager" 
+                  "Loading" "eager"
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $defaultHover
                   "Alt" .title
                   "Class" "social-light--hover"
-                  "Loading" "eager" 
-                  
+                  "Loading" "eager"
+
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkImage
                   "Alt" .title
                   "Class" "social-dark--default"
-                  "Loading" "eager" 
+                  "Loading" "eager"
                   )}}
 
                   {{ partial "image" (dict
                   "Src" $darkHover
                   "Alt" .title
                   "Class" "social-dark--hover"
-                  "Loading" "eager" 
+                  "Loading" "eager"
                   )}}
 
                   <span class="no-image-fallback">{{.no_image_fallback}}</span>
@@ -92,7 +92,7 @@
               {{ $active := eq $navItemURL $pageURL }}
 
               <li><a
-                  href="{{ .URL | relLangURL }}" 
+                  href="{{ .URL | relLangURL }}"
                   class="{{ if $active }}active{{ end }}"
                   {{ if $active }}aria-current="page"{{ end }}
                   >{{ .Name }}</a></li>
@@ -103,14 +103,14 @@
             <div class="col-6 col-lg-4 col-sm-6 footer-right">
               <!-- external link -->
               <a href="{{ site.Params.footer_url | relLangURL }}"
-              class="pt-3 footer-wcag"
+              class="mt-3 footer-wcag"
               rel="noopener noreferrer external"
               title="{{ site.Params.footer_alt }} external link">
               <span aria-hidden="true" class="no-image-fallback"> {{ site.Params.footer_alt }} </span>
-              <img src="{{site.Params.footer_image}}" 
+              <img src="{{site.Params.footer_image}}"
                 alt="{{site.Params.footer_alt}}"
                 class="wcag">
-                
+
               </a>
             </div>
           </div>

@@ -116,8 +116,13 @@
 
 .btn.btn-inverse {
   background-color: #ecf5f7;
-  color: $color-primary;
-  border-color: $color-primary;
+  color: #000406;
+  border: none;
+
+  &:hover,
+  &:active {
+    background-color: #000406;
+  }
 }
 
 .btn-outline-primary {

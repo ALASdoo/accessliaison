@@ -19,7 +19,7 @@
         {{ if site.Params.navigation_button.enable }}
         <!-- Appearance Settings -->
         <div class="dropdown js--appearance-settings">
-          <button 
+          <button
           class="btn btn-outlined ms-lg-4 mt-2 mt-lg-0 dropdown-toggle appearance-btn"
           data-bs-toggle="dropdown"
           aria-haspopup="true"
@@ -48,12 +48,12 @@
 
               <li class="dropdown-item js--dropdown-item">
                 <div class="form-check radio-field">
-                  <input 
-                    class="form-check-input" 
-                    type="radio" 
-                    name="theme-picker" 
-                    id="theme-dark" 
-                    value="dark" 
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme-picker"
+                    id="theme-dark"
+                    value="dark"
                     />
                   <label class="form-check-label" for="theme-dark">
                     {{ i18n "theme_dark" }}
@@ -63,12 +63,12 @@
 
               <li class="dropdown-item js--dropdown-item">
                 <div class="form-check radio-field">
-                  <input 
-                    class="form-check-input" 
-                    type="radio" 
-                    name="theme-picker" 
-                    id="theme-light" 
-                    value="light" 
+                  <input
+                    class="form-check-input"
+                    type="radio"
+                    name="theme-picker"
+                    id="theme-light"
+                    value="light"
                     />
                   <label class="form-check-label" for="theme-light">
                     {{ i18n "theme_light" }}
@@ -119,12 +119,12 @@
               </div>
             </li>
 
-            <li class="dropdown-item js--dropdown-item">
+            <li class="dropdown-item dropdown-item-reset js--dropdown-item">
               <button class="reset-button" >
-                <svg xmlns="http://www.w3.org/2000/svg" 
+                <svg xmlns="http://www.w3.org/2000/svg"
                   height="24px"
                   width="24px"
-                  role="presentation" 
+                  role="presentation"
                   aria-hidden="true" viewBox="0 -960 960 960"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></svg>
                 <span> {{i18n "reset_defaults" }} </span>
               </button>
@@ -193,9 +193,9 @@
       if (resetButton.contains(target)) {
         event.preventDefault();
         [
-          LARGE_TEXT_KEY, 
-          REMOVE_IMAGES_KEY, 
-          REDUCE_ANIMATIONS_KEY, 
+          LARGE_TEXT_KEY,
+          REMOVE_IMAGES_KEY,
+          REDUCE_ANIMATIONS_KEY,
           PREFERRED_THEME_KEY
         ].forEach((key) => {
           removeAppearancePreferences(key);

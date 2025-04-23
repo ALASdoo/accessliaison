@@ -1,5 +1,5 @@
 :root {
-  --svg-fill: #ffffff; 
+  --svg-fill: #ffffff;
 }
 
 .dark {
@@ -37,7 +37,7 @@
   padding-inline: var(--relative-size);
   background-color: #414647;
   border-radius: 50px;
-  
+
   transition-property: background-color;
   transition-duration: 120ms;
   transition-timing-function: ease-in-out;
@@ -70,7 +70,7 @@
   border-radius: 50%;
   background-color: var(--color-white);
   box-shadow: 0px 1px 1px 1px rgba(31, 31, 31, 0.4);
-  
+
   transition-property: transform, box-shadow;
   transition-duration: 120ms, 200ms;
   transition-timing-function: ease-in-out;
@@ -113,7 +113,7 @@
       transform: translateX(
         calc(
           var(--inline-size) -
-          calc( var(--relative-size) * 4 ) - 
+          calc( var(--relative-size) * 4 ) -
           calc(var(--relative-size) * 1.5 )
         )
       ); //magic number 6px
@@ -167,11 +167,11 @@
   }
 
   .switch-handle {
-    background-color: #1a2023;
+    background-color: #222525;
   }
 
   .switch-icon {
-    color: #1a2023;
+    color: #222525;
   }
 
   .switch-input:checked {

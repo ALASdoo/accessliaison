@@ -417,7 +417,7 @@ ul:not(.nav):not(.footer-nav) {
     padding-left: 0;
 
     &:hover {
-        color: $color-primary;
+        color: $text-color;
     }
 
     label {
@@ -467,7 +467,7 @@ body.dark {
     }
     .radio-field {
         &:hover {
-            color: $dark-color-primary;
+            color: $dark-text-color;
         }
         .form-check-input[type="radio"] {
             border-color: #e4edef;

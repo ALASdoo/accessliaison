@@ -6,7 +6,7 @@ banner:
   content: '
     - Achieve compliance quickly while improving quality and user experience
 
-    - We offer expertise, cutting-edge tools, and proven methodologies — no shortcuts.'
+    - We offer expertise, cutting-edge tools, and proven methodologies — no shortcuts'
   button:
     enable: true
     label: 'Book a free consultation'

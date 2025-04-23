@@ -73,7 +73,9 @@
         transition: 0s;
       }
     }
-
+    .dropdown-theme {
+      margin-bottom: 6px;
+    }
     .dropdown-lg {
       .dropdown-menu {
         width: 260px;
@@ -192,7 +194,7 @@
         &:hover,
         &.active,
         &:active {
-          color: $color-primary !important;
+          color: $text-color !important;
           background-color: transparent;
           cursor: pointer;
         }
@@ -206,6 +208,9 @@
         }
         &:hover::before {
           background-color: rgba(179, 179, 179, 0.3);
+        }
+        &.dropdown-item-reset:hover::before {
+          background: transparent;
         }
         & > * {
           position: relative;
@@ -245,22 +250,34 @@
 .reset-button {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: .4rem;
 
   width: 100%;
   border: none;
   padding: 6px;
-  padding-left: 24px;
-
-  background-color: transparent;
+  margin: 7px 0;
+  background-color: #bdc3c7;
   color: $text-color;
   fill: $text-color;
+  border-radius: 4px;
+  span {
+    padding-right: 10px;
+  }
   .text-large & {
     padding-left: 20px;
   }
   .dark & {
-    color: $dark-text-color;
-    fill: $dark-text-color;
+    color: #222525;
+    fill: #222525;
+    background-color: #F8FDFF;
+
+    &:hover,
+    &:focus {
+      background-color: #81dbf7;
+      color: #222525;
+      fill: #222525;
+    }
   }
   img,
   svg {
@@ -272,7 +289,6 @@
     }
   }
   &::before {
-
     // content: "";
     display: inline-block;
     width: 24px;
@@ -280,6 +296,12 @@
     background-image: url('images/refresh.svg');
 
     background-size: contain;
+  }
+  &:hover,
+  &:focus {
+    background-color: #023254;
+    color: $white;
+    fill: $white;
   }
 }
 
@@ -351,10 +373,13 @@
         color: $white !important;
         &:hover,
         &.active {
-          color: $dark-color-primary !important;
+          color: $dark-text-color !important;
         }
         &:hover::before {
           background-color: #232525;
+        }
+        &.dropdown-item-reset:hover::before {
+          background: transparent;
         }
         .dropdown-subtitle {
           color: #aaa;

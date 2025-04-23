@@ -104,7 +104,7 @@
   translation: Reduce animation
 
 - id: reset_defaults
-  translation: Reset to defaults
+  translation: Reset all
 
 - id: switch_remove_images
   translation: Remove images
@@ -149,4 +149,4 @@
   translation: https://calendly.com/vilmos/meet
 
 - id: read_more_blog_post
-  translation: "If you enjoyed this post, you might also like: "
+  translation: 'If you enjoyed this post, you might also like: '

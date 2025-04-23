@@ -427,13 +427,16 @@ ul:not(.nav):not(.footer-nav) {
         }
     }
 
+    &.form-check {
+        align-items: center;
+    }
     .form-check-input[type="radio"] {
         float: none;
         flex-shrink: 0;
         width: $font-size;
         height: $font-size;
         border: 2px solid #414647;
-        margin-top: 5px;
+        margin-top: 0;
         margin-left: 0;
         background-color: unset;
 

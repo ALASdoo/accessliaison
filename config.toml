@@ -12,7 +12,7 @@ title = 'AccessLiaison: Web accessibility solutions beyond compliance'
 ######################### site variables ##############################
 # customize your color and font from here.
 [params.variables]
-color_primary = "#034c71"
+color_primary = "#024c71"
 color_primary_darker = "#033254"
 color_secondary = "#376f92"
 body_color = "#DCE7EA"

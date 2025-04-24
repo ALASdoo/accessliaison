@@ -10,10 +10,10 @@
 
     table {
         width: 100%;
-        vertical-align: middle;
+        vertical-align: top;
         margin-bottom: 5rem;
         caption-side: top;
-        
+
         border-collapse: collapse;
         border-color: $color-primary;
         word-break: normal !important;
@@ -25,20 +25,18 @@
         }
 
         thead {
-            background: $color-primary;
-            color: white;
+            background: $white;
+            color: $color-primary;
         }
 
         tr {
             display: table-row;
-            vertical-align: inherit; 
-            &:not(:last-child) {
-                border-bottom: 1px solid $color-primary;
-            }  
+            vertical-align: top;
         }
         th,
         td {
             padding: 0.75rem;
+            border: 1px solid $color-primary;
 
             white-space: normal;
             text-wrap: pretty;
@@ -47,18 +45,6 @@
             word-break: normal;
             * {
                 word-break: normal !important;
-            }
-        }
-        th {
-            &:first-child {
-                border-radius: 0;
-                border-top-left-radius: var(--bs-border-radius-xl);
-                border-bottom-left-radius: var(--bs-border-radius-xl);
-            }
-            &:last-child {
-                border-radius: 0;
-                border-top-right-radius: var(--bs-border-radius-xl);
-                border-bottom-right-radius: var(--bs-border-radius-xl);
             }
         }
     }
@@ -112,11 +98,11 @@
 
             font-size: 1.5rem;
             line-height: 1;
-            
+
             .text-large & {
                 top: 12px;
             }
-        } 
+        }
 
         &::after {
             left: 3rem;

@@ -19,6 +19,9 @@ body.remove-images {
         display: block;
         font-family: $font-primary;
     }
+    .navbar .no-image-fallback {
+        height: 74px;
+    }
 }
 
 /**
@@ -84,7 +87,7 @@ ul:not(.nav):not(.footer-nav) {
 }
 
 .dropdown-section {
-    padding-left: 2rem;
+    padding-left: 1.7rem;
 }
 
 .dark .hero {

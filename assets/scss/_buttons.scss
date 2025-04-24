@@ -13,7 +13,7 @@
   font-weight: 600;
   letter-spacing: 0.8px;
   line-height: 1;
-  transition: 0.3s ease;
+  transition: 0s ease;
   text-decoration: none;
 
   .dark & {
@@ -258,10 +258,9 @@
     background: linear-gradient(
       90deg,
       #3a89cc 0%,
-      #3a89cc 18%,
-      #26c5f3 53%,
-      #26c5f3 85%,
-      #2fa9e1 100%,
+      #26c5f3 25%,
+      #26c5f3 50%,
+      #26c5f3 78%,
       #3a89cc 100%
     );
 

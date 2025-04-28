@@ -126,6 +126,36 @@
           rotate: -180deg;
         }
       }
+      .appearance-icon-hover {
+        display: none; // Hide the hover image by default
+      }
+
+      &:hover,
+      &:focus {
+        .appearance-icon-default {
+          display: none; // Hide the default image on hover
+        }
+      }
+
+      &:hover,
+      &:focus {
+        .appearance-icon-hover {
+          display: inline-block; // Show the hover image on hover
+        }
+      }
+
+      .appearance-icon {
+        color: #024c71;
+        fill: #024c71;
+      }
+
+      &:hover,
+      &:focus {
+        .appearance-icon-hover {
+          color: #016699;
+          fill: #016699;
+        }
+      }
     }
 
     @include media-breakpoint-down(md) {
@@ -139,8 +169,10 @@
         .dropdown-icon {
           display: none;
         }
-        &:hover {
+        &:hover,
+        &:focus {
           padding: 0;
+          background-color: transparent !important;
         }
       }
       .appearance-btn-label {
@@ -417,6 +449,21 @@
           background-color: #373A3A;
           box-shadow: 0 6px 50px -1px rgba(0, 0, 0, 0.3);
         }
+      }
+    }
+  }
+
+  .appearance-btn {
+    .appearance-icon {
+      color: #25c5f3;
+      fill: #25c5f3;
+    }
+
+    &:hover,
+    &:focus {
+      .appearance-icon-hover {
+        color: #25c5f3;
+        fill: #25c5f3;
       }
     }
   }

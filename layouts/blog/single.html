@@ -10,18 +10,9 @@
           <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
           {{ end }}
 
-
-          {{ if .Params.image }}
-          {{ partial "image" (dict
-          "Src" .Params.image
-          "Alt" .Title
-          "Class" "rounded-2 w-100 mb-5"
-          ) }}
-          {{ end }}
-
           <!-- author -->
           {{ if .Params.AuthorLink }}
-          <a href="{{ .Params.AuthorLink }}" 
+          <a href="{{ .Params.AuthorLink }}"
             rel="author external"
             aria-label="Author: {{ .Params.Author }} external link">
             {{ .Params.Author }}</a>
@@ -42,6 +33,14 @@
             <!-- /publish date -->
             <span aria-hidden="true">|</span> {{.ReadingTime}} {{i18n `min_read`}}
           </span>
+
+          {{ if .Params.image }}
+          {{ partial "image" (dict
+          "Src" .Params.image
+          "Alt" .Params.image_alt
+          "Class" "rounded-2 w-100 mt-5"
+          ) }}
+          {{ end }}
         </div>
       </div>
     </div>

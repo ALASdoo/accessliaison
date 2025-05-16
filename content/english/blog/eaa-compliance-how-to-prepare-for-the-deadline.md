@@ -2,7 +2,8 @@
 title: 'EAA compliance: How to prepare for the deadline'
 date: 2025-02-12T10:07:21+06:00
 # post image
-# image: 'images/blog/post-1.jpg'
+# image: 'images/blog/how_to_achieve_compliance.jpg'
+# image_alt: 'Timer shows 28 and 2025 next to a mostly unchecked checklist for testing website accessibility: color contrast, alt text, keyboard, documents, links, headings, animations.'
 # author
 author: 'Tajana Somogyi'
 authorLink: 'https://www.linkedin.com/in/tajana-somogyi'

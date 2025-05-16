@@ -91,23 +91,26 @@
     .social-dark--hover {
       display: none;
     }
-    
+
     .social-light--hover {
       display: none;
     }
 
+    &.focus,
+    &:focus,
+    &:focus-visible,
     &:hover {
       .social-light--hover {
           display: block;
       }
 
       .social-light--default {
-        display: none;  
+        display: none;
       }
     }
   }
 }
- 
+
 .dark {
   .social-light--default,
   .social-light--hover  {
@@ -119,6 +122,9 @@
       display: block;
     }
 
+    &.focus,
+    &:focus,
+    &:focus-visible,
     &:hover {
       .social-dark--default{
         display: none;

@@ -151,6 +151,10 @@
 
       &:hover,
       &:focus {
+        .appearance-icon {
+          color: #FFF;
+          fill: #FFF;
+        }
         .appearance-icon-hover {
           color: #016699;
           fill: #016699;
@@ -461,6 +465,10 @@
 
     &:hover,
     &:focus {
+      .appearance-icon {
+        color: inherit;
+        fill: inherit;
+      }
       .appearance-icon-hover {
         color: #25c5f3;
         fill: #25c5f3;

@@ -1,5 +1,5 @@
 body {
-  --max-with-70char: 70ch;
+  --max-with-70char: 60ch;
   font-family: $font-primary;
   font-weight: 400;
   line-height: 1.6;
@@ -66,9 +66,9 @@ small,
 }
 
 h1, h2, h3, h4, h5, h6, p, ol,
-blockquote, 
-table, 
-.content-70ch { 
+blockquote,
+table,
+.content-70ch {
   max-width: var(--max-with-70char);
 }
 
@@ -92,7 +92,7 @@ body.dark {
   a {
     color: $dark-text-color;
     text-decoration: underline;
-    
+
     &:hover {
       color: $dark-color-primary;
     }

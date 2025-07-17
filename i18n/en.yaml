@@ -150,3 +150,18 @@
 
 - id: read_more_blog_post
   translation: 'If you enjoyed this post, you might also like: '
+
+- id: important
+  translation: 'Important'
+
+- id: warning
+  translation: 'Warning'
+
+- id: note
+  translation: 'Note'
+
+- id: info
+  translation: 'Info'
+
+- id: tip
+  translation: 'Tip'

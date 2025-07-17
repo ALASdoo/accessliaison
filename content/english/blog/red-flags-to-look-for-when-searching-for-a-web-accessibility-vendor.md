@@ -2,11 +2,11 @@
 title: 'Red flags to look for when searching for a web accessibility vendor'
 date: 2025-02-13T10:07:21+06:00
 # post image
-# image: 'images/blog/red_flags.jpg'
-# image_alt: 'Inspecting a web page with a magnifying glass.'
+image: 'images/blog/red_flags.jpg'
+image_alt: 'Inspecting a web page with a magnifying glass.'
 # author
 author: 'Tajana Somogyi'
-authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
+# authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
@@ -25,14 +25,15 @@ Some businesses that have already invested in their website’s accessibility ar
 
 The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility. How can you do that if you are not an expert yourself? It might not be an easy task, but there is a lot you **can** do. Make sure you learn the most important facts and watch out for the red flags.
 
-\
-**In this blog post you can read about:**
+## Table of contents: {#toc-heading}
 
-- [Red flag 1: Too narrow scope](#red-flag-1-too-narrow-scope)
-- [Red flag 2: Unreal promises](#red-flag-2-unreal-promises)
-- [Red flag 3: Does not apply accessibility best practices](#red-flag-3-does-not-apply-accessibility-best-practices)
-- [Red flag 4: Lacking professionalism and reliability](#red-flag-4-lacking-professionalism-and-reliability)
-- [Conclusion: The right vendor will have your best interest at heart](#conclusion-the-right-vendor-will-have-your-best-interest-at-heart)
+<ul aria-labelledby="toc-heading">
+  <li><a href="#red-flag-1-too-narrow-scope">Red flag 1: Too narrow scope</a></li>
+  <li><a href="#red-flag-2-unreal-promises">Red flag 2: Unreal promises</a></li>
+  <li><a href="#red-flag-3-does-not-apply-accessibility-best-practices">Red flag 3: Does not apply accessibility best practices</a></li>
+  <li><a href="#red-flag-4-lacking-professionalism-and-reliability">Red flag 4: Lacking professionalism and reliability</a></li>
+  <li><a href="#conclusion-the-right-vendor-will-have-your-best-interest-at-heart">Conclusion: The right vendor will have your best interest at heart</a></li>
+</ul>
 
 ## Red flag 1: Too narrow scope
 

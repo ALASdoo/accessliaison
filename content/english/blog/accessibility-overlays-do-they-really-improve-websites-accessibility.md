@@ -2,11 +2,11 @@
 title: "Accessibility overlays: Do they really improve websites' accessibility?"
 date: 2025-02-14T10:07:21+06:00
 # post image
-# image: 'images/blog/overlays.jpg'
-# image_alt: 'On the monitor’s left side there is the symbol for a web accessibility plugin—on the right there is a skull symbol.'
+image: 'images/blog/overlays.jpg'
+image_alt: 'On the monitor’s left side there is the symbol for a web accessibility plugin—on the right there is a skull symbol.'
 # author
 author: 'Tajana Somogyi'
-authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
+# authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
@@ -31,15 +31,19 @@ If you're a website owner without deep accessibility expertise, you may have bee
 
 However, **accessibility overlays do not ensure compliance** with these regulations. To save yourself **time, resources, legal risks, and brand tarnish**, you should know that overlays are not an acceptable alternative or a substitute for fixing the website itself.
 
-\
-**In this blog post you can read about:**
+## Table of contents: {#toc-heading}
 
-1. [What is an accessibility overlay?](#what-is-an-accessibility-overlay)
-1. [Why overlays fall short](#why-overlays-fall-short)
-   1. [Incomplete fixes](#incomplete-fixes)
-   1. [Interference with assistive technologies](#interference-with-assistive-technologies)
-   1. [Privacy risks](#privacy-risks)
-1. [Properly implemented accessibility is the only way to compliance](#properly-implemented-accessibility-is-the-only-way-to-compliance)
+<ul aria-labelledby="toc-heading">
+  <li><a href="#what-is-an-accessibility-overlay">What is an accessibility overlay?</a></li>
+  <li><a href="#why-overlays-fall-short">Why overlays fall short</a>
+    <ul>
+      <li><a href="#incomplete-fixes">Incomplete fixes</a></li>
+      <li><a href="#interference-with-assistive-technologies">Interference with assistive technologies</a></li>
+      <li><a href="#privacy-risks">Privacy risks</a></li>
+    </ul>
+  </li>
+  <li><a href="#properly-implemented-accessibility-is-the-only-way-to-compliance">Properly implemented accessibility is the only way to compliance</a></li>
+</ul>
 
 ## What is an accessibility overlay?
 
@@ -186,7 +190,7 @@ If you are considering using the widget for monitoring, you should know that mos
 
 Users with disabilities carefully set their assistive devices/software to best suit their needs. Overlays’ generic approach interferes with these settings. This results in complicating, and even blocking, access for persons with disabilities.
 
-{{< notice warning >}}
+{{< notice important >}}
 **Screen reader users often comment that they avoid websites that use overlay plugins. Unpredictable changes that overlays create hinder the usability and accessibility of the page for them.**
 {{</ notice >}}
 
@@ -194,7 +198,7 @@ Users with disabilities carefully set their assistive devices/software to best s
 
 Accessibility overlays may automatically detect assistive technology, exposing a user's disability status without their consent. Disability, like age, gender, or ethnicity, is sensitive personal information. Laws such as the **General Data Protection Regulation (GDPR)** and the **California Consumer Privacy Act (CCPA)** require explicit user consent before collecting such data. Additionally, some overlays track user settings across multiple sites, creating further **data privacy violations**.
 
-{{< notice warning >}}
+{{< notice important >}}
 **Adding an overlay to your site could put you at risk of non-compliance with privacy regulations, leading to fines, legal action, and loss of user trust.**
 {{</ notice >}}
 

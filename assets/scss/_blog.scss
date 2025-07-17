@@ -6,6 +6,10 @@
 
     .article-time {
         display: block;
+        color: rgba(0, 4, 6, 0.7);
+    }
+    .dark & .article-time {
+        color: rgba(248, 253, 255, 0.7);
     }
 
     table {
@@ -27,6 +31,11 @@
         thead {
             background: $white;
             color: $color-primary;
+        }
+
+        .dark & thead {
+            background: $color-primary;
+            color: $white;
         }
 
         tr {
@@ -57,61 +66,14 @@
 
 
 
-.notices {
-    @extend .rounded-4;
-    &.note p {
-        &::before {
-            content: '📌';
-        }
-        &::after {
+.notice {
+    @extend .bg-white;
+    @extend .rounded-2;
+    padding: 1rem 1.5rem;
+    margin: 2rem 0;
 
-        }
-    }
-    &.warning {
-        p {
-            &::before {
-                content: "❗"
-            }
-            &::after {
-                content: "Important" !important;
-            }
-        }
-    }
-
-    p {
-        @extend .bg-white;
-        border-color: transparent !important;
-        padding: 1rem 1.5rem;
-
-        .text-large & {
-            border-top-width: 3rem !important;
-        }
-        body.dark & {
-            border-color: transparent !important;
-        }
-
-        &::before {
-            top: 8px;
-            left: 1rem;
-            margin-right: 2px;
-            border: none;
-
-            font-size: 1.5rem;
-            line-height: 1;
-
-            .text-large & {
-                top: 12px;
-            }
-        }
-
-        &::after {
-            left: 3rem;
-            color: $color-primary;
-            font-size: 1.5rem;
-            .text-large & {
-                font-size: 2rem;
-            }
-        }
+    .text-large & {
+        border-top-width: 3rem !important;
     }
 }
 

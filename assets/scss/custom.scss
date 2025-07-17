@@ -69,14 +69,14 @@ body.text-large {
 .align-self-center {
     align-self: center;
 }
-ul:not(.nav):not(.footer-nav) {
+ul:not(.nav):not(.footer-nav):not(.blog ul) {
     list-style-image: url('/images/bullet.svg');
 
     li {
         padding-left: 1rem;
     }
 }
-.dark ul:not(.nav):not(.footer-nav)  {
+.dark ul:not(.nav):not(.footer-nav):not(.blog ul) {
     list-style-image: url('/images/bullet_dark.svg');
 }
 .dropdown-heading {

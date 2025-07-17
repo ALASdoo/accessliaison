@@ -273,7 +273,7 @@ body {
       }
     }
 
-    ul {
+    ul:not(.blog ul)  {
       padding-left: 0;
       margin-bottom: 1.2rem;
       padding-left: 1.2rem;
@@ -289,21 +289,28 @@ body {
     }
 
     blockquote {
+      // Light mode styles
       color: $text-color;
       padding: 1.2rem 30px;
       border: 1px solid #eee;
-      border-left: 2px solid $color-primary;
+      // border-left: 2px solid $color-primary;
       margin: 2rem 0;
       background: $white;
       @extend .rounded-2;
 
       p {
-        margin-bottom: 0 !important;
+      margin-bottom: 0 !important;
       }
 
       cite {
-        display: inline-block;
-        margin-top: 1rem;
+      display: inline-block;
+      margin-top: 1rem;
+      }
+
+      // Dark mode override
+      body.dark & {
+        border-color: $dark-border-color !important;
+        border-width: 1px !important;
       }
     }
   }

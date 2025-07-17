@@ -2,11 +2,11 @@
 title: 'EAA compliance: How to prepare for the deadline'
 date: 2025-02-12T10:07:21+06:00
 # post image
-# image: 'images/blog/how_to_achieve_compliance.jpg'
-# image_alt: 'Timer shows 28 and 2025 next to a mostly unchecked checklist for testing website accessibility: color contrast, alt text, keyboard, documents, links, headings, animations.'
+image: 'images/blog/how_to_achieve_compliance.jpg'
+image_alt: 'Timer shows 28 and 2025 next to a mostly unchecked checklist for testing website accessibility: color contrast, alt text, keyboard, documents, links, headings, animations.'
 # author
 author: 'Tajana Somogyi'
-authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
+# authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
@@ -27,16 +27,17 @@ Don’t go searching for quick fixes just yet\! In this article, we’ll help yo
 
 For more information about the EAA, read our first blog post from this series: [EAA Compliance: Understanding the scope and the impact on web accessibility](/blog/eea-compliance-understanding-the-scope-and-the-impact-on-web-accessibility/)
 
-\
-**In this blog post you can read about:**
+## Table of contents: {#toc-heading}
 
-1. [Ensure conformance with relevant standards](#ensure-conformance-with-relevant-standards)
-1. [Conduct regular testing](#conduct-regular-testing)
-1. [Document accessibility efforts](#document-accessibility-efforts)
-1. [Ensure accessibility of third-party tools](#ensure-accessibility-of-third-party-tools)
-1. [Keep accessibility up to date](#keep-accessibility-up-to-date)
-1. [Foster a culture of accessibility](#foster-a-culture-of-accessibility)
-1. [Speed up your accessibility efforts with an expert partner](#speed-up-your-accessibility-efforts-with-an-expert-partner)
+<ul aria-labelledby="toc-heading">
+   <li><a href="#ensure-conformance-with-relevant-standards">Ensure conformance with relevant standards</a></li>
+   <li><a href="#conduct-regular-testing">Conduct regular testing</a></li>
+   <li><a href="#document-accessibility-efforts">Document accessibility efforts</a></li>
+   <li><a href="#ensure-accessibility-of-third-party-tools">Ensure accessibility of third-party tools</a></li>
+   <li><a href="#keep-accessibility-up-to-date">Keep accessibility up to date</a></li>
+   <li><a href="#foster-a-culture-of-accessibility">Foster a culture of accessibility</a></li>
+   <li><a href="#speed-up-your-accessibility-efforts-with-an-expert-partner">Speed up your accessibility efforts with an expert partner</a></li>
+</ul>
 
 ## Ensure conformance with relevant standards
 

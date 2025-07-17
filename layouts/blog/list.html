@@ -8,7 +8,7 @@
   data-aos-duration="600"
   data-aos-delay="400"
   data-aos-easing="ease-in-out-sine">
-  <div class="container content-70ch">
+  <div class="container">
     <div class="row">
       <div class="mx-auto">
         <div class="content ">
@@ -22,22 +22,28 @@
           }}
 
           <article class="mb-5">
-            {{ if .Params.image }}
-            {{ partial "image" (dict
-            "Src" .Params.image
-            "Alt" .Title
-            "Class" "rounded-2"
-            ) }}
-            {{ end }}
-            <h2>
-              <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            </h2>
-            <span class="article-time mb-2">
-              {{i18n `published_on`}} <time datetime='{{ .PublishDate | time.Format ":date_long" }}'>
-                {{ time.Format ":date_long" .PublishDate }}
-              </time>
-            </span>
-            <p>{{ .Summary }}</p>
+            <div class="d-flex align-items-start gap-5">
+              {{ if .Params.image }}
+              <div class="flex-shrink-0 mt-3" style="max-width: 180px;">
+                {{ partial "image" (dict
+                  "Src" .Params.image
+                  "Alt" .Title
+                  "Class" "rounded-2 w-100"
+                ) }}
+              </div>
+              {{ end }}
+              <div class="content-70ch">
+                <h2>
+                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </h2>
+                <span class="article-time mb-2">
+                  {{i18n `published_on`}} <time datetime='{{ .PublishDate }}'>
+                    {{ time.Format ":date_long" .PublishDate }}
+                  </time>
+                </span>
+                <p>{{ .Summary }}</p>
+              </div>
+            </div>
           </article>
           {{end}}
         </div>

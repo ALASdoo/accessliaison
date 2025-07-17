@@ -2,11 +2,11 @@
 title: 'EAA compliance: Understanding the scope and the impact on web accessibility'
 date: 2025-02-11T10:07:21+06:00
 # post image
-# image: 'images/blog/eaa_part_1.jpg'
-# image_alt: ''
+image: 'images/blog/eaa_part_1.jpg'
+image_alt: ''
 # author
 author: 'Tajana Somogyi'
-authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
+# authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
@@ -23,13 +23,14 @@ cta:
 
 The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities. Businesses operating in the EU, including e-commerce, banking, and transport, must comply with these regulations by **June 28, 2025**, or face penalties. Responsibility for accessibility violations lies with the website or app owners, even if third-party tools contribute to non-compliance. As the deadline approaches, businesses must take proactive steps to meet **WCAG 2.1** standards and ensure compliance to avoid legal and financial consequences.
 
-\
-**In this blog post you can read about:**
+## Table of contents: {#toc-heading}
 
-1. [What is the EAA](#what-is-the-eaa)
-1. [Which laws are based on the EAA?](#which-laws-are-based-on-the-eaa)
-1. [Who does the EAA apply to?](#who-does-the-eaa-apply-to)
-1. [How to comply with the EAA?](#how-to-comply-with-the-eaa)
+<ul aria-labelledby="toc-heading">
+  <li><a href="#what-is-the-eaa">What is the EAA</a></li>
+  <li><a href="#which-laws-are-based-on-the-eaa">Which laws are based on the EAA?</a></li>
+  <li><a href="#who-does-the-eaa-apply-to">Who does the EAA apply to?</a></li>
+  <li><a href="#how-to-comply-with-the-eaa">How to comply with the EAA?</a></li>
+</ul>
 
 ## What is the EAA?
 

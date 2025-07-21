@@ -70,7 +70,7 @@ Some overlay products offer repairs to the underlying page when loaded in the br
 {{< custom-table >}}
 
 <table>
-  <caption>Limitations of automatic fixes by overlay products</caption>
+  <caption>Automatic fixes and their limitations by overlay products</caption>
   <thead>
     <tr>
       <th scope="col">Fix</th>

@@ -10,4 +10,4 @@
 {{ $src   := printf "/images/%s" $file }}
 {{ $class := printf "icon %s" (.Get "class" | default "") }}
 
-<img src="{{ $src }}" alt="" class="{{ $class }}">
+<img src="{{ $src }}" alt="" class="{{ $class }}" aria-hidden=true>

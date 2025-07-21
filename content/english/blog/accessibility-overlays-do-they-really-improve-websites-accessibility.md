@@ -67,8 +67,8 @@ Overlays **cannot make your website compliant** with EAA, ADA, and other accessi
 
 Some overlay products offer repairs to the underlying page when loaded in the browser. While some trivial accessibility problems can be repaired this way, the accuracy of such repairs is limited. The problem is that overlays may fix surface-level issues but **fail to address deeper structural, semantic, or navigational barriers**.
 
+<div class="d-none d-md-block">
 {{< custom-table >}}
-
 <table>
   <caption>Automatic fixes and their limitations by overlay products</caption>
   <thead>
@@ -117,6 +117,51 @@ Some overlay products offer repairs to the underlying page when loaded in the br
   </tbody>
 </table>
 {{< /custom-table >}}
+</div>
+
+<div class="d-block d-md-none">
+
+  <p id="limitations-list"><strong>Automatic fixes and their limitations by overlay products:</strong></p>
+
+  <ul aria-labelledby="limitations-list">
+    <li>
+      <strong>Fix:</strong> Enabled basic keyboard navigation<br>
+      <strong>Aim:</strong> Ensures all interactive elements (such as buttons, links, and forms) are navigable via keyboard<br>
+      <strong>Limitation:</strong> Does not check focus order and keyboard traps
+    </li>
+    <li>
+      <strong>Fix:</strong> Improved color contrast<br>
+      <strong>Aim:</strong> Enhances contrast to improve readability<br>
+      <strong>Limitation:</strong> May ruin user experience with random color combinations; can override user’s preferences
+    </li>
+    <li>
+      <strong>Fix:</strong> ALT text detection and generation<br>
+      <strong>Aim:</strong> Detects missing ALT text and automatically generates it for images<br>
+      <strong>Limitation:</strong> Cannot detect when alt text is redundant; auto-generated text is often not meaningful
+    </li>
+    <li>
+      <strong>Fix:</strong> Offered generic accessibility statement<br>
+      <strong>Aim:</strong> Provides a ready-to-use draft for your website's accessibility statement<br>
+      <strong>Limitation:</strong> Not valid without a proper audit; draft may not match legal requirements
+    </li>
+    <li>
+      <strong>Fix:</strong> Enabled language identification<br>
+      <strong>Aim:</strong> Assists with language identification so screen readers interpret and pronounce text correctly<br>
+      <strong>Limitation:</strong> If missing, it indicates a fundamental code issue; overlays are not a real solution
+    </li>
+    <li>
+      <strong>Fix:</strong> Improved text resizing and line spacing<br>
+      <strong>Aim:</strong> Offers text resizing and line spacing options to improve readability<br>
+      <strong>Limitation:</strong> Can interfere with browser zoom and user preferences; may fail WCAG criteria
+    </li>
+    <li>
+      <strong>Fix:</strong> Enhanced cursor visibility<br>
+      <strong>Aim:</strong> Offers the option for a more visible cursor<br>
+      <strong>Limitation:</strong> Not required for WCAG conformance
+    </li>
+  </ul>
+
+</div>
 
 {{< custom-table >}}
 

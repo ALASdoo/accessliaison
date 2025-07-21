@@ -51,7 +51,7 @@ Accessibility overlays, plug-ins, or widgets are software add-ons to a website t
 
 This option might be useful for people who are not using assistive technology. For persons with disabilities, using assistive technology — such as screen reader, voice recognition, and screen magnifier — can be the only way to access online content. For them, **overlays can create significant issues** and even make a website unusable.
 
-{{< notice note >}}Overlays often duplicate accessibility functions already built into web browsers and operating systems. Guiding users in setting their preferred settings on a browser/device would be a more efficient way of providing support. You’ll find links to such guides in our accessibility statement.{{</ notice >}}
+{{< notice note >}}Overlays often duplicate accessibility functions already built into web browsers and operating systems. Guiding users in setting their preferred settings on a browser/device would be a more efficient way of providing support.{{</ notice >}}
 
 Some newer overlay products claim to improve code by detecting and “fixing” certain elements automatically. In the further text, we will address the limitations of such fixes.
 

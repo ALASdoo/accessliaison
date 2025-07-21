@@ -3,7 +3,7 @@ title: "Accessibility overlays: Do they really improve websites' accessibility?"
 date: 2025-02-14T10:07:21+06:00
 # post image
 image: 'images/blog/overlays.jpg'
-image_alt: 'On the monitor’s left side there is the symbol for a web accessibility plugin—on the right there is a skull symbol.'
+image_alt: 'On the left side of the dark computer monitor there is the symbol for a web accessibility plugin. On the right there is a neon skull graphyc.'
 # author
 author: 'Tajana Somogyi'
 # authorLink: 'https://www.linkedin.com/in/tajana-somogyi'
@@ -212,15 +212,17 @@ The best approach is to **embed accessibility into the design, development, and 
 
 If your website wasn’t built for accessibility, you can still **achieve genuine accessibility with the right tools and approach**. By conducting audits, fixing code, engaging accessibility experts, and implementing ongoing monitoring, you can build a digital presence that complies with relevant laws and is enjoyable to all.
 
-Steps to true accessibility:
+Steps to true accessibility:{#steps}
 
-1. **Identify the current accessibility barriers** on your site by conducting a full accessibility audit.
-2. **Seek guidance from accessibility experts** to choose the most efficient tools and approach.
-3. **Fix the UX, the code, and the content** that create the issues.
-4. Choose **accessible third-party widgets**.
-5. **Test with real users** of assistive technology.
-6. **Train your team** on accessibility best practices to achieve ongoing accessibility.
-7. **Monitor accessibility**, especially when the content and features are updated.
-8. **Keep up to date** with changes in legislation.
+<ol aria-labelledby="steps">
+  <li><strong>Identify the current accessibility barriers</strong> on your site by conducting a full accessibility audit.</li>
+  <li><strong>Seek guidance from accessibility experts</strong> to choose the most efficient tools and approach.</li>
+  <li><strong>Fix the UX, the code, and the content</strong> that create the issues.</li>
+  <li>Choose <strong>accessible third-party widgets</strong>.</li>
+  <li><strong>Test with real users</strong> of assistive technology.</li>
+  <li><strong>Train your team</strong> on accessibility best practices to achieve ongoing accessibility.</li>
+  <li><strong>Monitor accessibility</strong>, especially when the content and features are updated.</li>
+  <li><strong>Keep up to date</strong> with changes in legislation.</li>
+</ol>
 
-Commitment to accessibility reflects your organization's d**edication to inclusion and high-quality service**. By achieving true accessibility, you are **improving the search engine optimization (SEO) and user experience (UX)** of your website / web app. Your customers and current and potential employees will value your efforts.
+Commitment to accessibility reflects your organization's **dedication to inclusion and high-quality service**. By achieving true accessibility, you are **improving the search engine optimization (SEO) and user experience (UX)** of your website / web app. Your customers and current and potential employees will value your efforts.

@@ -27,7 +27,7 @@
               <div class="flex-shrink-0 mt-3" style="max-width: 180px;">
                 {{ partial "image" (dict
                   "Src" .Params.image
-                  "Alt" .Title
+                  "Alt" .Params.image_alt
                   "Class" "rounded-2 w-100"
                 ) }}
               </div>

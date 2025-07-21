@@ -79,12 +79,12 @@
 
           <!-- read more articles -->
           <aside class="section pb-0">
-            <h2 class="mb-4">{{ i18n "read_more_blog_post" }}</h2>
+            <h2 class="mb-4" id="read-more">{{ i18n "read_more_blog_post" }}</h2>
             <nav class="post-navigation" aria-label="More accessibility articles">
               {{ $currentPage := . }}
               {{ $pages := where site.RegularPages "Section" "blog" }}
               {{ $count := 0 }}
-              <ul>
+              <ul aria-labelledby="read-more">
                 {{ range $pages}}
                 {{ if and (ne .Permalink $currentPage.Permalink) (lt $count 4) }}
                 <li>

@@ -1,0 +1,13 @@
+{{/*
+  layouts/shortcodes/icon.html
+  Usage:
+    {{< icon type="do"  [class="extra classes"] >}}
+    {{< icon type="dont" [class="extra classes"] >}}
+*/}}
+
+{{ $type := .Get "type" | default "do" }}
+{{ $file := cond (eq $type "dont") "dont_icon.png" "do_icon.png" }}
+{{ $src   := printf "/images/%s" $file }}
+{{ $class := printf "icon %s" (.Get "class" | default "") }}
+
+<img src="{{ $src }}" alt="" class="{{ $class }}">

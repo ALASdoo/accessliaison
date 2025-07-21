@@ -3,10 +3,11 @@
 banner:
   title: 'Web accessibility solutions beyond compliance'
   image: 'images/hero.webp'
-  content: '
-    - Achieve compliance quickly while improving quality and user experience
-
-    - We offer expertise, cutting-edge tools, and proven methodologies — no shortcuts'
+  content: |
+    <ul aria-labelledby="hero-title">
+      <li>Achieve compliance quickly while improving quality and user experience</li>
+      <li>We offer expertise, cutting-edge tools, and proven methodologies — no shortcuts</li>
+    </ul>
   button:
     enable: true
     label: 'Book a free consultation'

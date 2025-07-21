@@ -3,7 +3,7 @@ title: 'EAA compliance: Understanding the scope and the impact on web accessibil
 date: 2025-02-11T10:07:21+06:00
 # post image
 image: 'images/blog/eaa_part_1.jpg'
-image_alt: ''
+image_alt: 'A judge’s gavel rests on a legal document under a spotlight, symbolizing the legal importance of accessibility compliance. A pen and a mobile sit nearby on the table.'
 # author
 author: 'Tajana Somogyi'
 # authorLink: 'https://www.linkedin.com/in/tajana-somogyi'

@@ -12,6 +12,12 @@
         color: rgba(248, 253, 255, 0.7);
     }
 
+    ul, ol {
+        ul, ol {
+            list-style-type: disc;
+        }
+    }
+
     table {
         width: 100%;
         vertical-align: top;

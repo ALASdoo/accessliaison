@@ -5,7 +5,7 @@
         <div class="col-lg-10 mx-auto content-70ch">
           <h1 class="mb-4">{{ .Title | markdownify }}</h1>
           {{ with .Params.subtitle }}
-          <div class="mb-0 fw-500 text-start">{{ . | markdownify }}</div>
+          <div class="mb-0 fw-500">{{ . | markdownify }}</div>
           {{ end }}
         </div>
       </div>

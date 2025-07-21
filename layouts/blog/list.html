@@ -22,9 +22,9 @@
           }}
 
           <article class="mb-5">
-            <div class="d-flex align-items-start gap-5">
+            <div class="d-flex align-items-start gap-5 flex-md-row flex-column">
               {{ if .Params.image }}
-              <div class="flex-shrink-0 mt-3" style="max-width: 180px;">
+              <div class="flex-shrink-0 mt-3 mb-md-0 mb-3" style="max-width: 180px;">
                 {{ partial "image" (dict
                   "Src" .Params.image
                   "Alt" .Params.image_alt

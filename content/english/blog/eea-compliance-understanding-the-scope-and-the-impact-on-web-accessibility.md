@@ -21,7 +21,9 @@ cta:
   btn_link: 'https://calendly.com/vilmos/meet'
 ---
 
-The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities. Businesses operating in the EU, including e-commerce, banking, and transport, must comply with these regulations by **June 28, 2025**, or face penalties. Responsibility for accessibility violations lies with the website or app owners, even if third-party tools contribute to non-compliance. As the deadline approaches, businesses must take proactive steps to meet **WCAG 2.1** standards and ensure compliance to avoid legal and financial consequences.
+The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities. 
+
+Businesses operating in the EU, including e-commerce, banking, and transport, must comply with these regulations since **June 28, 2025**. Responsibility for accessibility violations lies with the website/app owners, even if third-party tools contribute to non-compliance.
 
 ## Table of contents: {#toc-heading}
 

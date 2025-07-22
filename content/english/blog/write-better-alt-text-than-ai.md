@@ -54,7 +54,7 @@ The best alt text reflects both the image and its purpose in the content.
 The same image may need completely different alt text depending on its context. For example:
 
 - A chart used in a marketing report might need a summary of the key takeaway. The same chart in a product analytics dashboard might need a detailed description of the data.
-- A screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as "Streamlined checkout process with one-click payment options." In a help article it might be: "Checkout form with fields for name, address, and payment method."
+- A screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as `"Streamlined checkout process with one-click payment options."` In a help article it might be: `ruby"Checkout form with fields for name, address, and payment method."`
 
 Without context, alt text can either feel vague or create confusion for screen reader users. That’s why we always ask:
 
@@ -75,17 +75,21 @@ Ways to shorten your alt text and keep it relevant:
 - **Don’t use "image of", "graphic showing", or "picture of"**. Screen readers already announce it’s an image.
 
   {{< icon type="dont" >}} Don’t:
+  
   `alt="Image of hoop earrings."`
 
   {{< icon type="do" >}} Do:
+  
   `alt="Gold-plated hoop earrings with a twist design"`
 
 - **No fluff and filler word, or repetition of surrounding text**
 
   {{< icon type="dont" >}} Don’t:
+  
   `alt="Image of a beautiful and stylish modern living room interior with a couch, table, rug, and a lamp, designed for comfort and elegance"`
 
   {{< icon type="do" >}} Do:
+  
   `alt="Modern living room with minimalist grey couch and soft lighting"`
 
 - **If an image requires a longer description, add a visible image description beneath.** For example, put the data table near the chart. Be sure to check the table’s accessibility with a screen reader.
@@ -109,7 +113,9 @@ But here’s the key: **accessibility and SEO are not in conflict**. You don’t
 #### Be descriptive and accurate
 
 Describe the image in a concise and specific way, focusing on what’s most relevant to the content.
+
 For example: 
+
 `alt="Reusable stainless steel water bottle with bamboo lid."` is better than `alt="bottle"`
 
 #### Use keywords naturally
@@ -175,9 +181,11 @@ Alt text isn’t the place to be overly clever or vague. Aim for clear, concise 
 ![Screenshot of our feature that lets users schedule automated reports in one click](../images/screen.png)
 
 {{< icon type="dont" >}} Don't: 
+
 `alt="We're changing the game"`
 
 {{< icon type="do" >}} Do: 
+
 `alt="Screenshot of our feature that lets users schedule automated reports in one click"`
 
 Expressive language is ok, as long as it helps users understand the image’s purpose.

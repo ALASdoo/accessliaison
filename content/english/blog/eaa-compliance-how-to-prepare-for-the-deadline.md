@@ -70,7 +70,7 @@ Requirements for the non-web documents are explained in {{< link_external url="h
 
 ### Don’t rely on accessibility overlays and plug-ins
 
-Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about what plugins are useful for and their limitations here: [How useful are accessibility overlays and plugins?](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/)
+Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about [what plugins are useful for and their limitations](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/).
 
 The EAA specifically requires that digital products are designed and produced to be accessible.
 

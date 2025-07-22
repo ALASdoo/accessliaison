@@ -70,7 +70,7 @@ Exception: Documents published before 28th June 2025, if not updated or edited, 
 
 Requirements for the non-web documents are explained in {{< link_external url="https://www.w3.org/TR/wcag2ict-22/" >}}Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT){{< /link_external >}}. Guidelines you can find here are referenced and incorporated in EN 301 549, and standards in countries beyond the EU (e.g., India, Kenya, Australia, USA).
 
-### Don’t rely on accessibility overlays and plug-ins
+### Don’t rely on accessibility overlays and plugins
 
 Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about [what plugins are useful for and their limitations](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/).
 

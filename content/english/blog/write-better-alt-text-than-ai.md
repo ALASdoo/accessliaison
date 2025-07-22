@@ -116,7 +116,7 @@ Describe the image in a concise and specific way, focusing on what’s most rele
 
 For example: 
 
-`alt="Reusable stainless steel water bottle with bamboo lid."` is better than `alt="bottle"`
+`alt="Reusable stainless steel water bottle with bamboo lid."` is better than `alt="bottle"`.
 
 #### Use keywords naturally
 

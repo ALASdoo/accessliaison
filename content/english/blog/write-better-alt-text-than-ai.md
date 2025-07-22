@@ -200,7 +200,7 @@ Use alt text to communicate product details (materials, features, context of use
 
 #### Marketing agencies’ alt text benefit
 
-Use it in storytelling to narrate campaigns, or behind-the-scenes visuals. They can strengthen a brand, and position them as inclusive and disability-aware.
+Use it in storytelling to narrate campaigns, or behind-the-scenes visuals. They can strengthen a brand, and position it as inclusive and disability-aware.
 
 #### SaaS companies’ alt text benefit
 

@@ -62,7 +62,9 @@ Even if not incorporated into the laws yet, conforming to WCAG 2.2 will save you
 
 ### Make documents accessible
 
-EN 301 549 also applies to digital and downloadable documents. All HTML documents, PDFs, office documents, spreadsheets, and presentations have to be accessible if they are added or edited after 28th June 2025\. Even if you have an accessible HTML document on your platform, the downloadable PDF version has to be accessible too, according to the “Preservation of accessibility information during conversion” requirement of EN 301 549\.
+EN 301 549 also applies to digital and downloadable documents. All **HTML documents, PDFs, Office documents, spreadsheets, and presentations** have to be accessible if they are added or edited after 28th June 2025\. 
+
+Even if you have an accessible HTML document on your platform, the downloadable PDF version has to be accessible too, according to the “Preservation of accessibility information during conversion” requirement of EN 301 549\.
 
 Exception: Documents published before 28th June 2025, if not updated or edited, are considered archives and do not have to comply.
 

@@ -10,7 +10,7 @@
   data-aos-easing="ease-in-out-sine">
   <div class="container">
     <div class="row">
-      <div class="mx-auto">
+      <div class="col-12 col-lg-10 mx-auto">
         <div class="content ">
           {{range where site.RegularPages "Section" .Params.section}}
 
@@ -36,11 +36,6 @@
                 <h2>
                   <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 </h2>
-                <span class="article-time mb-2">
-                  {{i18n `published_on`}} <time datetime='{{ .PublishDate }}'>
-                    {{ time.Format ":date_long" .PublishDate }}
-                  </time>
-                </span>
                 <p>{{ .Summary }}</p>
               </div>
             </div>

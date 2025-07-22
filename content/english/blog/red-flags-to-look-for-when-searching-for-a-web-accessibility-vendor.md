@@ -23,7 +23,9 @@ cta:
 
 Some businesses that have already invested in their website’s accessibility are getting sued. That happens because they rely on so-called ‘accessibility solutions’ that don’t work. How can you avoid this trap?
 
-The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility. How can you do that if you are not an expert yourself? It might not be an easy task, but there is a lot you **can** do. Make sure you learn the most important facts and watch out for the red flags.
+The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility. 
+
+How can you do that if you are not an expert yourself? It might not be an easy task, but there is a lot you **can** do. Make sure you learn the most important facts and watch out for the red flags.
 
 ## Table of contents: {#toc-heading}
 
@@ -37,7 +39,7 @@ The most efficient solution is to choose a trusted web accessibility solution pr
 
 ## Red flag 1: Too narrow scope
 
-Web accessibility involves a broad range of expertise, from legal knowledge to design, development, quality assurance (QA), and user experience (UX). If a vendor focuses on just one aspect and neglects the others, they may not have the depth of knowledge needed to support your project in the long run. This can create gaps in your accessibility strategy, forcing you to seek additional support later, which takes more time and resources.
+Web accessibility involves a broad range of expertise, from legal knowledge to design, development, quality assurance (QA), and user experience (UX). If a vendor focuses on just one aspect and neglects the others, they may not have the depth of knowledge needed to support your project in the long run.
 
 ### Failure to offer ongoing support
 
@@ -90,7 +92,9 @@ An accessibility statement on the vendor’s website should be easy to find and 
 
 ### No certified experts
 
-The only recognized body for accessibility certification is the {{< link_external url="https://www.accessibilityassociation.org/s/" >}}International Association of Accessibility Professionals (IAAP){{< /link_external >}}. You can require confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile. Not all accessibility experts need to have the certificate to do their job properly. It’s a red flag only if no one in the organization holds a certification. It means that they do not invest in education enough and are probably missing the bigger picture.
+The only recognized body for accessibility certification is the {{< link_external url="https://www.accessibilityassociation.org/s/" >}}International Association of Accessibility Professionals (IAAP){{< /link_external >}}. You can get a confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile. 
+
+Not all accessibility experts need to have the certificate to do their job properly. It’s a red flag only if no one in the organization holds a certification. It means that they do not invest in education enough and are probably missing the bigger picture.
 
 ### Unclear or unreasonable pricing
 

@@ -50,7 +50,7 @@ To ensure compliance with the EAA for digital services (websites and application
 Although EN 301 549 builds on top of WCAG 2.1 Level AA, there are additional requirements for:
 
 - **User preferences and settings** (dark mode, fonts, color contrast, motion…)
-- **Documents and support services (**accessibility statement and help pages are both examples of documenting accessibility and compatibility features)
+- **Documents and support services** (accessibility statement and help pages are both examples of documenting accessibility and compatibility features)
 - **Authoring tools** (e.g. comment section on the website (review) is considered an authoring tool)
 - **Biometrics, voice and video communication, real-time text**
 

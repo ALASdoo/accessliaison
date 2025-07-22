@@ -120,7 +120,7 @@ For example:
 
 #### Use keywords naturally
 
-If your image is relevant to "eco-friendly drinkware," it’s fine to include that phrase — as long as it fits the description naturally.
+If your image is relevant to "eco-friendly drinkware", it’s fine to include that phrase — as long as it fits the description naturally.
 
 Avoid keyword stuffing like:
 

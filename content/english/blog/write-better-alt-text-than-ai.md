@@ -54,7 +54,7 @@ The best alt text reflects both the image and its purpose in the content.
 The same image may need completely different alt text depending on its context. For example:
 
 - A chart used in a marketing report might need a summary of the key takeaway. The same chart in a product analytics dashboard might need a detailed description of the data.
-- A screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as `"Streamlined checkout process with one-click payment options."` In a help article it might be: `"Checkout form with fields for name, address, and payment method."`
+- A screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as `"Streamlined checkout process with one-click payment options."` In a help article it might be `"Checkout form with fields for name, address, and payment method."`
 
 Without context, alt text can either feel vague or create confusion for screen reader users. That’s why we always ask:
 

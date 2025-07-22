@@ -21,9 +21,9 @@ cta:
   btn_link: 'https://calendly.com/vilmos/meet'
 ---
 
-Many businesses may discover a gap between the current accessibility of their digital product or service and compliance with the European Accessibility Act (EAA) requirements. With the **deadline of 28th June 2025** fast approaching, this might seem like an impossible task.
+Many businesses may discover a gap between the current accessibility of their digital product or service and compliance with the European Accessibility Act (EAA) requirements. Closing this gap might seem like an impossible task.
 
-Don’t go searching for quick fixes just yet\! In this article, we’ll help you plan and execute web accessibility practices like a pro. Anyway, when law is considered, there are no shortcuts to ensuring the accessibility of websites and apps. The right methodologies and choosing a reliable ally can secure you compliance by the deadline.
+Don’t go searching for quick fixes just yet\! In this article, we’ll help you plan and execute web accessibility practices like a pro. Anyway, when law is considered, there are no shortcuts to ensuring the accessibility of websites and apps. The right methodologies and choosing a reliable ally can secure you compliance.
 
 For more information about the EAA, read our first blog post from this series: [EAA Compliance: Understanding the scope and the impact on web accessibility](/blog/eea-compliance-understanding-the-scope-and-the-impact-on-web-accessibility/)
 
@@ -54,11 +54,11 @@ Although EN 301 549 builds on top of WCAG 2.1 Level AA, there are additional req
 - **Authoring tools** (e.g. comment section on the website (review) is considered an authoring tool)
 - **Biometrics, voice and video communication, real-time text**
 
-### Consider aiming for WCAG 2.2 Level AA2-level-aa
+### Consider aiming for WCAG 2.2 Level AA
 
-WCAG 2.2 will soon be part of EN 301 549, and with that, a part of WAD and the EAA. An update to EN 301 549 is scheduled for 2025\. It is expected that version 4.1.1 of EN 301 549 will incorporate WCAG 2.2 by the end of 2025 or early 2026\.
+WCAG 2.2 will soon be part of EN 301 549, and with that, a part of the Web Accessibility Directive (WAD) and the EAA. It is expected that version 4.1.1 of EN 301 549 will incorporate WCAG 2.2 by the end of 2025, or early 2026\.
 
-Even if not incorporated into the laws yet, it will save you time in the future and is considered to be the best practice, to use WCAG 2.2. It is already a standard.
+Even if not incorporated into the laws yet, conforming to WCAG 2.2 will save you time in the future and is considered the best practice. It is already a standard.
 
 ### Make documents accessible
 
@@ -84,11 +84,11 @@ Use a combination of:
 
 ## Document accessibility efforts
 
-Create and maintain an accessibility statement or conformance report (e.g., using a VPAT or similar format adapted for EN 301 549\) that clearly outlines how your website or app meets the relevant criteria.
+Create and maintain an accessibility statement or Accessibility Conformance Report (ACR). Use a Voluntary Product Accessibility Template (VPAT) or similar format adapted for EN 301 549\ to clearly outline how your website/app meets the relevant criteria.
 
 This documentation helps demonstrate your commitment to compliance and can be referenced by stakeholders, regulators, and in the procurement process.
 
-Although the EAA does not specifically require an accessibility statement, it does require that accessibility and compatibility features be documented and explained. EU member countries will certainly require accessibility statements with a specific format in their national legislation. Get informed about what template of the accessibility statement to use for the market you are serving.
+Although the EAA does not specifically require an accessibility statement, it does require that accessibility and compatibility features be documented and explained. Each EU member country decides  on a format of accessibility statement needed. Get informed about what template to use for the market you are serving.
 
 ## Ensure accessibility of third-party tools
 

@@ -86,7 +86,7 @@ Use a combination of:
 
 ## Document accessibility efforts
 
-Create and maintain an accessibility statement or Accessibility Conformance Report (ACR). Use a Voluntary Product Accessibility Template (VPAT) or similar format adapted for EN 301 549\ to clearly outline how your website/app meets the relevant criteria.
+Create and maintain an accessibility statement or Accessibility Conformance Report (ACR). Use a Voluntary Product Accessibility Template (VPAT) or similar format adapted for EN 301 549 to clearly outline how your website/app meets the relevant criteria.
 
 This documentation helps demonstrate your commitment to compliance and can be referenced by stakeholders, regulators, and in the procurement process.
 

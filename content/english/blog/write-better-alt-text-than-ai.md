@@ -53,8 +53,8 @@ The best alt text reflects both the image and its purpose in the content.
 
 The same image may need completely different alt text depending on its context. For example:
 
-- A **chart** used in a marketing report might need a summary of the key takeaway. The same chart in a product analytics dashboard might need a detailed description of the data.
-- A **screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as "Streamlined checkout process with one-click payment options." In a help article it might be: "Checkout form with fields for name, address, and payment method."
+- A chart used in a marketing report might need a summary of the key takeaway. The same chart in a product analytics dashboard might need a detailed description of the data.
+- A screenshot of a checkout form** on a software as a service (SaaS) landing page could be described as "Streamlined checkout process with one-click payment options." In a help article it might be: "Checkout form with fields for name, address, and payment method."
 
 Without context, alt text can either feel vague or create confusion for screen reader users. That’s why we always ask:
 
@@ -68,21 +68,25 @@ Effective alt text should be **clear, meaningful, and concise**. Usually one sho
 
 Some screen readers stop reading alt text after 125 characters. It is a good guideline to make alt text fit this limit, as it also reduces the cognitive load. This is especially important if there are many images on the page, like a product listing page (PLP) on e-commerce websites.
 
-If you exceed the 125 limit, take care to put all the important information in the first 125 characters.
+If you exceed the 125 limit, take care to **put all the important information in the first 125 characters**.
 
 Ways to shorten your alt text and keep it relevant:
 
 - **Don’t use "image of", "graphic showing", or "picture of"**. Screen readers already announce it’s an image.
 
-  {{< icon type="dont" >}} Don’t: alt="Image of hoop earrings."
+  {{< icon type="dont" >}} Don’t:
+  `alt="Image of hoop earrings."`
 
-  {{< icon type="do" >}} Do: alt="Gold-plated hoop earrings with a twist design"
+  {{< icon type="do" >}} Do:
+  `alt="Gold-plated hoop earrings with a twist design"`
 
 - **No fluff and filler word, or repetition of surrounding text**
 
-  {{< icon type="dont" >}} Don’t: alt="Image of a beautiful and stylish modern living room interior with a couch, table, rug, and a lamp, designed for comfort and elegance"
+  {{< icon type="dont" >}} Don’t:
+  `alt="Image of a beautiful and stylish modern living room interior with a couch, table, rug, and a lamp, designed for comfort and elegance"`
 
-  {{< icon type="do" >}} Do: alt="Modern living room with minimalist grey couch and soft lighting"
+  {{< icon type="do" >}} Do:
+  `alt="Modern living room with minimalist grey couch and soft lighting"`
 
 - **If an image requires a longer description, add a visible image description beneath.** For example, put the data table near the chart. Be sure to check the table’s accessibility with a screen reader.
 
@@ -105,7 +109,8 @@ But here’s the key: **accessibility and SEO are not in conflict**. You don’t
 #### Be descriptive and accurate
 
 Describe the image in a concise and specific way, focusing on what’s most relevant to the content.
-For example: alt="Reusable stainless steel water bottle with bamboo lid" is better than alt="bottle".
+For example: 
+`alt="Reusable stainless steel water bottle with bamboo lid."` is better than `alt="bottle"`
 
 #### Use keywords naturally
 
@@ -113,7 +118,7 @@ If your image is relevant to "eco-friendly drinkware," it’s fine to include th
 
 Avoid keyword stuffing like:
 
-alt="eco-friendly drinkware water bottle reusable green bottle eco water".
+`alt="eco-friendly drinkware water bottle reusable green bottle eco water"`
 
 #### Let your product images shine
 
@@ -133,7 +138,7 @@ This is especially relevant for:
 
 - e-commerce brands
 - marketing agencies working on campaigns
-- Software as a service (SaaS) companies showcasing product screens
+- Software as a Service (SaaS) companies showcasing product screens
 - inclusive brands
 
 ### How to use alt text to strengthen your brand identity
@@ -146,7 +151,7 @@ Example:
 
 ![Playful hot pink sneakers, made of cotton canvas and vulcanized rubber, splashing through a puddle.](../images/pink_shoes.png)
 
-alt="Playful hot pink sneakers, made of cotton canvas and vulcanized rubber, splashing through a puddle." feels more on-brand than alt="Pink shoes".
+`alt="Playful hot pink sneakers, made of cotton canvas and vulcanized rubber, splashing through a puddle."` feels more on-brand than `alt="Pink shoes"`.
 
 #### Tell the story behind the image
 
@@ -156,11 +161,12 @@ Example:
 
 ![Maria, the co-founder of Access Liaison, presenting at Web Summit 2024, sharing our journey to inclusive design.](../images/websummit.png)
 
-alt="Maria, the co-founder of Access Liaison, presenting at Web Summit 2024, sharing our journey to inclusive design." gives context to the image.
+`alt="Maria, the co-founder of Access Liaison, presenting at Web Summit 2024, sharing our journey to inclusive design."` gives context to the image.
 
 #### Support your brand positioning
 
-Emphasize key attributes like sustainability, innovation, or craftsmanship. Example: alt="Handcrafted ceramic mug made from locally sourced clay."
+Emphasize key attributes like sustainability, innovation, or craftsmanship. 
+Example: `alt="Handcrafted ceramic mug made from locally sourced clay."`
 
 #### Prioritize clarity and accuracy
 
@@ -168,9 +174,11 @@ Alt text isn’t the place to be overly clever or vague. Aim for clear, concise 
 
 ![Screenshot of our feature that lets users schedule automated reports in one click](../images/screen.png)
 
-{{< icon type="dont" >}} Avoid: alt="We're changing the game"
+{{< icon type="dont" >}} Don't: 
+`alt="We're changing the game"`
 
-{{< icon type="do" >}} Instead: alt="Screenshot of our feature that lets users schedule automated reports in one click"
+{{< icon type="do" >}} Do: 
+`alt="Screenshot of our feature that lets users schedule automated reports in one click"`
 
 Expressive language is ok, as long as it helps users understand the image’s purpose.
 
@@ -194,13 +202,13 @@ Alt text might be invisible to most users — but for those who need it, it’s 
 
 AI-generated alt text might seem like a convenient shortcut. The truth is that it’s rarely a substitute for human-written descriptions.
 
-Artificial intelligence algorithms can now excel in recognizing what is in the image. The issue is that they can’t understand what an image **means** within the context of the page.
+Artificial intelligence algorithms can now excel in recognizing what is in the image. The issue is that they **can’t understand what an image means within the context of the page**.
 
 Here’s why relying too much on auto-generated alt text can hurt your site:{#hurt}
 
 <ul aria-labelledby="hurt">
   <li><strong>It's often inaccurate</strong>: AI might misidentify a product, misread text in images, or fail to grasp brand-specific visuals.</li>
-  <li><strong>It lacks context</strong>: An image of a laptop on a desk might be labeled "computer," but that doesn't help users understand it's a lifestyle image for a SaaS landing page or a product demo.</li>
+  <li><strong>It lacks context</strong>: An image of a laptop on a desk might be labeled `"computer"` but that doesn't help users understand it's a lifestyle image for a SaaS landing page or a product demo.</li>
   <li><strong>It can undermine trust</strong>: For e-commerce brands, unclear image descriptions can lead to uncertainty and lost conversions.</li>
   <li><strong>It doesn't meet compliance standards</strong>: WCAG and accessibility laws require meaningful alternative text, not automated guesses.</li>
 </ul>
@@ -224,13 +232,13 @@ Alt text is redundant when the image does not provide any meaningful information
 Here are a few common examples:{#common}
 
 <ul aria-labelledby="common">
-  <li><strong>Logos or icons placed beside the company name:</strong> If the text "Acme Agency" is written right next to the logo, adding alt="Acme Agency" to the image is repetitive. It’s better to use alt="" (empty alt text) so screen readers can skip it.</li>
-  <li><strong>Buttons with both text and icons:</strong> If a "Buy Now" button includes a shopping cart icon, you don’t need to write alt="shopping cart" on the icon. The button label already communicates the purpose.</li>
+  <li><strong>Logos or icons placed beside the company name:</strong> If the text "Acme Agency" is written right next to the logo, adding `alt="Acme Agency"` to the image is repetitive. It’s better to use `alt=""` (empty alt text) so screen readers can skip it.</li>
+  <li><strong>Buttons with both text and icons:</strong> If a "Buy Now" button includes a shopping cart icon, you don’t need to write `alt="shopping cart"` on the icon. The button label already communicates the purpose.</li>
   <li><strong>Images repeated for decorative purposes:</strong> For example, a checkmark icon next to each bullet point does not need a description — it adds no meaning.</li>
   <li><strong>Graphs with fully described data underneath:</strong> If the chart’s data is already explained in a paragraph or data table right below it, including the same explanation in the alt text is redundant.</li>
 </ul>
 
-In these cases, we recommend using empty alt text (alt="") and ensuring the image is not focusable. This allows assistive technologies to move through your content more efficiently.
+In these cases, we recommend using empty alt text (`alt=""`) and ensuring the image is not focusable. This allows assistive technologies to move through your content more efficiently.
 
 ## Make alt text part of your strategy
 

@@ -128,7 +128,9 @@ Avoid keyword stuffing like:
 
 #### Let your product images shine
 
-For e-commerce sites, descriptive alt text can help your product pages surface in image search and boost relevance for long-tail queries like "lightweight waterproof hiking jacket". The alt text should supplement the product name and description, not just repeat the same information.
+For e-commerce sites, descriptive alt text can help your product pages surface in image search and boost relevance for long-tail queries like "lightweight waterproof hiking jacket". 
+
+The alt text should supplement the product name and description, not just repeat the same information.
 
 #### Don’t repeat the same alt text
 

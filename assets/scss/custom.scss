@@ -522,7 +522,33 @@ body.dark {
     }
 }
 .footer {
-    // background: url('/images/footer_bg_dark.png') repeat-x;
+    &:not(.footer-home) {
+        border-top: 1px solid #8fa7b7;
+
+        background: linear-gradient(
+            to bottom,
+            #aac0ce 0px,
+            #DCE6E9 80px,
+            #DCE6E9 400px
+        );
+
+        .dark & {
+            border-top-color: #25c5f3;
+            background: linear-gradient(
+                to bottom,
+                /* teal to mid-dark */
+                #146780 0%,
+                #105468 2.5%,
+                #0c3d4d 5%,
+                #082b35 7.5%,
+                #051b22 10%,
+                #020f14 15%,
+                /* deep navy to almost black */
+                #000406 50%,
+                #000405 100%
+            );
+        }
+    }
 
 	.footer-heading {
 		color: $color-primary;

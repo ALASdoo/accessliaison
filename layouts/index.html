@@ -59,21 +59,23 @@
     </div>
     <div class="row">
       <div class="col-12 col-xl-7 mx-auto mb-xl-0">
-        <h3 class="mt-4 mb-4 text-md-center"> {{ .subtitle | markdownify }} </h3>
+        <h3 class="mt-4 mb-4 text-md-center" id="feature-list-title"> {{ .subtitle | markdownify }} </h3>
         <div class="text-md-center"> {{ .subtitle_content }} </div>
       </div>
     </div>
     <div class="row gx-md-4 gy-4 mt-1">
-      {{ range .feature_item }}
-        <div class="col-12 col-sm-6 col-lg-3 d-flex">
-          <div class="feature-card bg-white rounded-4 shadow d-block d-sm-flex">
-            <div class="block">
-              <h4 class="mb-4">{{ .name }}</h4>
-              <p class="mb-0">{{ .content | markdownify }}</p>
+      <ul class="row gx-md-4 gy-4 mt-1" aria-labelledby="feature-list-title">
+        {{ range .feature_item }}
+          <li class="col-12 col-sm-6 col-lg-3 d-flex">
+            <div class="feature-card bg-white rounded-4 shadow d-block d-sm-flex">
+              <div class="block">
+                <h4 class="mb-4">{{ .name }}</h4>
+                <p class="mb-0">{{ .content | markdownify }}</p>
+              </div>
             </div>
-          </div>
-        </div>
-      {{ end }}
+          </li>
+        {{ end }}
+      </ul>
     </div>
   </div>
 </section>
@@ -230,16 +232,18 @@
   <div class="container">
     <div class="row">
       <div class="col-xl-7 mb-4 text-md-center mx-auto">
-        <h2 class="section-title mb-4">{{ .title | markdownify }}</h2>
+        <h2 class="section-title mb-4" id="why-choose-us-title">{{ .title | markdownify }}</h2>
       </div>
     </div>
     <div class="why-choose-us-container">
-      {{ range .items }}
-      <div class="why-choose-us-item">
-        <h3 class="mb-4"> {{ .name }} </h3>
-        <p> {{ .content | markdownify }} </p>
-      </div>
-      {{ end }}
+      <ul class="why-choose-us-list row" aria-labelledby="why-choose-us-title">
+        {{ range .items }}
+        <li class="why-choose-us-item col-12 col-lg-4 mb-4 px-4">
+          <h3 class="mb-4"> {{ .name }} </h3>
+          <p> {{ .content | markdownify }} </p>
+        </li>
+        {{ end }}
+      </ul>
     </div>
   </div>
 </section>

@@ -15,7 +15,7 @@
                 {{ site.Params.footer_content | markdownify }}
               </p>
               {{ with site.Params.social }}
-              <ul class="list-inline social-icons">
+              <ul class="list-inline social-icons" aria-label="AccessLiaison on social media">
                 {{ range . }}
                 <li class="list-inline-item">
                   <a href="{{ .link | safeURL }}"
@@ -63,7 +63,7 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-6 col-lg-4 col-sm-6 footer-center">
+            <div class="col-lg-4 col-sm-6 footer-center">
               {{ if site.Menus.footer }}
               <ul class="list-unstyled footer-nav footer-list">
               {{ $currentPage := . }}
@@ -82,7 +82,7 @@
               </ul>
               {{ end }}
             </div>
-            <div class="col-6 col-lg-4 col-sm-6 footer-right">
+            <div class="col-lg-4 col-sm-6 footer-right">
               <!-- external link -->
               <a href="{{ site.Params.footer_url | relLangURL }}"
               class="mt-3 footer-wcag"

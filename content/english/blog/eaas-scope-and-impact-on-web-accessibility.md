@@ -1,5 +1,5 @@
 ---
-title: 'EAA compliance: Understanding the scope and the impact on web accessibility'
+title: 'EAA’s scope and impact on web accessibility'
 date: 2025-02-11T10:07:21+06:00
 # post image
 image: 'images/blog/eaa_part_1.jpg'
@@ -11,7 +11,7 @@ author: 'Tajana Somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
-description: 'This is meta description'
+description: "What it takes to meet the European Accessibility Act's requirements — and which businesses are affected."
 # post draft
 draft: false
 

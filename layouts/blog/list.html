@@ -10,7 +10,7 @@
   data-aos-easing="ease-in-out-sine">
   <div class="container">
     <div class="row">
-      <div class="col-12 col-lg-10 mx-auto">
+      <div class="col-12 mx-auto">
         <ul class="content blog-list list-unstyled" aria-label="Blog articles list">
           {{range where site.RegularPages "Section" .Params.section}}
 
@@ -22,22 +22,22 @@
           }}
 
           <li class="mb-5">
-            <article>
-              <div class="d-flex align-items-start gap-5 flex-md-row flex-column">
+            <article class="container blog-item rounded-2 overflow-hidden">
+              <div class="row">
                 {{ if .Params.image }}
-                <div class="flex-shrink-0 mt-3 mb-md-0 mb-3" style="max-width: 180px;">
+                <div class="col-12 col-md-4 d-flex align-items-stretch m-0 p-0">
                   {{ partial "image" (dict
                     "Src" .Params.image
                     "Alt" .Params.image_alt
-                    "Class" "rounded-2 w-100"
+                    "Class" "w-100 h-100 object-fit-cover"
                   ) }}
                 </div>
                 {{ end }}
-                <div class="content-70ch">
+                <div class="col-12 col-md-8 p-4">
                   <h2>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                   </h2>
-                  <p>{{ .Params.description }}</p>
+                  <p class="content-70ch">{{ .Params.description }}</p>
                 </div>
               </div>
             </article>

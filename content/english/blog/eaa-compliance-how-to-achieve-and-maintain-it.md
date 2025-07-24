@@ -1,5 +1,5 @@
 ---
-title: 'EAA compliance: How to prepare for the deadline'
+title: 'EAA compliance: How to achieve and maintain it'
 date: 2025-02-12T10:07:21+06:00
 # post image
 image: 'images/blog/how_to_achieve_compliance.jpg'
@@ -11,7 +11,7 @@ author: 'Tajana Somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
-description: 'This is meta description'
+description: 'Quick fixes won’t get you EAA compliant. Follow these steps to implement lasting accessibility practices.'
 # post draft
 draft: false
 

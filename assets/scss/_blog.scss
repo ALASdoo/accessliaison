@@ -79,7 +79,20 @@
         vertical-align: middle;
     }
 }
+.blog-item {
+    border: 1px solid $border-color;
 
+    .card-img {
+        margin-bottom: 0;
+    }
+}
+
+.object-fit-cover {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: auto;
+}
 
 
 .notice {

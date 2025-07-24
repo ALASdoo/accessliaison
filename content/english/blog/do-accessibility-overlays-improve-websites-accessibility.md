@@ -126,37 +126,37 @@ Some overlay products offer repairs to the underlying page when loaded in the br
 
   <ul aria-labelledby="limitations-list">
     <li>
-      <strong>Fix:</strong> Enabled basic keyboard navigation<br>
+      <strong>Fix: Enabled basic keyboard navigation</strong><br>
       <strong>Aim:</strong> Ensures all interactive elements (such as buttons, links, and forms) are navigable via keyboard<br>
       <strong>Limitation:</strong> Does not check focus order and keyboard traps
     </li>
     <li>
-      <strong>Fix:</strong> Improved color contrast<br>
+      <strong>Fix: Improved color contrast</strong><br>
       <strong>Aim:</strong> Enhances contrast to improve readability<br>
       <strong>Limitation:</strong> May ruin user experience with random color combinations; can override user’s preferences
     </li>
     <li>
-      <strong>Fix:</strong> ALT text detection and generation<br>
+      <strong>Fix: ALT text detection and generation</strong><br>
       <strong>Aim:</strong> Detects missing ALT text and automatically generates it for images<br>
       <strong>Limitation:</strong> Cannot detect when alt text is redundant; auto-generated text is often not meaningful
     </li>
     <li>
-      <strong>Fix:</strong> Offered generic accessibility statement<br>
+      <strong>Fix: Offered generic accessibility statement</strong><br>
       <strong>Aim:</strong> Provides a ready-to-use draft for your website's accessibility statement<br>
       <strong>Limitation:</strong> Not valid without a proper audit; draft may not match legal requirements
     </li>
     <li>
-      <strong>Fix:</strong> Enabled language identification<br>
+      <strong>Fix: Enabled language identification</strong><br>
       <strong>Aim:</strong> Assists with language identification so screen readers interpret and pronounce text correctly<br>
       <strong>Limitation:</strong> If missing, it indicates a fundamental code issue; overlays are not a real solution
     </li>
     <li>
-      <strong>Fix:</strong> Improved text resizing and line spacing<br>
+      <strong>Fix: Improved text resizing and line spacing</strong><br>
       <strong>Aim:</strong> Offers text resizing and line spacing options to improve readability<br>
       <strong>Limitation:</strong> Can interfere with browser zoom and user preferences; may fail WCAG criteria
     </li>
     <li>
-      <strong>Fix:</strong> Enhanced cursor visibility<br>
+      <strong>Fix: Enhanced cursor visibility</strong><br>
       <strong>Aim:</strong> Offers the option for a more visible cursor<br>
       <strong>Limitation:</strong> Not required for WCAG conformance
     </li>

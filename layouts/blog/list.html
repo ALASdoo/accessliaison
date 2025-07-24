@@ -11,7 +11,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-10 mx-auto">
-        <div class="content ">
+        <ul class="content blog-list list-unstyled" aria-label="Blog articles list">
           {{range where site.RegularPages "Section" .Params.section}}
 
           {{ $button := dict
@@ -21,27 +21,29 @@
           "link" .RelPermalink
           }}
 
-          <article class="mb-5">
-            <div class="d-flex align-items-start gap-5 flex-md-row flex-column">
-              {{ if .Params.image }}
-              <div class="flex-shrink-0 mt-3 mb-md-0 mb-3" style="max-width: 180px;">
-                {{ partial "image" (dict
-                  "Src" .Params.image
-                  "Alt" .Params.image_alt
-                  "Class" "rounded-2 w-100"
-                ) }}
+          <li class="mb-5">
+            <article>
+              <div class="d-flex align-items-start gap-5 flex-md-row flex-column">
+                {{ if .Params.image }}
+                <div class="flex-shrink-0 mt-3 mb-md-0 mb-3" style="max-width: 180px;">
+                  {{ partial "image" (dict
+                    "Src" .Params.image
+                    "Alt" .Params.image_alt
+                    "Class" "rounded-2 w-100"
+                  ) }}
+                </div>
+                {{ end }}
+                <div class="content-70ch">
+                  <h2>
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h2>
+                  <p>{{ .Params.description }}</p>
+                </div>
               </div>
-              {{ end }}
-              <div class="content-70ch">
-                <h2>
-                  <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-                </h2>
-                <p>{{ .Params.description }}</p>
-              </div>
-            </div>
-          </article>
+            </article>
+          </li>
           {{end}}
-        </div>
+        </ul>
       </div>
     </div>
   </div>

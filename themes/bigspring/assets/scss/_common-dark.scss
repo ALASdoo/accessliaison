@@ -154,14 +154,14 @@ body.dark {
       color: rgba($white, 0.7);
 
       &:hover {
-        color: $color-primary;
+        color: $dark-color-primary;
       }
     }
 
     blockquote {
       color: $white;
       border-color: #454b50;
-      border-left: 2px solid $color-primary;
+      border-left: 2px solid $dark-color-primary;
       background: $dark-body-bg;
     }
 

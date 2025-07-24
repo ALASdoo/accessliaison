@@ -3,6 +3,7 @@ title: 'Red flags to look for when searching for a web accessibility vendor'
 date: 2025-02-13T10:07:21+06:00
 # post image
 image: 'images/blog/red_flags.jpg'
+image_rectangle: 'images/blog/red_flags_rectangle.jpg'
 image_alt: 'Inspecting a web page with a magnifying glass.'
 # author
 author: 'Tajana Somogyi'
@@ -10,7 +11,7 @@ author: 'Tajana Somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
-description: 'This is meta description'
+description: "Avoid investing in web accessibility solutions that don't work. You can spot these 4 red flags on your own."
 # post draft
 draft: false
 
@@ -23,7 +24,7 @@ cta:
 
 Some businesses that have already invested in their website’s accessibility are getting sued. That happens because they rely on so-called ‘accessibility solutions’ that don’t work. How can you avoid this trap?
 
-The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility. 
+The most efficient solution is to choose a trusted web accessibility solution provider that can help you confidently navigate digital accessibility.
 
 How can you do that if you are not an expert yourself? It might not be an easy task, but there is a lot you **can** do. Make sure you learn the most important facts and watch out for the red flags.
 
@@ -92,7 +93,7 @@ An accessibility statement on the vendor’s website should be easy to find and 
 
 ### No certified experts
 
-The only recognized body for accessibility certification is the {{< link_external url="https://www.accessibilityassociation.org/s/" >}}International Association of Accessibility Professionals (IAAP){{< /link_external >}}. You can get a confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile. 
+The only recognized body for accessibility certification is the {{< link_external url="https://www.accessibilityassociation.org/s/" >}}International Association of Accessibility Professionals (IAAP){{< /link_external >}}. You can get a confirmation from them if somebody has the certificate (CPACC, WAS, CPWA). Experts should also have the badge and certificate number with an expiring date on their LinkedIn profile.
 
 Not all accessibility experts need to have the certificate to do their job properly. It’s a red flag only if no one in the organization holds a certification. It means that they do not invest in education enough and are probably missing the bigger picture.
 

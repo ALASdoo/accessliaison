@@ -1,8 +1,9 @@
 ---
-title: "Accessibility overlays: Do they really improve websites' accessibility?"
+title: "Do accessibility overlays improve websites' accessibility?"
 date: 2025-02-14T10:07:21+06:00
 # post image
 image: 'images/blog/overlays.jpg'
+image_rectangle: 'images/blog/overlays_rectangle.jpg'
 image_alt: 'On the left side of the dark computer monitor there is the symbol for a web accessibility plugin. On the right there is a neon skull graphyc.'
 # author
 author: 'Tajana Somogyi'
@@ -10,7 +11,7 @@ author: 'Tajana Somogyi'
 # post type (regular/featured)
 # type: 'featured'
 # meta description
-description: 'This is meta description'
+description: "Accessibility widgets that use overlays can't replace fixing the website itself. Learn why, and what to do instead."
 # post draft
 draft: false
 

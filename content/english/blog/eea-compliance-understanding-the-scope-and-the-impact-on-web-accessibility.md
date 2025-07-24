@@ -3,6 +3,7 @@ title: 'EAA compliance: Understanding the scope and the impact on web accessibil
 date: 2025-02-11T10:07:21+06:00
 # post image
 image: 'images/blog/eaa_part_1.jpg'
+image_rectangle: 'images/blog/eaa_part_1_rectangle.jpg'
 image_alt: 'A judge’s gavel rests on a legal document under a spotlight, symbolizing the legal importance of accessibility compliance. A pen and a mobile sit nearby on the table.'
 # author
 author: 'Tajana Somogyi'
@@ -21,7 +22,7 @@ cta:
   btn_link: 'https://calendly.com/vilmos/meet'
 ---
 
-The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities. 
+The **European Accessibility Act (EAA)** is a directive that standardizes accessibility requirements across EU member states, ensuring digital products and services are accessible to individuals with disabilities.
 
 Businesses operating in the EU, including e-commerce, banking, and transport, must comply with these regulations since **June 28, 2025**. Responsibility for accessibility violations lies with the website/app owners, even if third-party tools contribute to non-compliance.
 

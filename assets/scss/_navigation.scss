@@ -219,7 +219,7 @@
       }
       .dropdown-item {
         position: relative;
-        padding: 8px 15px;
+        padding: 10px 15px;
         display: inline-block;
 
         font-size: $font-size;
@@ -228,10 +228,6 @@
         border-radius: 6px;
         .text-large & {
           font-size: rfs-value($large-font-size);
-        }
-
-        @include desktop {
-          padding: 6px 15px;
         }
 
         &:focus,

@@ -10,7 +10,7 @@
   data-aos-easing="ease-in-out-sine">
   <div class="container">
     <div class="row">
-      <div class="col-12 mx-auto">
+      <div class="col-10 mx-auto">
         <ul class="content blog-list list-unstyled" aria-label="Blog articles list">
           {{range where site.RegularPages "Section" .Params.section}}
 
@@ -25,7 +25,7 @@
             <article class="container blog-item rounded-2 overflow-hidden">
               <div class="row">
                 {{ if .Params.image }}
-                <div class="col-12 col-md-4 d-flex align-items-stretch m-0 p-0">
+                <div class="col-12 col-md-3 d-flex align-items-stretch m-0 p-0">
                   {{ partial "image" (dict
                     "Src" .Params.image
                     "Alt" .Params.image_alt
@@ -33,7 +33,7 @@
                   ) }}
                 </div>
                 {{ end }}
-                <div class="col-12 col-md-8 p-4">
+                <div class="col-12 col-md-9 p-5">
                   <h2>
                     <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                   </h2>

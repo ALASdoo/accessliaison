@@ -80,10 +80,14 @@
     }
 }
 .blog-item {
-    border: 1px solid $border-color;
+    border: 1px solid $text-color;
 
     .card-img {
         margin-bottom: 0;
+    }
+
+    .dark & {
+        border: 1px solid $dark-text-color;
     }
 }
 

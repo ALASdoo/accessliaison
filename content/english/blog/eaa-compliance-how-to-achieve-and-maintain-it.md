@@ -26,7 +26,7 @@ Many businesses may discover a gap between the current accessibility of their di
 
 Don’t go searching for quick fixes just yet\! In this article, we’ll help you plan and execute web accessibility practices like a pro. Anyway, when law is considered, there are no shortcuts to ensuring the accessibility of websites and apps. The right methodologies and choosing a reliable ally can secure you compliance.
 
-For more information about the EAA, read our first blog post from this series: [EAA Compliance: Understanding the scope and the impact on web accessibility](/blog/eea-compliance-understanding-the-scope-and-the-impact-on-web-accessibility/)
+For more information about the EAA, read our first blog post from this series: [EAA’s scope and impact on web accessibility](/blog/eaas-scope-and-impact-on-web-accessibility/)
 
 ## Table of contents: {#toc-heading}
 
@@ -73,7 +73,7 @@ Requirements for the non-web documents are explained in {{< link_external url="h
 
 ### Don’t rely on accessibility overlays and plugins
 
-Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about [what plugins are useful for and their limitations](/blog/accessibility-overlays-do-they-really-improve-websites-accessibility/).
+Accessibility overlays and plug-ins don’t provide compliance. They can even insert certain problems with the layout that were not present before. Learn about [what plugins are useful for and their limitations](/blog/do-accessibility-overlays-improve-websites-accessibility/).
 
 The EAA specifically requires that digital products are designed and produced to be accessible.
 

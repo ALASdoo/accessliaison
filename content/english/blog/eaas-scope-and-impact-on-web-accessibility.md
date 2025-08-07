@@ -138,7 +138,7 @@ The EAA states that businesses must meet the minimum accessibility requirements 
 
 With the June 2025 deadline approaching fast, businesses must take proactive steps to ensure they comply with the EAA. Don’t wait until the last minute—start preparing today to avoid penalties and ensure your digital services are accessible to all users.
 
-For detailed advice on how to prepare for the deadline, check out the next blog in this series: [EAA compliance: How to prepare for the deadline](/blog/eaa-compliance-how-to-prepare-for-the-deadline/).
+For detailed advice on how to prepare for the deadline, check out the next blog in this series: [EAA compliance: How to achieve and maintain it](/blog/eaa-compliance-how-to-achieve-and-maintain-it/).
 
 ### Need help navigating the complexity of the EAA compliance?
 

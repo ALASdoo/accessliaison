@@ -104,13 +104,38 @@
       return null;
     };
 
+    // Bootstrap alert helper
+    const showAlert = (message, type = "success") => {
+      // Remove existing alert if any
+      const existingAlert = document.querySelector(".cookie-alert");
+      if (existingAlert) existingAlert.remove();
+
+      const alertDiv = document.createElement("div");
+      alertDiv.className = `alert alert-${type} cookie-alert alert-dismissible fade show m-0`;
+      alertDiv.role = "alert";
+      alertDiv.style.zIndex = "1080";
+      alertDiv.tabIndex = -1;
+      alertDiv.innerHTML = `
+      <span>${message}</span>
+      <span>
+        You can <a href="/cookie-policy" class="alert-link">change your cookie settings</a> at any time.
+      </span>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      `;
+
+      document.body.prepend(alertDiv);
+      alertDiv.focus();
+    };
+
     const declineCookies = () => {
       createCookie(COOKIE_STORAGE_KEY, "decline", 30);
+      showAlert("You have declined cookies.", "info");
     };
 
     const acceptCookies = () => {
       createCookie(COOKIE_STORAGE_KEY, "accept", 30);
       loadConsentScripts(consentScripts);
+      showAlert("You have accepted cookies.", "info");
     };
 
     const cookieModalEl = document.querySelector(".cookie-modal");

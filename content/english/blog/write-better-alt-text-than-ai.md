@@ -16,10 +16,10 @@ description: 'Creating accessible, on-brand, and SEO-friendly alt texts is a qui
 draft: false
 
 cta:
-  title: 'Tackle accessibility with confidence'
-  content: 'Ensuring accessibility can feel overwhelming, but you don’t have to do it alone. Chat with an accessibility expert to see how we can help.'
-  btn_label: 'Book a free consultation'
-  btn_link: 'https://calendly.com/vilmos/meet'
+  title: 'Do you need an experienced eye to review your alt texts?'
+  content: 'Tajana Somogyi, our accessibility specialist, excels in branding, UX, and SEO best practices. She can take a look in a free discovery call, and help you determine where to start.'
+  btn_label: 'Talk to expert'
+  btn_link: 'https://calendly.com/tajana-alasdoo/30min'
 ---
 
 Alt text — short for alternative text — is a small detail with a big impact.
@@ -258,8 +258,3 @@ A good alt text makes your content more inclusive, searchable, and user-friendly
 Automated tools are improving fast, but they still miss the nuance of human judgment, brand voice, and real-world context.
 
 With the improvements we suggest your brand will stand out in the sea of generic descriptions.
-
-### Do you need an experienced eye to review your alt texts?
-
-Tajana Somogyi, our accessibility specialist, excels in branding, user experience (UX), and SEO best practices. She can take a look in a free discovery call, and help you determine where to start.
-[Talk to expert →]()

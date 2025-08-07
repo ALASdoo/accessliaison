@@ -38,22 +38,22 @@ body {
     }
   }
 
-/* CTA banner - reverse background  */
-.reverse-bg {
+  /* CTA banner - reverse background  */
+  .reverse-bg {
 
-  a,
-  button,
-  select,
-  .btn {
-    &:focus {
-      outline-color: #ecf5f7;
+    a,
+    button,
+    select,
+    .btn {
+      &:focus {
+        outline-color: #ecf5f7;
 
-      .dark & {
-        outline-color: $dark-body-bg;
+        .dark & {
+          outline-color: $dark-body-bg;
+        }
       }
     }
   }
-}
 
   a:hover {
     color: $color-primary;
@@ -313,8 +313,40 @@ body {
         border-width: 1px !important;
       }
     }
+    code {
+      color: #0C0D0E;
+      background-color: #e3e5e8;
+      padding: 0.2rem 0.4rem;
+      border-radius: 8px;
+
+      body.dark & {
+        color: #E6EDF3;
+        background-color: #344054;
+      }
+    }
+  }
+.alert-info .alert-link {
+  // color: $link-color;
+  &:focus {
+    outline-color: darken($color-primary, 10%);
   }
 
+  &:hover {
+    color: #052127;
+  }
+}
+.alert {
+  .btn-close {
+    padding: 0.7rem;
+    margin: 0.7rem;
+    opacity: .8;
+
+    &:focus {
+      outline: 3px solid darken($color-primary, 10%) !important;
+      outline-offset: 4px !important;
+    }
+  }
+}
 /* Dark Mode */
 body.dark .content {
   a {

@@ -1,6 +1,6 @@
 ---
 title: "Do accessibility overlays improve websites' accessibility?"
-date: 2025-02-14T10:07:21+06:00
+date: 2025-06-07T10:07:21+06:00
 # post image
 image: 'images/blog/overlays.jpg'
 image_rectangle: 'images/blog/overlays_rectangle.jpg'

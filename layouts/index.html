@@ -238,7 +238,7 @@
     <div class="why-choose-us-container">
       <ul class="why-choose-us-list row" aria-labelledby="why-choose-us-title">
         {{ range .items }}
-        <li class="why-choose-us-item col-12 col-lg-4 mb-4 px-4">
+        <li class="why-choose-us-item col-12 col-lg-4 mb-4 px-md-4">
           <h3 class="mb-4"> {{ .name }} </h3>
           <p> {{ .content | markdownify }} </p>
         </li>
@@ -256,13 +256,13 @@
 <section class="section p-0 cta-bottom reverse-bg">
   <div class="container">
     <div class="row">
-      <div class="col-12 rounded-4 cta p-5">
-        <h2 class="cta-heading mb-4">{{ .title | markdownify }}</h2>
+      <div class="col-12 rounded-4 cta p-md-5">
+        <h2 class="cta-heading mb-4 text-center">{{ .title | markdownify }}</h2>
         {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
         {{ if .button.enable }}
         {{ with .button }}
         <a href="{{ .link | relLangURL }}"
-          class="btn btn-primary btn-inverse"
+          class="btn btn-primary btn-inverse mx-auto"
           aria-label="{{ .label }} external link"
           rel="external noopener">
           {{ .label }}

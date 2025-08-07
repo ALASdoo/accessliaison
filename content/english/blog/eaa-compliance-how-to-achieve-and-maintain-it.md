@@ -1,6 +1,6 @@
 ---
 title: 'EAA compliance: How to achieve and maintain it'
-date: 2025-02-12T10:07:21+06:00
+date: 2025-03-03T10:07:21+06:00
 # post image
 image: 'images/blog/how_to_achieve_compliance.jpg'
 image_rectangle: 'images/blog/how_to_achieve_compliance_rectangle.jpg'

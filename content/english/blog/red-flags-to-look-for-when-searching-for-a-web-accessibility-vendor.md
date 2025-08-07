@@ -1,6 +1,6 @@
 ---
 title: 'Red flags to look for when searching for a web accessibility vendor'
-date: 2025-02-13T10:07:21+06:00
+date: 2025-04-15T10:07:21+06:00
 # post image
 image: 'images/blog/red_flags.jpg'
 image_rectangle: 'images/blog/red_flags_rectangle.jpg'

@@ -1,11 +1,11 @@
 <section class="section cta-bottom reverse-bg pb-0">
     <div class="container">
       <div class="row">
-        <div class="col-12 rounded-4 cta p-5">
+        <div class="col-12 rounded-4 cta p-md-5">
 
          <div class="mx-auto">
             {{if .title }}
-            <h2 class="cta-heading mb-4">{{ .title }} </h2>
+            <h2 class="cta-heading mb-4 text-center">{{ .title }} </h2>
             {{ end }}
 
             {{if .content }}
@@ -14,7 +14,7 @@
 
             {{if .btn_link }}
             <a href='{{ .btn_link }}'
-              class="btn btn-primary btn-inverse"
+              class="btn btn-primary btn-inverse mx-auto"
               aria-label='{{ .btn_label }} external link'
               rel="external">
               {{ .btn_label }}

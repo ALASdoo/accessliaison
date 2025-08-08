@@ -19,7 +19,7 @@ cta:
   title: 'Do you need an experienced eye to review your alt texts?'
   content: 'Tajana Somogyi, our accessibility specialist, excels in branding, UX, and SEO best practices. She can take a look in a free discovery call, and help you determine where to start.'
   btn_label: 'Talk to expert'
-  btn_link: 'https://calendly.com/tajana-alasdoo/30min'
+  btn_link: 'https://calendly.com/tajana-alasdoo/15min'
 ---
 
 Alt text — short for alternative text — is a small detail with a big impact.

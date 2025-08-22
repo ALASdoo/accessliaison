@@ -44,3 +44,26 @@
 
 <!-- cookie modal  -->
 {{partial "cookie-consent.html" .}}
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Organization",
+ "name":"AccessLiaison",
+ "url":"https://accessliaison.com/",
+ "logo":"https://accessliaison.com/logo.png",
+ "sameAs": [
+   "https://www.linkedin.com/company/accessliaison",
+   "https://www.instagram.com/make_digital_accessible"
+ ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "{{ .Site.Title }}",
+  "url": "{{ .Site.BaseURL }}"
+}
+</script>

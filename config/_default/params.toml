@@ -42,13 +42,15 @@ link = "get-demo/"
 
 # contact info
 [contact_info]
-address = "Dimitrija Tucovica 20, Zrenjanin, Srbia"
+address = "Dimitrija Tucovica 64, Zrenjanin, Srbia"
 mobile = ""
 email = "infoalasdoo.com"
 
 # seo meta data for OpenGraph / Twitter Card
 [metadata]
 keywords = [
+    "accessliaison",
+    "access liaison",
     "web accessibility",
     "website accessibility",
     "accessibility solutions",
@@ -64,7 +66,7 @@ keywords = [
     "Section 508",
 ]
 description = "Experience the full benefits of web accessibility compliance with AccessLiaison: audits, remediation, automated testing, and training."
-author = "Alas doo"
+author = "AccessLiaison"
 image = "images/logo_social.png" # this image will be used as fallback if a page has no image of its own
 
 # matomo tracking: see https://matomo.org/
@@ -113,13 +115,13 @@ no_image_fallback = "Facebook"
 [[social]]
 title = "instagram"
 icon = "fab fa-instagram"                        # fontawesome icon pack : https://fontawesome.com/icons/
-image = "instagram"   
+image = "instagram"
 link = "https://www.instagram.com/accessliaison"
 no_image_fallback = "Instagram"
 
 [[social]]
 title = "linkedin"
 icon = "fab fa-linkedin"                                # fontawesome icon pack : https://fontawesome.com/icons/
-image = "linkedin"   
+image = "linkedin"
 link = "https://www.linkedin.com/company/accessliaison"
 no_image_fallback = "LinkedIn"

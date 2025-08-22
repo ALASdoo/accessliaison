@@ -240,9 +240,9 @@ Understanding when alt text is not needed is just as important as knowing when i
 
 Alt text is redundant when the image does not provide any meaningful information beyond what’s already conveyed in nearby text. Repeating that same information in the image's alt attribute creates unnecessary noise for users relying on assistive technology.
 
-Here are a few common examples:{#common}
+Here are a few common examples:
 
-<ul aria-labelledby="common">
+<ul aria-label="Examples of cases when alt text is redundant">
   <li><strong>Logos or icons placed beside the company name:</strong> If the text "Acme Agency" is written right next to the logo, adding `alt="Acme Agency"` to the image is repetitive. It’s better to use `alt=""` (empty alt text) so screen readers can skip it.</li>
   <li><strong>Buttons with both text and icons:</strong> If a "Buy Now" button includes a shopping cart icon, you don’t need to write `alt="shopping cart"` on the icon. The button label already communicates the purpose.</li>
   <li><strong>Images repeated for decorative purposes:</strong> For example, a checkmark icon next to each bullet point does not need a description — it adds no meaning.</li>

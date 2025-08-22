@@ -40,7 +40,6 @@
                   "Alt" ""
                   "Class" "social-light--hover"
                   "Loading" "eager"
-
                   )}}
 
                   {{ partial "image" (dict
@@ -56,6 +55,10 @@
                   "Class" "social-dark--hover"
                   "Loading" "eager"
                   )}}
+
+                  <!-- Preload hover images to prevent flicker -->
+                  <img src="{{ $defaultHover }}" alt="" style="display:none;" />
+                  <img src="{{ $darkHover }}" alt="" style="display:none;" />
 
                   <span class="no-image-fallback">{{.no_image_fallback}}</span>
                   </a></li>
